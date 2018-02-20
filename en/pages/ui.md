@@ -46,7 +46,7 @@ __e-Mail Address__
 e-mail address of user.
 
 __Language__
-You can change user language in the Emakin. Users will see language and same time language cultural on the brackets in there. Language cultural options will help to use to users for them language specific formatting like numbers, dates etc.
+You can change user language in the Workrunner. Users will see language and same time language cultural on the brackets in there. Language cultural options will help to use to users for them language specific formatting like numbers, dates etc.
 
 __Themes__
 Themes option provide to change color style of user interface.
@@ -63,7 +63,7 @@ You can learn how to change user profile preference settings by watching this vi
 <iframe width="420" height="240" src="https://www.youtube.com/embed/OZVdUuCEsFw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ##### Logon Methods
-Logon methods is managed to set password process and login into Emakin using a external authentication process. 
+Logon methods is managed to set password process and login into Workrunner using a external authentication process. 
 
 ##### Set Password:
 
@@ -74,15 +74,15 @@ Logon methods is managed to set password process and login into Emakin using a e
 
 ##### Add New Logon:
 
-*Click Set Password or New Logon button.
-*Click any logon.
+* Click Set Password or New Logon button.
+* Click any logon.
 
 You can learn how to change your password by watching this video:
 <iframe width="420" height="240" src="https://www.youtube.com/embed/OZVdUuCEsFw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Send Feedback
 
-Provides a feedback form to send notifications about Emakin. Your feedback is valuable to us and all negative or positive feedbacks are considered carefully. We constantly strive to improve our services based on your feedback.
+Provides a feedback form to send notifications about Workrunner. Your feedback is valuable to us and all negative or positive feedbacks are considered carefully. We constantly strive to improve our services based on your feedback.
 
 ### Log Out
 
