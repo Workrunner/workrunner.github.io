@@ -23,9 +23,9 @@
 
 [User's Guide]()
 
-  * # SubMenu Heading 1
-  * [Business Process](pages/bizprocess.md)
   * [Getting Started](pages/gettingstarted.md)
+  * [Business Process](pages/bizprocess.md)
+  * [User Interface](pages/ui.md)
 
 [User's Guide](pages/userguide.md)
 
