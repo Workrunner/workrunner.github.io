@@ -9,6 +9,7 @@ The home page is consisted of three parts.
 3. worklist on the right side of home page.
 
 Main UI: 
+
 ![alt text][ui_main]
 
 ## User Panel
