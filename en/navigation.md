@@ -22,7 +22,7 @@
 [Getting Started](pages/gettingstarted.md)
 [User's Guide](pages/userguide.md)
 [Admin's Guide](pages/adminguide.md)
-[Support](pages/adminguide.md)
+[Support](pages/support.md)
 [HowTo](pages/howto.md)
 
 <!-- A more complex navigation example: ----------------------------------------
