@@ -1,6 +1,6 @@
 # User Interface
 
-The home page is Emakin's main page and user interface, listing the tasks that are currently assigned to you. The interface supports all modern browsers (IE, Firefox, Chrome, Opera) and is optimized for all mobile devices with JavaScript capabilities. 
+The home page is Workrunner's main page and user interface, listing the tasks that are currently assigned to you. The interface supports all modern browsers (IE, Firefox, Chrome, Opera) and is optimized for all mobile devices with JavaScript capabilities. 
 
 The home page is consisted of three parts. 
 
@@ -21,7 +21,7 @@ Main UI:
 
 
 
-[ui_main]: https://github.com/Workrunner/workrunner.github.io/blob/master/en/pages/uploads/images/ui_main.png "Main UI"
+[ui_main]: https://github.com/workrunner/workrunner.github.io/raw/master/en/pages/uploads/images/ui_main.png "Main UI"
 
 
 
