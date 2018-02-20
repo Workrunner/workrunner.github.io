@@ -24,13 +24,13 @@ My profil is a short description of user information. My profil is happened from
 
 Basic information step is managed identity information of users.
 
-##### Display Name
+__Display Name__
 Display name is users mail address or any name to show on users panel.
 
-##### Name 
+__Name __
 Name of user.
 
-##### Surname
+__Surname__
 Surname of user.
 
 #### Preferences
@@ -39,19 +39,20 @@ Preferences section is used to design image, e-mail address, language and themes
 
 
 
-##### Image
+__Image__
 Add any image to show a picture beside your comments, actions etc. in the activities stream on the task screen.
 
-##### e-Mail Address
+__e-Mail Address__
 e-mail address of user.
 
-##### Language
+__Language__
 You can change user language in the Emakin. Users will see language and same time language cultural on the brackets in there. Language cultural options will help to use to users for them language specific formatting like numbers, dates etc.
 
-##### Themes
+__Themes__
 Themes option provide to change color style of user interface.
 
 Colors options are;
+
 * Default
 * Clean
 * Blue
@@ -60,17 +61,17 @@ Colors options are;
 
 You can learn how to change user profile preference settings by watching this video :
 
-[](https://www.youtube.com/watch?v=OZVdUuCEsFw)
+[](https://www.youtube.com/embed/OZVdUuCEsFw)
 
 ##### Logon Methods
 Logon methods is managed to set password process and login into Emakin using a external authentication process. 
 
 ##### Set Password:
 
-*Click Set Password or New Logon button.
-*Enter your password.
-*Enter your password for confirmation.
-*Click Set Password button.
+* Click Set Password or New Logon button.
+* Enter your password.
+* Enter your password for confirmation.
+* Click Set Password button.
 
 ##### Add New Logon:
 
