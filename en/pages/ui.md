@@ -4,9 +4,9 @@ The home page is Workrunner's main page and user interface, listing the tasks th
 
 The home page is consisted of three parts. 
 
-1. user panel on the top bar.
-2. The body consisted from activity stream, labels, calendar, administration and market.
-3. worklist on the right side of home page.
+1. User panel on the top bar.
+2. The body consists of activity stream, labels, calendar, administration and market.
+3. Worklist on the right side of home page.
 
 Main UI: 
 
