@@ -21,7 +21,7 @@ A background job is a the Workrunner job that runs behind the scenes and without
 
 ## Key Concepts
 
-This introduces some of key concepts related to designing a business process with Workrunner and terminology used.
+This section introduces some of key concepts related to designing a business process with Workrunner and terminology used.
 
 ### Process
 
@@ -65,7 +65,7 @@ Document archive stores the all document based data. Documents may be generated 
 
 ## Life Cycle
 
-This page explains the life cycle of creating an application in the Workrunner BPMS. Applications are created and run with agile methodology steps in the Workrunner BPMS.
+This section explains the life cycle of creating an application in the Workrunner BPMS. Applications are created and run with agile methodology steps in the Workrunner BPMS.
 
 Agile methodology in the Workrunner BPMS uses adaptive approach where there is no detailed planning and there is clarity on future tasks only in respect of what features need to be developed. There is feature driven development and the Workrunner BPMS adapts to the changing product requirements dynamically.The product is tested very frequently, through the release iterations, minimizing the risk of any major failures in future.
 
