@@ -24,7 +24,7 @@
 [User's Guide]()
 
   * [Getting Started](pages/uguide/user_overview.md)
-  * [Business Process](pages/uguide/bizprocess.md)
+  * [Business Process](pages/uguide/biz_process.md)
   * [User Interface](pages/uguide/ui.md)
 
 [User's Guide](pages/uguide/userguide.md)
