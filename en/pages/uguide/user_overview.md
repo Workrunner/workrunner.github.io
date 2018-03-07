@@ -1,4 +1,4 @@
-# Getting Started
+# Introduction
 
 ## What is Workrunner and how does it work?
 
