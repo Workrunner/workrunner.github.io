@@ -29,7 +29,17 @@
 
 [User's Guide](pages/userguide.md)
 
+[Admin's Guide]()
+
+  * [Overview](pages/overview.md)
+  * [Process Modeling](pages/process_model.md)
+  * [Process Administration](process_admin/ui.md)
+  * [Integration Services](integration/ui.md)
+  * [System Administration](sys_admin/ui.md)
+
 [Admin's Guide](pages/adminguide.md)
+
+
 
 [Support](pages/support.md)
 
