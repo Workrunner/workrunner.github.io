@@ -23,21 +23,21 @@
 
 [User's Guide]()
 
-  * [Getting Started](pages/gettingstarted.md)
-  * [Business Process](pages/bizprocess.md)
-  * [User Interface](pages/ui.md)
+  * [Getting Started](pages/uguide/user_overview.md)
+  * [Business Process](pages/uguide/bizprocess.md)
+  * [User Interface](pages/uguide/ui.md)
 
-[User's Guide](pages/userguide.md)
+[User's Guide](pages/uguide/userguide.md)
 
 [Admin's Guide]()
 
-  * [Overview](pages/overview.md)
-  * [Process Modeling](pages/process_model.md)
-  * [Process Administration](process_admin/ui.md)
-  * [Integration Services](integration/ui.md)
-  * [System Administration](sys_admin/ui.md)
+  * [Overview](pages/aguide/admin_overview.md)
+  * [Process Modeling](pages/aguide/process_model.md)
+  * [Process Administration](pages/aguide/process_admin.md)
+  * [Integration Services](pages/aguide/integration.md)
+  * [System Administration](pages/aguide/sys_admin.md)
 
-[Admin's Guide](pages/adminguide.md)
+[Admin's Guide](pages/aguide/adminguide.md)
 
 
 
