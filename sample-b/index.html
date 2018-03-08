@@ -32,15 +32,18 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Heading B", url: "#heading-b", children: [
-              {title: "Sub-Heading B 1", url: "#sub-heading-b-1" },
-              {title: "Sub-Heading B 2", url: "#sub-heading-b-2" },
-              {title: "Sub-Heading B 3", url: "#sub-heading-b-3" },
+          {title: "Process Modeling", url: "#process-modeling", children: [
+              {title: "Process Diagram", url: "#process-diagram" },
+          ]},
+          {title: "Diagram Language", url: "#diagram-language", children: [
+              {title: "Pools", url: "#pools" },
           ]},
         ];
 
     </script>
-    <script src="../js/base.js"></script> 
+    <script src="../js/base.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script> 
 </head>
 
 <body>
@@ -67,24 +70,68 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="heading-b">Heading B<a class="headerlink" href="#heading-b" title="Permanent link">#</a></h1>
-<h2 id="sub-heading-b-1">Sub-Heading B 1<a class="headerlink" href="#sub-heading-b-1" title="Permanent link">#</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla volutpat odio, nec iaculis tortor laoreet vitae. Suspendisse dictum nibh nulla, non fringilla sapien mollis sed. Nunc vehicula facilisis tellus, ut tempor massa bibendum sed. Aenean non justo eu nulla luctus aliquam. Nullam eget arcu a urna ultrices volutpat lobortis ut sapien. Fusce vitae dapibus tellus, nec tincidunt metus. Etiam scelerisque orci ac ligula fermentum rhoncus. Ut at nisi quis tellus imperdiet porta. In semper mollis urna, nec ultricies purus bibendum non. </p>
-<h2 id="sub-heading-b-2">Sub-Heading B 2<a class="headerlink" href="#sub-heading-b-2" title="Permanent link">#</a></h2>
+    <h1 id="process-modeling">Process Modeling<a class="headerlink" href="#process-modeling" title="Permanent link">#</a></h1>
+<h2 id="process-diagram">Process Diagram<a class="headerlink" href="#process-diagram" title="Permanent link">#</a></h2>
+<p>A process diagram is a visualized model consisting of Tasks, Actions, Roles and Routes. For example a simple expense process is modeled as follows;</p>
+<p>![alt text][20180307_diagram_overview]</p>
+<p><strong>Leave Request</strong>
+Defines the start task of the process. Employee can save or submit a leave request.</p>
+<p><strong>Manager Approval</strong>
+Defines the first approval task of the process. Manager can confirm or reject the request. If rejected, the process is routed back to the employee. </p>
+<p><strong>HR Approval</strong>
+Defines the second approval task of the process. Human Resources can confirm or reject the request, and if HR confirms the request, confirmed request is recorded into HR database, else if rejected, the process is routed back to the manager.</p>
+<p><strong>Inform Employee</strong>
+Defines the inform employee task of the process. Employee can select OK and finish the process.</p>
+<h1 id="diagram-language">Diagram Language<a class="headerlink" href="#diagram-language" title="Permanent link">#</a></h1>
+<p>BPMN or similar notations are generally contain technical terms like "if", "split", "explicit join" activities and require some skills to understand diagram. Emakin uses own process notation to describe processes to achieve understand processes by everyone without any education or skills needed.</p>
+<p>According to diagram above:</p>
 <ul>
-<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-<li>Aenean accumsan nulla iaculis enim fringilla consectetur.</li>
-<li>Fusce cursus risus ultrices ante placerat ullamcorper.</li>
-<li>Suspendisse eget ligula non mi suscipit eleifend eget ut neque.</li>
-<li>Duis nec dolor pharetra, pulvinar ante vel, tristique augue.</li>
-<li>Nulla semper ante gravida ex tempor commodo vel vitae elit.</li>
-<li>Nunc ultrices turpis et arcu placerat semper.</li>
-<li>Integer pellentesque sem luctus metus mattis imperdiet.</li>
-<li>Sed eget velit non nulla volutpat fermentum et sed nunc.</li>
-<li>Aenean at diam non magna dignissim iaculis.</li>
+<li>
+<p>Green box identifies the start (initiator) task of pool.</p>
+</li>
+<li>
+<p>Orange boxes identify the intermediate task of pool.</p>
+</li>
+<li>
+<p>Each gray box that connected to tasks identifies the action as result of task that assigned user can select.</p>
+</li>
+<li>
+<p>Lines between actions and tasks identify the routes to next task in process. If no route is found process is terminated with selected action.</p>
+</li>
 </ul>
-<h2 id="sub-heading-b-3">Sub-Heading B 3<a class="headerlink" href="#sub-heading-b-3" title="Permanent link">#</a></h2>
-<p>Pellentesque hendrerit, enim at dictum dignissim, enim ipsum venenatis velit, sit amet pretium ligula nisi quis libero. Phasellus quis sapien vitae sem lacinia imperdiet. Sed venenatis facilisis orci. Sed blandit, metus et faucibus imperdiet, libero mauris ultrices mauris, quis placerat orci dolor suscipit sem. Praesent pharetra congue ex, quis efficitur felis faucibus id. Nam feugiat erat vel dolor pretium venenatis. Nunc eu quam elit. Nunc at gravida eros. Nullam vitae felis in sem efficitur dictum id at nunc. Suspendisse sagittis diam a justo cursus imperdiet. Nullam dapibus dui id felis malesuada varius. Aenean aliquet, mi ut semper egestas, massa neque posuere urna, non congue neque velit a ante. Pellentesque purus orci, finibus sit amet nisi ullamcorper, hendrerit luctus magna. Vivamus iaculis interdum elit, vitae vulputate diam hendrerit dignissim. </p>
+<p><strong>You can learn how to build a process by watching this video :</strong></p>
+<iframe width="400" height="400" src="https://www.youtube.com/embed/9HhSKT2Ip84" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="pools">Pools<a class="headerlink" href="#pools" title="Permanent link">#</a></h2>
+<p>Pool is a container of diagram. Most of the business processes require more than one diagram for different operations. For example advance request and expense payment diagrams can be defined in one process. </p>
+<p>For a pool, you can configure following:</p>
+<p><strong>Name</strong>
+Identifies the pool. This information used only for process designers and are not visible by users.</p>
+<p><strong>Default Form</strong>
+Default selected form to show users if task does not specify any form.</p>
+<p><strong>Data Root</strong>
+Root data element be used from data model. Different pools may share same root element if needed.</p>
+<p><strong>Is Administrative ?</strong>
+Check this option if pool is used only for administrative operations. When checked pool accessed only by user has "write" permission on process or is admin. For example; You may need to create an Options diagram to set process preferences.</p>
+<p><strong>Is Anonymously Accessible ?</strong>
+Check this option to allow anonymous (non-logged in) users. This option also requires anonymous access permission on domain preferences.</p>
+<p><strong>Documentation URL</strong>
+Documentation URL address is used to link process documentation.</p>
+<p><strong>Support URL</strong>
+Support URL address is used to link support site.</p>
+<p>After pool is created you can configure the tasks, roles and routes from graphical designer.</p>
+<p>Pool also contains following properties:</p>
+<h3 id="open-script">Open Script<a class="headerlink" href="#open-script" title="Permanent link">#</a></h3>
+<p>Script to be executed for every new instances just before first task. This script may be useful to assign dynamically changing default values. (ex: assign current date to form value) Please refer to scripting section for more detail.</p>
+<h3 id="closing-script">Closing Script<a class="headerlink" href="#closing-script" title="Permanent link">#</a></h3>
+<p>Script to be executed for every normally closed (by user action or deadline) instances. This script may be useful for export process data to any external system. Please refer to scripting section for more detail.</p>
+<h3 id="terminating-script">Terminating Script<a class="headerlink" href="#terminating-script" title="Permanent link">#</a></h3>
+<p>Script to be executed for terminated (forced by administrative or system) instances. Please refer to scripting section for more detail.</p>
+<h3 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">#</a></h3>
+<p>List of message templates to be used for mail notifications. More information can be found at Message Templates section.</p>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">#</a></h3>
+<p>List of variables to use in scripting environment. Variables are used to define and easy to update static values to use in rule validations, formulas etc. Defined variables can be accessed with $ sign prefix. Example: $ExpenseLimit</p>
+<p>Variable values can be override with Task definitions to update value in only task scope. Example: $AllowPriceChange can set to false in pool definition and can be set to true for administrative type tasks to disable on rule validation.</p>
 
   <br>
     
