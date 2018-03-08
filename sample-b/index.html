@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Dmitry S">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Sample Page B - Windmill MkDocs Theme</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Process Modeling", url: "#process-modeling", children: [
+              {title: "Process Diagram", url: "#process-diagram" },
+          ]},
+          {title: "Diagram Language", url: "#diagram-language", children: [
+              {title: "Pools", url: "#pools" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../sample-a2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sample-a2/" class="btn btn-xs btn-link">
+        Sample Subpage A2
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="process-modeling">Process Modeling<a class="headerlink" href="#process-modeling" title="Permanent link">#</a></h1>
+<h2 id="process-diagram">Process Diagram<a class="headerlink" href="#process-diagram" title="Permanent link">#</a></h2>
+<p>A process diagram is a visualized model consisting of Tasks, Actions, Roles and Routes. For example a simple expense process is modeled as follows;</p>
+<p>![alt text][20180307_diagram_overview]</p>
+<p><strong>Leave Request</strong>
+Defines the start task of the process. Employee can save or submit a leave request.</p>
+<p><strong>Manager Approval</strong>
+Defines the first approval task of the process. Manager can confirm or reject the request. If rejected, the process is routed back to the employee. </p>
+<p><strong>HR Approval</strong>
+Defines the second approval task of the process. Human Resources can confirm or reject the request, and if HR confirms the request, confirmed request is recorded into HR database, else if rejected, the process is routed back to the manager.</p>
+<p><strong>Inform Employee</strong>
+Defines the inform employee task of the process. Employee can select OK and finish the process.</p>
+<h1 id="diagram-language">Diagram Language<a class="headerlink" href="#diagram-language" title="Permanent link">#</a></h1>
+<p>BPMN or similar notations are generally contain technical terms like "if", "split", "explicit join" activities and require some skills to understand diagram. Emakin uses own process notation to describe processes to achieve understand processes by everyone without any education or skills needed.</p>
+<p>According to diagram above:</p>
+<ul>
+<li>
+<p>Green box identifies the start (initiator) task of pool.</p>
+</li>
+<li>
+<p>Orange boxes identify the intermediate task of pool.</p>
+</li>
+<li>
+<p>Each gray box that connected to tasks identifies the action as result of task that assigned user can select.</p>
+</li>
+<li>
+<p>Lines between actions and tasks identify the routes to next task in process. If no route is found process is terminated with selected action.</p>
+</li>
+</ul>
+<p><strong>You can learn how to build a process by watching this video :</strong></p>
+<iframe width="400" height="400" src="https://www.youtube.com/embed/9HhSKT2Ip84" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="pools">Pools<a class="headerlink" href="#pools" title="Permanent link">#</a></h2>
+<p>Pool is a container of diagram. Most of the business processes require more than one diagram for different operations. For example advance request and expense payment diagrams can be defined in one process. </p>
+<p>For a pool, you can configure following:</p>
+<p><strong>Name</strong>
+Identifies the pool. This information used only for process designers and are not visible by users.</p>
+<p><strong>Default Form</strong>
+Default selected form to show users if task does not specify any form.</p>
+<p><strong>Data Root</strong>
+Root data element be used from data model. Different pools may share same root element if needed.</p>
+<p><strong>Is Administrative ?</strong>
+Check this option if pool is used only for administrative operations. When checked pool accessed only by user has "write" permission on process or is admin. For example; You may need to create an Options diagram to set process preferences.</p>
+<p><strong>Is Anonymously Accessible ?</strong>
+Check this option to allow anonymous (non-logged in) users. This option also requires anonymous access permission on domain preferences.</p>
+<p><strong>Documentation URL</strong>
+Documentation URL address is used to link process documentation.</p>
+<p><strong>Support URL</strong>
+Support URL address is used to link support site.</p>
+<p>After pool is created you can configure the tasks, roles and routes from graphical designer.</p>
+<p>Pool also contains following properties:</p>
+<h3 id="open-script">Open Script<a class="headerlink" href="#open-script" title="Permanent link">#</a></h3>
+<p>Script to be executed for every new instances just before first task. This script may be useful to assign dynamically changing default values. (ex: assign current date to form value) Please refer to scripting section for more detail.</p>
+<h3 id="closing-script">Closing Script<a class="headerlink" href="#closing-script" title="Permanent link">#</a></h3>
+<p>Script to be executed for every normally closed (by user action or deadline) instances. This script may be useful for export process data to any external system. Please refer to scripting section for more detail.</p>
+<h3 id="terminating-script">Terminating Script<a class="headerlink" href="#terminating-script" title="Permanent link">#</a></h3>
+<p>Script to be executed for terminated (forced by administrative or system) instances. Please refer to scripting section for more detail.</p>
+<h3 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">#</a></h3>
+<p>List of message templates to be used for mail notifications. More information can be found at Message Templates section.</p>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">#</a></h3>
+<p>List of variables to use in scripting environment. Variables are used to define and easy to update static values to use in rule validations, formulas etc. Defined variables can be accessed with $ sign prefix. Example: $ExpenseLimit</p>
+<p>Variable values can be override with Task definitions to update value in only task scope. Example: $AllowPriceChange can set to false in pool definition and can be set to true for administrative type tasks to disable on rule validation.</p>
+
+  <br>
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../sample-a2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sample-a2/" class="btn btn-xs btn-link">
+        Sample Subpage A2
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
