@@ -254,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../ag/ov/key_concepts/" title="Admin Guide" class="md-tabs__link">
+        <a href="../../ag/overview/" title="Admin Guide" class="md-tabs__link">
           Admin Guide
         </a>
       
     </li>
-  
-
   
 
       
@@ -882,46 +876,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-1" type="checkbox" id="nav-12-1">
-    
-    <label class="md-nav__link" for="nav-12-1">
+  <li class="md-nav__item">
+    <a href="../../ag/overview/" title="Overview" class="md-nav__link">
       Overview
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-12-1">
-        Overview
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ag/ov/key_concepts/" title="Key Concepts" class="md-nav__link">
-      Key Concepts
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ag/ov/life_cycle/" title="Life Cycle" class="md-nav__link">
-      Life Cycle
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -6321,7 +6279,184 @@
                 
                   <h1>Search</h1>
                 
-                
+                <p>You can use the search options to find the items you need. At the top bar, there is a search field that allows you to search the selected container for items that match a specified <a href="https://lucene.apache.org/core/2_9_4/queryparsersyntax.html">search</a> keyword.</p>
+<p><a href="../../images/ug/20180307_search.png"><img alt="Home page" src="../../images/ug/20180307_search.png" /></a></p>
+<p>Workrunner system gives users various search options. There are:</p>
+<p><strong>Terms</strong></br>
+Two types of search term option is available.</p>
+<ol>
+<li>A Single Term is a single word such as “ purchase” or “order”.</li>
+<li>A Phrase is a group of words surrounded by double quotes such as "purchase order".</li>
+</ol>
+<p><strong>Fields</strong></br>
+You can search any field by typing the field name followed by a colon <code>:</code> and then the term you are looking for.</p>
+<ol>
+<li>
+<p>If you want to find the document entitled "Purchase Order" which contains the text "order", you can enter: </p>
+<p><code>title:”Purchase Order” AND text:go</code> or <code>title:”Purchase Order” AND order</code></p>
+</li>
+<li>
+<p>The field is only valid for the term that it directly precedes, so the query</p>
+<p><code>title:invoice approval information</code> </br></br>
+will only find "purchase" in the title field. It will find "approval" and "information" in the default field.</p>
+</li>
+</ol>
+<p><strong>Wildcard Searches</strong></br>
+Workrunner system supports single and multiple character wildcard searches within single terms (not within phrase queries).</p>
+<p>To perform a single character wildcard search use the <code>?</code> symbol.</p>
+<p>To perform a multiple character wildcard search use the <code>*</code> symbol.</p>
+<ol>
+<li>
+<p>The single character wildcard search looks for terms that match that with the single character replaced. For example, to search for "invoice" or "expense" you can use the search:</p>
+<div class="codehilite"><pre><span></span>invo?ce
+</pre></div>
+
+
+</li>
+<li>
+<p>Multiple character wildcard searches looks for 0 or more characters. For example, to search for expense or expenses you can use the search:</p>
+<div class="codehilite"><pre><span></span>expense*
+</pre></div>
+
+
+</li>
+<li>
+<p>You can also use the wildcard searches in the middle of a term.</p>
+<div class="codehilite"><pre><span></span>exp*ense
+</pre></div>
+
+
+</li>
+</ol>
+<p>Note: You cannot use a <code>*</code> or <code>?</code> symbol as the first character of a search.</p>
+<p><strong>Fuzzy Searches</strong></br></p>
+<p>Workrunner system supports fuzzy searches. To do a fuzzy search use the tilde, <code>~</code>, symbol at the end of a single word Term.</p>
+<ol>
+<li>
+<p>To search for a term similar in spelling to "expense" use the fuzzy search:</p>
+<div class="codehilite"><pre><span></span>expense~
+</pre></div>
+
+
+</li>
+<li>
+<p>The value is between 0 and 1, with a value closer to 1 only terms with a higher similarity will be matched. For example:</p>
+<div class="codehilite"><pre><span></span>expense~0,8
+</pre></div>
+
+
+</li>
+</ol>
+<p>The default that is used if the parameter is not given is 0.5.</p>
+<p><strong>Proximity Searches</strong></br>
+Workrunner system supports finding words are a within a specific distance away. To do a proximity search use the tilde, <code>~</code>, symbol at the end of a Phrase. For example to search for a "form" and "expense" within 10 words of each other in a document use the search:</p>
+<div class="codehilite"><pre><span></span>    “expense form”~10
+</pre></div>
+
+
+<p><strong>Range Searches</strong></br>
+Range Queries allow one to match documents whose field(s) values are between the lower and upper bound specified by the Range Query.</p>
+<ul>
+<li>Range Queries can be inclusive or exclusive of the upper and lower bounds. Sorting is done lexicographically.<div class="codehilite"><pre><span></span>Mod_date:[300201 TO 300501]
+</pre></div>
+
+
+</li>
+</ul>
+<p>This will find documents whose mod_date fields have values between 300201 and 30050, inclusive.</p>
+<ul>
+<li>Note that Range Queries are not reserved for date fields. You could also use range queries with non-date fields:<div class="codehilite"><pre><span></span>Title:{Document TO Invoice}
+</pre></div>
+
+
+</li>
+</ul>
+<p>This will find all documents whose titles are between Document and Invoice, but not including Document and Invoice.</p>
+<p>Inclusive range queries are denoted by square brackets. Exclusive range queries are denoted by curly brackets.</p>
+<p><strong>Boosting a Term</strong></br>
+Workrunner system provides the relevance level of matching documents based on the terms found. To boost a term use the caret, <code>^</code>, symbol with a boost factor (a number) at the end of the term you are searching. The higher the boost factor, the more relevant the term will be.</p>
+<ul>
+<li>Boosting allows you to control the relevance of a document by boosting its term. For example, if you are searching for<div class="codehilite"><pre><span></span>expense form
+</pre></div>
+
+
+</li>
+</ul>
+<p>and you want the term "expense" to be more relevant boost it using the <code>^</code> symbol along with the boost factor next to the term. You would type:</p>
+<div class="codehilite"><pre><span></span>    expense^4 form
+</pre></div>
+
+
+<ul>
+<li>This will make documents with the term expense appear more relevant. You can also boost Phrase Terms as in the example:<div class="codehilite"><pre><span></span> “expense form”^4
+</pre></div>
+
+
+</li>
+</ul>
+<p>By default, the boost factor is 1. Although the boost factor must be positive, it can be less than 1.</p>
+<p><strong>Boolean Operators</strong></br>
+Boolean operators allow terms to be combined through logic operators. Workrunnersystem supports <code>AND</code>, <code>+</code>, <code>OR</code>, <code>NOT</code> and <code>-</code> as Boolean operators(Note: Boolean operators must be <strong>ALL CAPS</strong>).</p>
+<p>The <code>OR</code> operator is the default conjunction operator. This means that if there is no Boolean operator between two terms, the <code>OR</code> operator is used. The <code>OR</code> operator links two terms and finds a matching document if either of the terms exist in a document. This is equivalent to a union using sets. The symbol || can be used in place of the word <code>OR</code>.</p>
+<ul>
+<li>To search for documents that contain either "expense form" or just "expense" use the query:</br></br>
+<code>“expense form” expense</code> or <code>“expense form” OR expense</code></li>
+</ul>
+<p><strong>AND operator</strong></br>
+The <code>AND</code> operator matches documents where both terms exist anywhere in the text of a single document. This is equivalent to an intersection using sets. The symbol <code>&amp;&amp;</code> can be used in place of the word <code>AND</code>.</p>
+<p>To search for documents that contain "Expense form" and "Invoice form" use the query:</p>
+<div class="codehilite"><pre><span></span> “expense form” AND “Invoice form”
+</pre></div>
+
+
+<p><strong>+ operator</strong></br>
+The <code>+</code> or required operator requires that the term after the <code>+</code> symbol exist somewhere in a the field of a single document.</p>
+<p>To search for documents that must contain "expense" and may contain "form" use the query:</p>
+<div class="codehilite"><pre><span></span>  +expense form
+</pre></div>
+
+
+<p><strong>NOT operator</strong></br>
+The <code>NOT</code> operator excludes documents that contain the term after <code>NOT</code>. This is equivalent to a difference using sets. The symbol ! can be used in place of the word <code>NOT</code>.</p>
+<ol>
+<li>
+<p>To search for documents that contain"purchase order" but not "expense form" use the query:</p>
+<div class="codehilite"><pre><span></span>“Purchase order” NOT “expense form”
+</pre></div>
+
+
+</li>
+<li>
+<p>The NOT operator cannot be used with just one term. For example, the following search will return no results:</p>
+<div class="codehilite"><pre><span></span>NOT”purchase order”
+</pre></div>
+
+
+</li>
+<li>
+<p>The <code>-</code> or prohibit operator excludes documents that contain the term after the <code>-</code> symbol.</p>
+</li>
+</ol>
+<p>To search for documents that contain “Purchase order” but not ""expense form" use the query:</p>
+<p><code>“Purchase order” - “expense form”</code></p>
+<p><strong>Grouping</strong></br>
+Workrunner system supports using parentheses to group clauses to form sub queries. This can be very useful if you want to control the boolean logic for a query.</p>
+<p>To search for either "expense" or "purchase" and "inbox" use the query:</p>
+<div class="codehilite"><pre><span></span>(expense OR purchase) AND inbox
+</pre></div>
+
+
+<p><strong>Field Grouping</strong></br>
+Workrunner system supports using parentheses to group multiple clauses to a single field. To search for a title that contains both the word "expense" and the phrase "purchase order" use the query:</p>
+<div class="codehilite"><pre><span></span>title:(+expense+”purchase order”)
+</pre></div>
+
+
+<p><strong>Escaping Special Characters</strong></br>
+Workrunner system  supports escaping special characters that are part of the query syntax. The current list special characters are</p>
+<p><code>+ - &amp;&amp; || ! ( ) { } [ ] ^ &quot; ~ * ? : \</code></p>
+<p>To escape these character use the  before the character. For example to search for <code>(2+2):4</code> use the query:</p>
+<p><code>\(2\+2\)\:4</code></p>
                 
                   
                 
