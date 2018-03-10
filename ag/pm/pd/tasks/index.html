@@ -696,6 +696,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../../ug/worklist/" title="Toolbar" class="md-nav__link">
+      Toolbar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../../ug/worklist_tasks/" title="Worklist Tasks" class="md-nav__link">
       Worklist Tasks
     </a>
@@ -709,13 +721,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4-4-2" type="checkbox" id="nav-11-4-4-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4-4-3" type="checkbox" id="nav-11-4-4-3">
     
-    <label class="md-nav__link" for="nav-11-4-4-2">
+    <label class="md-nav__link" for="nav-11-4-4-3">
       Delegation
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-11-4-4-2">
+      <label class="md-nav__title" for="nav-11-4-4-3">
         Delegation
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -6499,7 +6511,7 @@
 <p><strong>Postwork</strong></p>
 <p>Script to be executed after task is completed. Please refer Postwork Script section for more details.</p>
 <p><strong>Delayed Execution</strong></p>
-<p>Check this field to process this task in delayed context. By default Emakin executes task steps in synchronized context until task is assigned to a user or workflow is complete. If you check this field workflow engine temporarily stops execution at task and commits the current state to database. Remaining execution is performed in another transaction. In some cases you may need to use this field to ensure save current state and perform remaining operations in another error checking context.</p>
+<p>Check this field to process this task in delayed context. By default Workrunner executes task steps in synchronized context until task is assigned to a user or workflow is complete. If you check this field workflow engine temporarily stops execution at task and commits the current state to database. Remaining execution is performed in another transaction. In some cases you may need to use this field to ensure save current state and perform remaining operations in another error checking context.</p>
 <p><strong>Options</strong></p>
 <p>List of task options. Task options are provides quick accessible to following task properties:</p>
 <ul>
@@ -6535,9 +6547,9 @@
 <h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
 <p>Configures the task to perform scheduled operations. Depending on the task type, performs following:</p>
 <p><strong>Start Point</strong></p>
-<p>If task is configured as start point emakin periodically initiates new instances depending on schedule and executes the evaluation script. When any action taken, it continues to next step on workflow.</p>
+<p>If task is configured as start point Workrunner periodically initiates new instances depending on schedule and executes the evaluation script. When any action taken, it continues to next step on workflow.</p>
 <p><strong>Normal</strong></p>
-<p>If task is configured as intermediate task, emakin periodically checks any waiting tasks and executes the evaluation script on it. When any action taken, it continues to next step on workflow.</p>
+<p>If task is configured as intermediate task, Workrunner periodically checks any waiting tasks and executes the evaluation script on it. When any action taken, it continues to next step on workflow.</p>
 <p>For evaluation you can configure following:</p>
 <p><strong>Enabled</strong></p>
 <p>Check this field to enable scheduled operation.</p>
