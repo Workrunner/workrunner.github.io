@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#task-toolbar" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -641,6 +645,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../home_page/" title="Home Page" class="md-nav__link">
+      Home Page
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../user_panel/" title="User Panel" class="md-nav__link">
       User Panel
     </a>
@@ -680,14 +696,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4-4" type="checkbox" id="nav-11-4-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4-5" type="checkbox" id="nav-11-4-5" checked>
     
-    <label class="md-nav__link" for="nav-11-4-4">
-      Worklist
+    <label class="md-nav__link" for="nav-11-4-5">
+      Work List
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-11-4-4">
-        Worklist
+      <label class="md-nav__title" for="nav-11-4-5">
+        Work List
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -698,8 +714,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../worklist/" title="Toolbar" class="md-nav__link">
-      Toolbar
+    <a href="../worklist/" title="Worklist" class="md-nav__link">
+      Worklist
     </a>
   </li>
 
@@ -716,9 +732,36 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Worklist Tasks
+      </label>
+    
     <a href="./" title="Worklist Tasks" class="md-nav__link md-nav__link--active">
       Worklist Tasks
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-toolbar" title="Task Toolbar" class="md-nav__link">
+    Task Toolbar
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -730,13 +773,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4-4-3" type="checkbox" id="nav-11-4-4-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4-5-3" type="checkbox" id="nav-11-4-5-3">
     
-    <label class="md-nav__link" for="nav-11-4-4-3">
+    <label class="md-nav__link" for="nav-11-4-5-3">
       Delegation
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-11-4-4-3">
+      <label class="md-nav__title" for="nav-11-4-5-3">
         Delegation
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -760,8 +803,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../time_period/" title="Time Period" class="md-nav__link">
-      Time Period
+    <a href="../time_period/" title="For a Time Period" class="md-nav__link">
+      For a Time Period
     </a>
   </li>
 
@@ -6301,6 +6344,35 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-toolbar" title="Task Toolbar" class="md-nav__link">
+    Task Toolbar
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -6309,7 +6381,22 @@
                 
                   <h1>Worklist Tasks</h1>
                 
-                
+                <h2 id="task-toolbar">Task Toolbar<a class="headerlink" href="#task-toolbar" title="Permanent link">&para;</a></h2>
+<p>Task toolbar page organize tasks action in Workrunner, you can manage and <a href="../specific_task">delegate</a> tasks in this page. Task toolbar stable actions are close,print, add, remove labels and forward.</p>
+<p><a href="../../images/ug/20180307_task_toolbar1.png"><img alt="Home page" src="../../images/ug/20180307_task_toolbar1.png" /></a></p>
+<ul>
+<li>Close is used leave task without save.</li>
+<li>Move to button is used a task from list to another label</li>
+<li>Label as button is used to select or open any task from list to display label toolbar.</li>
+<li>Print is used to print task. </li>
+<li>History button is used to arrive history information of task.</li>
+<li>Forward button is used to delegate task to user, group or unit.</li>
+</ul>
+<p><a href="../../images/ug/20180307_task_toolbar2.png"><img alt="Home page" src="../../images/ug/20180307_task_toolbar2.png" /></a></p>
+<p>Save button and send to approval button are created when <a href="../business_process">process</a> is designed.
+Locked Tasks</p>
+<p>Locked tasks locks task to selected user in Workrunner. Some of tasks may be sent to more than one person in your organization, and when you open the task you may see a locked form. A locked form is only for previewing the task, and cannot be unlocked until lock time is expired, or the task is closed without taking any other action, by the user who have locked the form.</p>
+<p><a href="../../images/ug/20180307_locked_tasks.png"><img alt="Home page" src="../../images/ug/20180307_locked_tasks.png" /></a></p>
                 
                   
                 
@@ -6328,7 +6415,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../worklist/" title="Toolbar" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../worklist/" title="Worklist" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -6337,7 +6424,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Toolbar
+                Worklist
               </span>
             </div>
           </a>

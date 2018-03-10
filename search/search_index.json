@@ -1407,7 +1407,7 @@
         }, 
         {
             "location": "/ug/user_guide/", 
-            "text": "This guide covers features and functions that are available to emakin users and administrators. \n\n\nGetting Started\nBusiness Process\nUser Interface\n    User Panel\n    Activity Stream\n    Labels\n    Worklist\n        Worklist Tasks\n        Delegation\n            Delegation For a Specific Task\n            Delegate Someone In Your Organization For a Time Period\n            By the Admin\n        Search\n        History\n    Folders\n    Market", 
+            "text": "This guide covers features and functions that are available to Workrunner users and administrators. \n\n\n\n\nGetting Started\n\n\nBusiness Process\n\n\nUser Interface\n\n\nHome Page\n\n\nUser Panel\n\n\nActivity Stream\n\n\nLabels\n\n\nWork List\n\n\nWorklist\n\n\nWorklist Tasks\n\n\nDelegation\n\n\nSpecific Task\n\n\nFor a Time Period\n\n\nBy the Admin\n\n\n\n\n\n\nSearch\n\n\nHistory\n\n\n\n\n\n\nFolders\n\n\nMarket", 
             "title": "Overview"
         }, 
         {
@@ -1446,54 +1446,109 @@
             "title": "The Process Chain"
         }, 
         {
+            "location": "/ug/home_page/", 
+            "text": "The home page is Workrunner's main page and user interface, listing the tasks that are currently assigned to you. The interface supports all modern browsers (IE, Firefox, Chrome, Opera) and is optimized for all mobile devices with JavaScript capabilities. \n\n\nThe home page is consisted of three parts. \n\n\n\n\nUser panel\n on the top bar.\n\n\nThe body consists of \nactivity stream\n, \nlabels\n, \ncalendar\n, \nadministration\n and \nmarket\n.\n\n\nWorklist\n on the right side of home page.\n\n\n\n\nMain UI:", 
+            "title": "Home Page"
+        }, 
+        {
             "location": "/ug/user_panel/", 
-            "text": "", 
+            "text": "User panel place is found at the top-right side of the screen, to carry out user-specific actions like changing your password, program language or configuring system notifications. Click on user name, a pop up window will appear in the interface. This pop-up links are My Profile, Send Feedback and Log Out.\n\n\n\n\nMy Profile\n\n\nMy profil is a short description of user information. My profil is happened from basic information section, preferences section and logon methods section.\n\n\nBasic Information\n\n\nBasic information step is managed identity information of users.\n\n\nDisplay Name\n\nDisplay name is users mail address or any name to show on users panel.\n\n\nName\n\nName of user.\n\n\nSurname\n\nSurname of user.\n\n\n\n\nPreferences\n\n\nPreferences section is used to design image, e-mail address, language and themes features.\n\n\n\n\nImage\n\nAdd any image to show a picture beside your comments, actions etc. in the activities stream on the task screen.\n\n\ne-Mail Address\n\ne-mail address of user.\n\n\nLanguage\n\nYou can change user language in the Workrunner. Users will see language and same time language cultural on the brackets in there. Language cultural options will help to use to users for them language specific formatting like numbers, dates etc.\n\n\nThemes\n\nThemes option provide to change color style of user interface.\n\n\nColors options are;\n\n\n\n\nDefault\n\n\nClean\n\n\nBlue\n\n\nSun\n\n\nBlocks \n\n\n\n\nYou can learn how to change user profile preference settings by watching this video:\n\n\n\n\n\nLogon Methods\n\nLogon methods is managed to set password process and login into Workrunner using a external authentication process. \n\n\n\n\nSet Password\n\n\n\n\nClick Set Password or New Logon button.\n\n\nEnter your password.\n\n\nEnter your password for confirmation.\n\n\nClick Set Password button.\n\n\n\n\nAdd New Logon\n\n\n\n\nClick Set Password or New Logon button.\n\n\nClick any logon.\n\n\n\n\n\n\nYou can learn how to change your password by watching this video:\n\n\n\n\n\nSend Feedback\n\n\nProvides a feedback form to send notifications about Workrunner. Your feedback is valuable to us and all negative or positive feedbacks are considered carefully. We constantly strive to improve our services based on your feedback.\n\n\n\n\nLog Out\n\n\nLets user log off from the system securely. All of the stored cookies are removed from the system and the user is redirected to the log in page.", 
             "title": "User Panel"
         }, 
         {
+            "location": "/ug/user_panel/#my-profile", 
+            "text": "My profil is a short description of user information. My profil is happened from basic information section, preferences section and logon methods section.", 
+            "title": "My Profile"
+        }, 
+        {
+            "location": "/ug/user_panel/#basic-information", 
+            "text": "Basic information step is managed identity information of users.  Display Name \nDisplay name is users mail address or any name to show on users panel.  Name \nName of user.  Surname \nSurname of user.", 
+            "title": "Basic Information"
+        }, 
+        {
+            "location": "/ug/user_panel/#preferences", 
+            "text": "Preferences section is used to design image, e-mail address, language and themes features.   Image \nAdd any image to show a picture beside your comments, actions etc. in the activities stream on the task screen.  e-Mail Address \ne-mail address of user.  Language \nYou can change user language in the Workrunner. Users will see language and same time language cultural on the brackets in there. Language cultural options will help to use to users for them language specific formatting like numbers, dates etc.  Themes \nThemes option provide to change color style of user interface.  Colors options are;   Default  Clean  Blue  Sun  Blocks    You can learn how to change user profile preference settings by watching this video:   Logon Methods \nLogon methods is managed to set password process and login into Workrunner using a external authentication process.    Set Password   Click Set Password or New Logon button.  Enter your password.  Enter your password for confirmation.  Click Set Password button.   Add New Logon   Click Set Password or New Logon button.  Click any logon.    You can learn how to change your password by watching this video:", 
+            "title": "Preferences"
+        }, 
+        {
+            "location": "/ug/user_panel/#send-feedback", 
+            "text": "Provides a feedback form to send notifications about Workrunner. Your feedback is valuable to us and all negative or positive feedbacks are considered carefully. We constantly strive to improve our services based on your feedback.", 
+            "title": "Send Feedback"
+        }, 
+        {
+            "location": "/ug/user_panel/#log-out", 
+            "text": "Lets user log off from the system securely. All of the stored cookies are removed from the system and the user is redirected to the log in page.", 
+            "title": "Log Out"
+        }, 
+        {
             "location": "/ug/activity_stream/", 
-            "text": "", 
+            "text": "An activity stream is a list of recent activities performed by an user, on an Workrunner. Activity stream is unique for each user in the system and users can't see other users activity stream list. Also you can sent message to other users in the Workrunner with activity stream.\n\n\n\n\nAdd comment in to message field.\n\n\n\n\n\n\n\n\nState\n\n\nDefinition\n\n\n\n\n\n\n\n\n\n\n\n\nIt is used to import files or document in to message.\n\n\n\n\n\n\n\n\nIt is used to add link in to message.\n\n\n\n\n\n\n\n\nShare To\n\nThis field is used for choosing that sent message to user, group or unit. \n\n\nSubmit\n\nSubmit is send action button. \n\n\nCancel\n\nCancel is canceled action button. \n\n\nWhen you sent message to your collaborator, your collaborator will see your message in to her/him activity stream page.\n\n\nImport Options\n\nYou can import files in to message box to using different options.\n\n\n \n\n\n\n\nMy computer, you can use to import files from your computer in to Workrunner.\n\n\nCamera, you can take a photo using your computer camera and attaching this photo in to message box.  \n\n\nGoogle drive, you can use to import files from your google drive account in to Workrunner.\n\n\nOne drive, you can use to import files from your one drive account in to Workrunner.\n\n\nOffice 365, you can use to import files from your office 365 account in to Workrunner.\n\n\n\n\nActivity Heartbeat\n\nYou can follow your Workrunner activities and the total system activities in activity heartbeat diagram.\n\n\n\n\n\n\nYellow line is your's activities.\n\n\nRed line is total system's activities.", 
             "title": "Activity Stream"
         }, 
         {
             "location": "/ug/labels/", 
-            "text": "", 
+            "text": "You can use labels to categorize your tasks. Labels are like folders but additionally, you can apply multiple labels to a task. You can also;\n\n\n\n\nSelect a label from left side of home page to see all tasks with that label.\n\n\nSearch for all tasks with a label.\n\n\n\n\n \n\n\nWorkrunner defines 6 simple labels to make an easy-to-manage task list.\n\n\nInbox\n\nAll new tasks are automatically tagged with Inbox label. You can remove label from task if you want to hide it from inbox list.\n\n\nImportant\n\nTasks moved by the user are listed in the important tag. \n\n\nAll Waiting\n\nAll tasks which require your action to continue process are automatically tagged with All Waiting label.\n\n\nWatched\n\nAll tasks which are followed by you. You can look your tasks. \n\n\nSent\n\nAll the tasks which were started by you or assigned to you and waiting for an action to advance.\n\n\nAll\n\nLists all the tasks assigned to you regardless of their state.\n\n\nThese labels are predefined, and they cannot removed or changed, but you can add your own labels as needed.\n\n\nCreating a New Label\n\n\nTo create a new label in your label list;\n\n\n\n\nSelect label then you will see your label name with \"undefined\" end of label list, click on there.\n\n\nType name of the new label on displayed form, then click \nOK\n to close it.\n\n\nYou can select a parent label to move under an existing label. This is optional.\n\n\n\n\n \n\n\nAssigning a Label to a Task\n\n\nSelect or open any task from list to display label toolbar.\n\n\n\n\nSelect \nLabel\n button to display label list\u00df\n\n\nSelect one or more label and click to apply.\n\n\n\n\nMoving a Task to a Label\n\n\nTo move a task from list to another label;\n\n\n\n\nSelect or open any task from list to display label toolbar.\n\n\nSelect \nMove\n button to display label list.\n\n\nSelect label name from drop down list and click apply.", 
             "title": "Labels"
         }, 
         {
+            "location": "/ug/labels/#creating-a-new-label", 
+            "text": "To create a new label in your label list;   Select label then you will see your label name with \"undefined\" end of label list, click on there.  Type name of the new label on displayed form, then click  OK  to close it.  You can select a parent label to move under an existing label. This is optional.", 
+            "title": "Creating a New Label"
+        }, 
+        {
+            "location": "/ug/labels/#assigning-a-label-to-a-task", 
+            "text": "Select or open any task from list to display label toolbar.   Select  Label  button to display label list\u00df  Select one or more label and click to apply.", 
+            "title": "Assigning a Label to a Task"
+        }, 
+        {
+            "location": "/ug/labels/#moving-a-task-to-a-label", 
+            "text": "To move a task from list to another label;   Select or open any task from list to display label toolbar.  Select  Move  button to display label list.  Select label name from drop down list and click apply.", 
+            "title": "Moving a Task to a Label"
+        }, 
+        {
             "location": "/ug/worklist/", 
-            "text": "Work list is a list of to-do tasks while running a business process. For example approving an expense form is a task for manager or resolving a reported technical problem is a task for service desk.\n\n\nTool bar, work list tool bar and filter bar are managed to worklist. \n\n\nTool Bar\n\n\nTool bar is allowing the user to select a variety of functions.\n\n\n\n\nRefresh\n\n\nRenews your work list.\n\n\nSearch\n\n\nSearches your tasks.\n\n\nUser Panel\n\n\nSee your profil information in user panel option.\n\n\nSupport\n\n\nFinds to solve for your program problem in support option.\n\n\nWork List Tool Bar\n\n\nTasks are listed and to follow in the work list tool bar. \n\n\n\n\nTask Name\n\n\nWhat the task is about and instructions of what must be done to complete the task. You can open the task by clicking on task name.\n\n\nFrom\n\n\nWho has sent the task to you. Some tasks are started automatically and this field may be empty.\n\n\nStarted At\n\n\nWhen the task is started. Will be updated.\n\n\nDeadline\n\n\nDeadline date of task if set. When deadline date passes Emakin automatically close the task and advance.\n\n\nFolder\n\n\nFolder name of task. Beginner task is created from inside process in the folder.\n\n\n#\n\n\nTrack number of task. Each started process gets an incremental number for tracking if needed. You can open more detailed history of task by click on track number.\n\n\nPaging\n\n\nSelects your task list and decide to interval row.\n\n\nPrevious Page and Next Page\n\n\nSelects your old and new tasks pages.\n\n\n\n\nFilter\n\nFilter option is listed tasks in the work list. Tasks name are separated from each other under the filter, also task count is written near to task name. When you click on task name under the filter, related tasks are listed in the work list bar.", 
-            "title": "Toolbar"
+            "text": "Work list is a list of to-do tasks while running a business process. For example approving an expense form is a task for manager or resolving a reported technical problem is a task for service desk.\n\n\nTool bar, work list tool bar and filter bar are managed to worklist. \n\n\nTool Bar\n\n\nTool bar is allowing the user to select a variety of functions.\n\n\n\n\nRefresh\n\nRenews your work list.\n\n\nSearch\n\n\nSearches\n your tasks.\n\n\nUser Panel\n\nSee your profil information in \nuser panel\n option.\n\n\nSupport\n\nFinds to solve for your program problem in \nsupport\n option.\n\n\nWork List Tool Bar\n\n\nTasks are listed and to follow in the work list tool bar. \n\n\n\n\nTask Name\n\nWhat the task is about and instructions of what must be done to complete the task. You can open the task by clicking on task name.\n\n\nFrom\n\nWho has sent the task to you. Some tasks are started automatically and this field may be empty.\n\n\nStarted At\n\nWhen the task is started. Will be updated.\n\n\nDeadline\n\nDeadline date of task if set. When deadline date passes Emakin automatically close the task and advance.\n\n\nFolder\n\n\nFolder\n name of task. Beginner task is created from inside process in the folder.\n\n\n#\n\nTrack number of task. Each started process gets an incremental number for tracking if needed. You can open more detailed history of task by click on track number.\n\n\nPaging\n\n\nSelects your \ntask\n list and decide to interval row.\n\n\nPrevious Page and Next Page\n\nSelects your old and new tasks pages.\n\n\n\n\nFilter\n\nFilter option is listed tasks in the work list. Tasks name are separated from each other under the filter, also task count is written near to task name. When you click on task name under the filter, related tasks are listed in the work list bar.", 
+            "title": "Worklist"
         }, 
         {
             "location": "/ug/worklist/#tool-bar", 
-            "text": "Tool bar is allowing the user to select a variety of functions.   Refresh  Renews your work list.  Search  Searches your tasks.  User Panel  See your profil information in user panel option.  Support  Finds to solve for your program problem in support option.", 
+            "text": "Tool bar is allowing the user to select a variety of functions.   Refresh \nRenews your work list.  Search  Searches  your tasks.  User Panel \nSee your profil information in  user panel  option.  Support \nFinds to solve for your program problem in  support  option.", 
             "title": "Tool Bar"
         }, 
         {
             "location": "/ug/worklist/#work-list-tool-bar", 
-            "text": "Tasks are listed and to follow in the work list tool bar.    Task Name  What the task is about and instructions of what must be done to complete the task. You can open the task by clicking on task name.  From  Who has sent the task to you. Some tasks are started automatically and this field may be empty.  Started At  When the task is started. Will be updated.  Deadline  Deadline date of task if set. When deadline date passes Emakin automatically close the task and advance.  Folder  Folder name of task. Beginner task is created from inside process in the folder.  #  Track number of task. Each started process gets an incremental number for tracking if needed. You can open more detailed history of task by click on track number.", 
+            "text": "Tasks are listed and to follow in the work list tool bar.    Task Name \nWhat the task is about and instructions of what must be done to complete the task. You can open the task by clicking on task name.  From \nWho has sent the task to you. Some tasks are started automatically and this field may be empty.  Started At \nWhen the task is started. Will be updated.  Deadline \nDeadline date of task if set. When deadline date passes Emakin automatically close the task and advance.  Folder  Folder  name of task. Beginner task is created from inside process in the folder.  # \nTrack number of task. Each started process gets an incremental number for tracking if needed. You can open more detailed history of task by click on track number.", 
             "title": "Work List Tool Bar"
         }, 
         {
             "location": "/ug/worklist/#paging", 
-            "text": "Selects your task list and decide to interval row.  Previous Page and Next Page  Selects your old and new tasks pages.   Filter \nFilter option is listed tasks in the work list. Tasks name are separated from each other under the filter, also task count is written near to task name. When you click on task name under the filter, related tasks are listed in the work list bar.", 
+            "text": "Selects your  task  list and decide to interval row.  Previous Page and Next Page \nSelects your old and new tasks pages.   Filter \nFilter option is listed tasks in the work list. Tasks name are separated from each other under the filter, also task count is written near to task name. When you click on task name under the filter, related tasks are listed in the work list bar.", 
             "title": "Paging"
         }, 
         {
             "location": "/ug/worklist_tasks/", 
-            "text": "", 
+            "text": "Task Toolbar\n\n\nTask toolbar page organize tasks action in Workrunner, you can manage and \ndelegate\n tasks in this page. Task toolbar stable actions are close,print, add, remove labels and forward.\n\n\n\n\n\n\nClose is used leave task without save.\n\n\nMove to button is used a task from list to another label\n\n\nLabel as button is used to select or open any task from list to display label toolbar.\n\n\nPrint is used to print task. \n\n\nHistory button is used to arrive history information of task.\n\n\nForward button is used to delegate task to user, group or unit.\n\n\n\n\n\n\nSave button and send to approval button are created when \nprocess\n is designed.\nLocked Tasks\n\n\nLocked tasks locks task to selected user in Workrunner. Some of tasks may be sent to more than one person in your organization, and when you open the task you may see a locked form. A locked form is only for previewing the task, and cannot be unlocked until lock time is expired, or the task is closed without taking any other action, by the user who have locked the form.", 
             "title": "Worklist Tasks"
         }, 
         {
+            "location": "/ug/worklist_tasks/#task-toolbar", 
+            "text": "Task toolbar page organize tasks action in Workrunner, you can manage and  delegate  tasks in this page. Task toolbar stable actions are close,print, add, remove labels and forward.    Close is used leave task without save.  Move to button is used a task from list to another label  Label as button is used to select or open any task from list to display label toolbar.  Print is used to print task.   History button is used to arrive history information of task.  Forward button is used to delegate task to user, group or unit.    Save button and send to approval button are created when  process  is designed.\nLocked Tasks  Locked tasks locks task to selected user in Workrunner. Some of tasks may be sent to more than one person in your organization, and when you open the task you may see a locked form. A locked form is only for previewing the task, and cannot be unlocked until lock time is expired, or the task is closed without taking any other action, by the user who have locked the form.", 
+            "title": "Task Toolbar"
+        }, 
+        {
             "location": "/ug/specific_task/", 
-            "text": "", 
+            "text": "In some situations like when you are too busy with some urgent task and have no time to deal with your waiting tasks or when you are out of the office to do some other work such as meeting a client or when you went on leave; you may want to delegate someone else in the office to take care of your tasks. In Workrunner, there are several ways to delegate your tasks to another person depending on your choice.\n\n\nWhen you delegate someone for specific task(s), the assigned person becomes responsible only for the specified task(s).\n\n\nBy the User\n\n\nIf you have something urgent and you know you can\u2019t make time for the tasks that assigned to you, open the related task window and you will see the \nForward\n button in the navigation as shown below in the picture with three options;\n\n\n\n\nRecently Used\n\nYou can see last selected in there.\n\n\nOrganization\n\nWhen clicked on the \norganization\n text box a pop up window appears and also when you click on the plus you will see department name and when you click on plus the near to department then you will see users name or users position.\n\n\nSearch Results\n\nIf you cannot find the user or users you need, you can type her/his name to search for it or you can just click on the search results button to look for it.\n\n\nAfter this when you click OK button, the person you selected will be assigned to the task you wanted to.\n\n\nYou can learn how to forward a task by watching this video :", 
             "title": "Specific Task"
+        }, 
+        {
+            "location": "/ug/specific_task/#by-the-user", 
+            "text": "If you have something urgent and you know you can\u2019t make time for the tasks that assigned to you, open the related task window and you will see the  Forward  button in the navigation as shown below in the picture with three options;   Recently Used \nYou can see last selected in there.  Organization \nWhen clicked on the  organization  text box a pop up window appears and also when you click on the plus you will see department name and when you click on plus the near to department then you will see users name or users position.  Search Results \nIf you cannot find the user or users you need, you can type her/his name to search for it or you can just click on the search results button to look for it.  After this when you click OK button, the person you selected will be assigned to the task you wanted to.  You can learn how to forward a task by watching this video :", 
+            "title": "By the User"
         }, 
         {
             "location": "/ug/time_period/", 
             "text": "", 
-            "title": "Time Period"
+            "title": "For a Time Period"
         }, 
         {
             "location": "/ug/by_admin/", 
