@@ -1706,9 +1706,79 @@
             "title": "Evolution"
         }, 
         {
-            "location": "/ag/pm/pd/pools/", 
-            "text": "", 
+            "location": "/ag/pm/process_modeling_toc/", 
+            "text": "Process Diagram\n\n\nDiagram Overview\n\n\nPools\n\n\nTasks\n\n\nActions\n\n\nRoles\n\n\nRoutes\n\n\nMessage Templates\n\n\n\n\n\n\nData Model\n\n\nXPath and XQuery\n join\n\n\nForms\n\n\nForms Overview\n\n\nControls\n\n\nRules\n join\n\n\nCharts Design\n join\n\n\n\n\n\n\nDatabases\n join\n\n\nLocalization\n\n\nNamespaces\n\n\nScreens\n\n\nScripting\n\n\nScripting Modules\n\n\nReference\n\n\nVariables\n\n\n\n\n\n\nWeb Services\n\n\nData Templates", 
+            "title": "Process Modeling TOC"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/", 
+            "text": "A process diagram is a visualized model consisting of Tasks, Actions, Roles and Routes. For example a simple expense process is modeled as follows;\n\n\n\n\nLeave Request\n\nDefines the start task of the process. Employee can save or submit a leave request.\n\n\nManager Approval\n\nDefines the first approval task of the process. Manager can confirm or reject the request. If rejected, the process is routed back to the employee. \n\n\nHR Approval\n\nDefines the second approval task of the process. Human Resources can confirm or reject the request, and if HR confirms the request, confirmed request is recorded into HR database, else if rejected, the process is routed back to the manager.\n\n\nInform Employee\n\nDefines the inform employee task of the process. Employee can select OK and finish the process.\n\n\nDiagram Language\n\n\nBPMN or similar notations are generally contain technical terms like \"if\", \"split\", \"explicit join\" activities and require some skills to understand diagram. Emakin uses own process notation to describe processes to achieve understand processes by everyone without any education or skills needed.\n\n\nAccording to diagram above:\n\n\n\n\n\n\nGreen box identifies the start (initiator) task of pool.\n\n\n\n\n\n\nOrange boxes identify the intermediate task of pool.\n\n\n\n\n\n\nEach gray box that connected to tasks identifies the action as result of task that assigned user can select.\n\n\n\n\n\n\nLines between actions and tasks identify the routes to next task in process. If no route is found process is terminated with selected action.\n\n\n\n\n\n\nYou can learn how to build a process by watching this video :\n\n\n\n\n\nPools\n\n\nPool is a container of diagram. Most of the business processes require more than one diagram for different operations. For example advance request and expense payment diagrams can be defined in one process. \n\n\nFor a pool, you can configure following:\n\n\nName\n\nIdentifies the pool. This information used only for process designers and are not visible by users.\n\n\nDefault Form\n\nDefault selected form to show users if task does not specify any form.\n\n\nData Root\n\nRoot data element be used from data model. Different pools may share same root element if needed.\n\n\nIs Administrative ?\n\nCheck this option if pool is used only for administrative operations. When checked pool accessed only by user has \"write\" permission on process or is admin. For example; You may need to create an Options diagram to set process preferences.\n\n\nIs Anonymously Accessible ?\n\nCheck this option to allow anonymous (non-logged in) users. This option also requires anonymous access permission on domain preferences.\n\n\nDocumentation URL\n\nDocumentation URL address is used to link process documentation.\n\n\nSupport URL\n\nSupport URL address is used to link support site.\n\n\nAfter pool is created you can configure the tasks, roles and routes from graphical designer.\n\n\nPool also contains following properties:\n\n\nOpen Script\n\n\nScript to be executed for every new instances just before first task. This script may be useful to assign dynamically changing default values. (ex: assign current date to form value) Please refer to scripting section for more detail.\n\n\nClosing Script\n\n\nScript to be executed for every normally closed (by user action or deadline) instances. This script may be useful for export process data to any external system. Please refer to scripting section for more detail.\n\n\nTerminating Script\n\n\nScript to be executed for terminated (forced by administrative or system) instances. Please refer to scripting section for more detail.\n\n\nTemplates\n\n\nList of message templates to be used for mail notifications. More information can be found at Message Templates section.\n\n\nVariables\n\n\nList of variables to use in scripting environment. Variables are used to define and easy to update static values to use in rule validations, formulas etc. Defined variables can be accessed with $ sign prefix. Example: $ExpenseLimit\n\n\nVariable values can be override with Task definitions to update value in only task scope. Example: $AllowPriceChange can set to false in pool definition and can be set to true for administrative type tasks to disable on rule validation.", 
+            "title": "Diagram Overview"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/#diagram-language", 
+            "text": "BPMN or similar notations are generally contain technical terms like \"if\", \"split\", \"explicit join\" activities and require some skills to understand diagram. Emakin uses own process notation to describe processes to achieve understand processes by everyone without any education or skills needed.  According to diagram above:    Green box identifies the start (initiator) task of pool.    Orange boxes identify the intermediate task of pool.    Each gray box that connected to tasks identifies the action as result of task that assigned user can select.    Lines between actions and tasks identify the routes to next task in process. If no route is found process is terminated with selected action.    You can learn how to build a process by watching this video :", 
+            "title": "Diagram Language"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/#pools", 
+            "text": "Pool is a container of diagram. Most of the business processes require more than one diagram for different operations. For example advance request and expense payment diagrams can be defined in one process.   For a pool, you can configure following:  Name \nIdentifies the pool. This information used only for process designers and are not visible by users.  Default Form \nDefault selected form to show users if task does not specify any form.  Data Root \nRoot data element be used from data model. Different pools may share same root element if needed.  Is Administrative ? \nCheck this option if pool is used only for administrative operations. When checked pool accessed only by user has \"write\" permission on process or is admin. For example; You may need to create an Options diagram to set process preferences.  Is Anonymously Accessible ? \nCheck this option to allow anonymous (non-logged in) users. This option also requires anonymous access permission on domain preferences.  Documentation URL \nDocumentation URL address is used to link process documentation.  Support URL \nSupport URL address is used to link support site.  After pool is created you can configure the tasks, roles and routes from graphical designer.  Pool also contains following properties:", 
             "title": "Pools"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/#open-script", 
+            "text": "Script to be executed for every new instances just before first task. This script may be useful to assign dynamically changing default values. (ex: assign current date to form value) Please refer to scripting section for more detail.", 
+            "title": "Open Script"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/#closing-script", 
+            "text": "Script to be executed for every normally closed (by user action or deadline) instances. This script may be useful for export process data to any external system. Please refer to scripting section for more detail.", 
+            "title": "Closing Script"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/#terminating-script", 
+            "text": "Script to be executed for terminated (forced by administrative or system) instances. Please refer to scripting section for more detail.", 
+            "title": "Terminating Script"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/#templates", 
+            "text": "List of message templates to be used for mail notifications. More information can be found at Message Templates section.", 
+            "title": "Templates"
+        }, 
+        {
+            "location": "/ag/pm/pd/diagram_overview/#variables", 
+            "text": "List of variables to use in scripting environment. Variables are used to define and easy to update static values to use in rule validations, formulas etc. Defined variables can be accessed with $ sign prefix. Example: $ExpenseLimit  Variable values can be override with Task definitions to update value in only task scope. Example: $AllowPriceChange can set to false in pool definition and can be set to true for administrative type tasks to disable on rule validation.", 
+            "title": "Variables"
+        }, 
+        {
+            "location": "/ag/pm/pd/pools/", 
+            "text": "Pool is a container of diagram. Most of the business processes require more than one diagram for different operations. For example advance request and expense payment diagrams can be defined in one process. \n\n\nFor a pool, you can configure following:\n\n\nName\n\nIdentifies the pool. This information used only for process designers and are not visible by users.\n\n\nDefault Form\n\nDefault selected form to show users if task does not specify any form.\n\n\nData Root\n\nRoot data element be used from data model. Different pools may share same root element if needed.\n\n\nIs Administrative ?\n\nCheck this option if pool is used only for administrative operations. When checked pool accessed only by user has \"write\" permission on process or is admin. For example; You may need to create an Options diagram to set process preferences.\n\n\nIs Anonymously Accessible ?\n\nCheck this option to allow anonymous (non-logged in) users. This option also requires anonymous access permission on domain preferences.\n\n\nDocumentation URL\n\nDocumentation URL address is used to link process documentation.\n\n\nSupport URL\n\nSupport URL address is used to link support site.\n\n\nAfter pool is created you can configure the tasks, roles and routes from graphical designer.\n\n\nPool also contains following properties:\n\n\nOpen Script\n\n\nScript to be executed for every new instances just before first task. This script may be useful to assign dynamically changing default values. (ex: assign current date to form value) Please refer to scripting section for more detail.\n\n\nClosing Script\n\n\nScript to be executed for every normally closed (by user action or deadline) instances. This script may be useful for export process data to any external system. Please refer to scripting section for more detail.\n\n\nTerminating Script\n\n\nScript to be executed for terminated (forced by administrative or system) instances. Please refer to scripting section for more detail.\n\n\nTemplates\n\n\nList of message templates to be used for mail notifications. More information can be found at Message Templates section.\n\n\nVariables\n\n\nList of variables to use in scripting environment. Variables are used to define and easy to update static values to use in rule validations, formulas etc. Defined variables can be accessed with $ sign prefix. Example: $ExpenseLimit\n\n\nVariable values can be override with Task definitions to update value in only task scope. Example: $AllowPriceChange can set to false in pool definition and can be set to true for administrative type tasks to disable on rule validation.", 
+            "title": "Pools"
+        }, 
+        {
+            "location": "/ag/pm/pd/pools/#open-script", 
+            "text": "Script to be executed for every new instances just before first task. This script may be useful to assign dynamically changing default values. (ex: assign current date to form value) Please refer to scripting section for more detail.", 
+            "title": "Open Script"
+        }, 
+        {
+            "location": "/ag/pm/pd/pools/#closing-script", 
+            "text": "Script to be executed for every normally closed (by user action or deadline) instances. This script may be useful for export process data to any external system. Please refer to scripting section for more detail.", 
+            "title": "Closing Script"
+        }, 
+        {
+            "location": "/ag/pm/pd/pools/#terminating-script", 
+            "text": "Script to be executed for terminated (forced by administrative or system) instances. Please refer to scripting section for more detail.", 
+            "title": "Terminating Script"
+        }, 
+        {
+            "location": "/ag/pm/pd/pools/#templates", 
+            "text": "List of message templates to be used for mail notifications. More information can be found at Message Templates section.", 
+            "title": "Templates"
+        }, 
+        {
+            "location": "/ag/pm/pd/pools/#variables", 
+            "text": "List of variables to use in scripting environment. Variables are used to define and easy to update static values to use in rule validations, formulas etc. Defined variables can be accessed with $ sign prefix. Example: $ExpenseLimit  Variable values can be override with Task definitions to update value in only task scope. Example: $AllowPriceChange can set to false in pool definition and can be set to true for administrative type tasks to disable on rule validation.", 
+            "title": "Variables"
         }, 
         {
             "location": "/ag/pm/pd/tasks/", 
@@ -1826,39 +1896,19 @@
             "title": "Data Model"
         }, 
         {
-            "location": "/ag/pm/xp/xpath/", 
+            "location": "/ag/pm/xpath/", 
             "text": "", 
-            "title": "XPath"
-        }, 
-        {
-            "location": "/ag/pm/xp/basic_features/", 
-            "text": "", 
-            "title": "Basic Features"
-        }, 
-        {
-            "location": "/ag/pm/xp/primitive_operations/", 
-            "text": "", 
-            "title": "Primitive operations"
-        }, 
-        {
-            "location": "/ag/pm/xp/invisible_updates/", 
-            "text": "", 
-            "title": "Invisible Updates"
-        }, 
-        {
-            "location": "/ag/pm/xp/updating_expressions/", 
-            "text": "", 
-            "title": "Updating Expressions"
-        }, 
-        {
-            "location": "/ag/pm/xp/order_conflicts/", 
-            "text": "", 
-            "title": "Order and Conflicts"
+            "title": "XPath and XQuery"
         }, 
         {
             "location": "/ag/pm/fo/forms_overview/", 
             "text": "", 
             "title": "Forms Overview"
+        }, 
+        {
+            "location": "/ag/pm/fo/controls_toc/", 
+            "text": "", 
+            "title": "Controls TOC"
         }, 
         {
             "location": "/ag/pm/fo/column/", 
@@ -2031,39 +2081,19 @@
             "title": "Conditional Content"
         }, 
         {
-            "location": "/ag/pm/fo/formatting_rules/", 
+            "location": "/ag/pm/fo/rules/", 
             "text": "", 
-            "title": "Formatting Rules"
+            "title": "Rules"
         }, 
         {
-            "location": "/ag/pm/fo/validation_rules/", 
+            "location": "/ag/pm/fo/charts_design/", 
             "text": "", 
-            "title": "Validation Rules"
+            "title": "Charts Design"
         }, 
         {
-            "location": "/ag/pm/fo/line_chart/", 
+            "location": "/ag/pm/databases/", 
             "text": "", 
-            "title": "Line Chart"
-        }, 
-        {
-            "location": "/ag/pm/fo/pie_chart/", 
-            "text": "", 
-            "title": "Pie Chart"
-        }, 
-        {
-            "location": "/ag/pm/da/file_database/", 
-            "text": "", 
-            "title": "File Database"
-        }, 
-        {
-            "location": "/ag/pm/da/create_import_database/", 
-            "text": "", 
-            "title": "Create or Import Database"
-        }, 
-        {
-            "location": "/ag/pm/da/xml_database/", 
-            "text": "", 
-            "title": "Xml Database"
+            "title": "Databases"
         }, 
         {
             "location": "/ag/pm/localization/", 
@@ -2079,6 +2109,11 @@
             "location": "/ag/pm/screens/", 
             "text": "", 
             "title": "Screens"
+        }, 
+        {
+            "location": "/ag/pm/sc/reference_toc/", 
+            "text": "", 
+            "title": "Reference TOC"
         }, 
         {
             "location": "/ag/pm/sc/activitystream.push/", 
