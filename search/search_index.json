@@ -902,47 +902,202 @@
         }, 
         {
             "location": "/ag/pm/fo/dropdown_content/", 
-            "text": "", 
+            "text": "Dropdown content allows to design to list box. You can create to value list for using different dropdown content of options.\n\n\n\n\nDesign\n\n\nAuto Select Value\n\nThis option provides to bring the topmost value when open the form.\n\n\nSize\n\nLarge, Big, Medium, and Small options are listed. Selecting one of these will shrink or fit the radio list into its container. \n\n\nHints\n\nThe text entered in this area pops up when you hover the field.\n\n\nRules\n\n\nRequired for Group\n\nThis section is useful for giving a section a name to mark it as required when taking a specific action. When required for group section is filled for any element or section in the form, system doesn't let one to leave it empty and displays a warning. Setting a rule by clicking on any action on the process diagram and entering its name into the \nvalidation group\n field from the right side menu will require this section to be filled.\n\n\nDynamic Rules\n\nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.\n\n\n\n\n\n\nFormatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. Further information \nhere\n\n\n\n\n\n\nValidation rules, allow you to validate the data that is entered by the end-user. Further information \nhere\n\n\n\n\n\n\nData\n\n\nBound XPath\n\nChanges XPath of the dropdown.\n\n\nValue XPath\n\nXPath to store selection value.\n\n\nCaption XPath\n\nXPath to store selection text value.\n\n\nData Sources\n \n\n\n\n\nDatabase Query\n \n\n\nStatic List Items\n \n\n\nXml Database Query\n \n\n\nForm Data Query\n \n\n\nWeb Service Query\n \n\n\nContent Types\n \n\n\n\n\nOther Properties\n\n\n\n\nCut is used to move control.\n\n\nCopy is used to copy control.\n\n\nDelete is used to delete control.\n\n\nXML is used to view and edit xml of the control.\n\n\nConvert is used to change content control into other controls.", 
             "title": "Dropdown Content"
         }, 
         {
+            "location": "/ag/pm/fo/dropdown_content/#design", 
+            "text": "Auto Select Value \nThis option provides to bring the topmost value when open the form.  Size \nLarge, Big, Medium, and Small options are listed. Selecting one of these will shrink or fit the radio list into its container.   Hints \nThe text entered in this area pops up when you hover the field.", 
+            "title": "Design"
+        }, 
+        {
+            "location": "/ag/pm/fo/dropdown_content/#rules", 
+            "text": "Required for Group \nThis section is useful for giving a section a name to mark it as required when taking a specific action. When required for group section is filled for any element or section in the form, system doesn't let one to leave it empty and displays a warning. Setting a rule by clicking on any action on the process diagram and entering its name into the  validation group  field from the right side menu will require this section to be filled.  Dynamic Rules \nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.    Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. Further information  here    Validation rules, allow you to validate the data that is entered by the end-user. Further information  here", 
+            "title": "Rules"
+        }, 
+        {
+            "location": "/ag/pm/fo/dropdown_content/#data", 
+            "text": "Bound XPath \nChanges XPath of the dropdown.  Value XPath \nXPath to store selection value.  Caption XPath \nXPath to store selection text value.  Data Sources     Database Query    Static List Items    Xml Database Query    Form Data Query    Web Service Query    Content Types     Other Properties   Cut is used to move control.  Copy is used to copy control.  Delete is used to delete control.  XML is used to view and edit xml of the control.  Convert is used to change content control into other controls.", 
+            "title": "Data"
+        }, 
+        {
             "location": "/ag/pm/fo/expression_content/", 
-            "text": "", 
+            "text": "Evaluates an expression given in double curly braces such as a mathmetical operation, displays the result on the form and loads it into the specified target XPath.\n\n\n\n\nHints\n\nThe text entered in this area pops up when you hover the field. \n\n\nTarget\n\nXPath to load the result of expression.\n\n\nOther Properties\n\n\n\n\nCut is used to move control.\n\n\nCopy is used to copy control.\n\n\nDelete is used to delete control.\n\n\nXML is used to view and edit xml of the control.\n\n\nConvert is used to change content control into other controls.", 
             "title": "Expression Content"
         }, 
         {
             "location": "/ag/pm/fo/tag_list/", 
-            "text": "", 
+            "text": "Displays entered texts as separated tags. Press enter or click outside the box to turn a text into a tag.\n\n\nDesign\n\n\nSize\n\nLarge, Big, Medium, and Small options are listed. Selecting one of these will shrink or fit the radio list into its container. \n\n\nHints\n\nThe text entered in this area pops up when you hover the field.\n\n\nRules\n\n\nRequired for Group\n\nThis section is useful for giving a section a name to mark it as required when taking a specific action. When required for group section is filled for any element or section in the form, system doesn't let one to leave it empty and displays a warning. Setting a rule by clicking on any action on the process diagram and entering its name into the \nvalidation group\n field from the right side menu will require this section to be filled.\n\n\nDynamic Rules\n\nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.\n\n\n\n\n\n\nFormatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. Further information \nhere\n\n\n\n\n\n\nValidation rules, allow you to validate the data that is entered by the end-user. Further information \nhere\n\n\n\n\n\n\nData\n\n\nBound XPath\n\nChanges XPath of the tag list.\n\n\nValue XPath\n\nXPath to store selection value.\n\n\nCaption XPath\n\nXPath to store selection text value.\n\n\nItem XPath\n\nItems of a tag list content change depending on this setting. Default is \" * \" which sets it to regard all items as in the same structure. If you want to use different contents for different items you should dictate it by specifying an XPath. \n\n\nData Sources\n \n\n\n\n\nDatabase Query\n \n\n\nStatic List Items\n \n\n\nXml Database Query\n \n\n\nForm Data Query\n \n\n\nWeb Service Query\n \n\n\nContent Types\n \n\n\n\n\nOther Properties\n\n\n\n\nCut is used to move control.\n\n\nCopy is used to copy control.\n\n\nDelete is used to delete control.\n\n\nXML is used to view and edit xml of the control.\n\n\nConvert is used to change content control into other controls.", 
             "title": "Tag List"
         }, 
         {
+            "location": "/ag/pm/fo/tag_list/#design", 
+            "text": "Size \nLarge, Big, Medium, and Small options are listed. Selecting one of these will shrink or fit the radio list into its container.   Hints \nThe text entered in this area pops up when you hover the field.", 
+            "title": "Design"
+        }, 
+        {
+            "location": "/ag/pm/fo/tag_list/#rules", 
+            "text": "Required for Group \nThis section is useful for giving a section a name to mark it as required when taking a specific action. When required for group section is filled for any element or section in the form, system doesn't let one to leave it empty and displays a warning. Setting a rule by clicking on any action on the process diagram and entering its name into the  validation group  field from the right side menu will require this section to be filled.  Dynamic Rules \nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.    Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. Further information  here    Validation rules, allow you to validate the data that is entered by the end-user. Further information  here", 
+            "title": "Rules"
+        }, 
+        {
+            "location": "/ag/pm/fo/tag_list/#data", 
+            "text": "Bound XPath \nChanges XPath of the tag list.  Value XPath \nXPath to store selection value.  Caption XPath \nXPath to store selection text value.  Item XPath \nItems of a tag list content change depending on this setting. Default is \" * \" which sets it to regard all items as in the same structure. If you want to use different contents for different items you should dictate it by specifying an XPath.   Data Sources     Database Query    Static List Items    Xml Database Query    Form Data Query    Web Service Query    Content Types     Other Properties   Cut is used to move control.  Copy is used to copy control.  Delete is used to delete control.  XML is used to view and edit xml of the control.  Convert is used to change content control into other controls.", 
+            "title": "Data"
+        }, 
+        {
             "location": "/ag/pm/fo/database_query/", 
-            "text": "", 
+            "text": "This control provides querying for relational databases. When this control is selected, there appears a floating menu next to it. Click Edit button from that menu to open the Query Designer.\n\n\n\n\nQuery\n\n\nParameters\n\n\nTarget schema, table and to include all fields option is presented at this section.\n\n\nTarget Schema\n\nSelect one of the newly created or imported database schemas from this dropdown menu.\n\n\nTarget Table\n\nAfter selecting the target schema, select a newly created or imported database table from dropdown menu.\n\n\nInclude All Fields?\n\n\n\n\nYes, include all fields always. : Check this option if you want to include all fields in the query result.\n\n\n\n\nFields\n\n\nSelect the fields you want to include in the query result. You can specify field order using arrow buttons on the right side.\n\n\nField\n\nLists columns of selected database and its related tables.\n\n\nCaption\n\nCaption to display to user. If not specified field is hidden to user.\n\n\nFormula\n\nThe formula to use for aggregate values.\n\n\nMapped XPath\n\nXPath to map field value on data model. If not specified Name property is used.\n\n\nOrder\n\n\nField\n\nSpecify field(s) to regard when ordering.\n\n\nOrder Type\n\nSelect ordering type.\n\n\n\n\nAscending\n\n\nDescending\n\n\n\n\nCriteria\n\n\nAdd as many criteria as you want to create you where clause.\n\n\nField\n\nSpecify field(s) to filter select query.\n\n\nFormula\n\nThe formula to use for aggregate values.\n\n\n\n\nCount\n\n\nSum\n\n\nAverage\n\n\nMinimum\n\n\nMaksimum\n\n\nAverage of distinct values\n\n\nSum of distinct values\n\n\nCount of distinct values\n\n\n\n\nComparison\n\nCriteria value comparison.\n\n\n\n\nEquals\n\n\nDifferent\n\n\nLike\n\n\nLess than\n\n\nGreater than\n\n\nLess than or equals\n\n\nGreater than or equals\n\n\n\n\nValue\n\nThe criteria value. You may use expression { and } identifiers when needed.\n\n\nCondition\n\nCondition to merge with next criteria.\n\n\n\n\nAnd\n\n\nOr\n\n\n\n\nIgnore Values\n\nEnter value(s) to ignore in select query.\n\n\nBlocks\n\n\nIn order to isolate conditions properly you may use block structure for where clause. Add as many block as you want and select their condition.\n\n\nSub Queries\n\n\nCreates a sub query in your select query.\n\n\nRelation\n\nLists relations of the specified table from main query.\n\n\nMapped XPath\n\nXPath to map field value on data model. If not specified Name property is used.\n\n\nInclude All Fields\n\nCheck this option if you want to include all fields in the query result.\n\n\nResults\n\n\nOptions to map and format the result data.\n\n\nItem XPath\n\nXPath of item that will be listed in dropbox. If it is left empty, which is same with * value, all resulting items are being listed.\n\n\nList Item Formatting\n\n\nCustomizes format of dropdown's options.\n\n\nDisplay Text Format\n\nSpecify the format to display result text. You can use column names inside curly braces. Ex: {{Name}} - {{Id}}\n\n\nValue Format\n\nSpecify the format of value. You can use column names inside curly braces. Ex:  {{Id}} - {{Type}}\n\n\nSelection Mappings\n\n\nIn order to map a column data from query result into an XPath, create a mapping by pressing Add New button.\n\n\nSource\n\nName of data column to be mapped.\n\n\nTarget\n\nXPath to map data.\n\n\nHierarchy Column\n\nIn case you have an hierarchy on a table determined by one of its column, use this section to specify parent column's name to display your data in a hierarchical way or leave it empty to display data as a plain list.", 
             "title": "Database Query"
         }, 
         {
-            "location": "/ag/pm/fo/static_list_items/", 
+            "location": "/ag/pm/fo/database_query/#query", 
             "text": "", 
+            "title": "Query"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#parameters", 
+            "text": "Target schema, table and to include all fields option is presented at this section.  Target Schema \nSelect one of the newly created or imported database schemas from this dropdown menu.  Target Table \nAfter selecting the target schema, select a newly created or imported database table from dropdown menu.  Include All Fields?   Yes, include all fields always. : Check this option if you want to include all fields in the query result.", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#fields", 
+            "text": "Select the fields you want to include in the query result. You can specify field order using arrow buttons on the right side.  Field \nLists columns of selected database and its related tables.  Caption \nCaption to display to user. If not specified field is hidden to user.  Formula \nThe formula to use for aggregate values.  Mapped XPath \nXPath to map field value on data model. If not specified Name property is used.", 
+            "title": "Fields"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#order", 
+            "text": "Field \nSpecify field(s) to regard when ordering.  Order Type \nSelect ordering type.   Ascending  Descending", 
+            "title": "Order"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#criteria", 
+            "text": "Add as many criteria as you want to create you where clause.  Field \nSpecify field(s) to filter select query.  Formula \nThe formula to use for aggregate values.   Count  Sum  Average  Minimum  Maksimum  Average of distinct values  Sum of distinct values  Count of distinct values   Comparison \nCriteria value comparison.   Equals  Different  Like  Less than  Greater than  Less than or equals  Greater than or equals   Value \nThe criteria value. You may use expression { and } identifiers when needed.  Condition \nCondition to merge with next criteria.   And  Or   Ignore Values \nEnter value(s) to ignore in select query.", 
+            "title": "Criteria"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#blocks", 
+            "text": "In order to isolate conditions properly you may use block structure for where clause. Add as many block as you want and select their condition.", 
+            "title": "Blocks"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#sub-queries", 
+            "text": "Creates a sub query in your select query.  Relation \nLists relations of the specified table from main query.  Mapped XPath \nXPath to map field value on data model. If not specified Name property is used.  Include All Fields \nCheck this option if you want to include all fields in the query result.", 
+            "title": "Sub Queries"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#results", 
+            "text": "Options to map and format the result data.  Item XPath \nXPath of item that will be listed in dropbox. If it is left empty, which is same with * value, all resulting items are being listed.", 
+            "title": "Results"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#list-item-formatting", 
+            "text": "Customizes format of dropdown's options.  Display Text Format \nSpecify the format to display result text. You can use column names inside curly braces. Ex: {{Name}} - {{Id}}  Value Format \nSpecify the format of value. You can use column names inside curly braces. Ex:  {{Id}} - {{Type}}", 
+            "title": "List Item Formatting"
+        }, 
+        {
+            "location": "/ag/pm/fo/database_query/#selection-mappings", 
+            "text": "In order to map a column data from query result into an XPath, create a mapping by pressing Add New button.  Source \nName of data column to be mapped.  Target \nXPath to map data.  Hierarchy Column \nIn case you have an hierarchy on a table determined by one of its column, use this section to specify parent column's name to display your data in a hierarchical way or leave it empty to display data as a plain list.", 
+            "title": "Selection Mappings"
+        }, 
+        {
+            "location": "/ag/pm/fo/static_list_items/", 
+            "text": "Static list option provides to add list of value in to dropdown content manually.\n\n\nText\n\nName of list value.\n\n\nValue\n\nNumber of list value.", 
             "title": "Static List Items"
         }, 
         {
             "location": "/ag/pm/fo/xml_database_query/", 
-            "text": "", 
+            "text": "Fetches data from XML database and loads into the dropdown control.\n\n\nQuery\n\n\nWrite your xQuery script here.\n\n\nParameters\n\n\nOptions of which database to query and parameter assignments.\n\n\nRepository\n\nSelect the location of data to query, either Domain or Process repository.\n\n\nParameters\n\n\n\n\nName : Parameter name to be used in the xQuery.\n\n\nValue : Xpath for parameter data to be assigned.\n\n\n\n\nResults\n\n\nOptions to map and format the result data.\n\n\nItem XPath\n\nSpecifies item that will be listed in dropbox. If it is left empty, which is same with * value, all resulting items are being listed.\n\n\nList Item Formatting\n\n\nCustomizes format of query result.\n\n\nDisplay Text Format\n\nSpecify the format to display result text. You can use XPath inside curly braces. Ex: {{name}} - {{id}}\n\n\nValue Format\n\nSpecify the format of value. You can use XPath inside curly braces. Ex:  {{id}} - {{type}}\n\n\nSelection Mappings\n\n\nIn order to map the selected data from xQuery result into a node of the form, create a mapping by pressing Add New button.\n\n\nSource\n\nNode name to map its data.\n\n\nTarget\n\nXPath to map data into.\n\n\nHierarchy XPath\n\nIn a nested xml node structure, for example if your XML looks like the excerpt below, you may specify the starting node of the recurrence. In this example Hierarchy XPath is \"Folders\".\n\n\nFolders\n\n    \nFolder\n\n        \nName\nfolder1\n/Name\n\n    \n/Folder\n\n    \nFolder\n\n        \nName\nfolder2\n/Name\n\n        \nFolders\n\n            \nFolder\n\n                \nName\nfolder2a\n/Name\n\n            \n/Folder\n\n            \nFolder\n\n                \nName\nfolder2b\n/Name\n\n            \n/Folder\n\n        \n/Folders\n\n    \n/Folder\n\n\n/Folders", 
             "title": "Xml Database Query"
         }, 
         {
+            "location": "/ag/pm/fo/xml_database_query/#query", 
+            "text": "Write your xQuery script here.", 
+            "title": "Query"
+        }, 
+        {
+            "location": "/ag/pm/fo/xml_database_query/#parameters", 
+            "text": "Options of which database to query and parameter assignments.  Repository \nSelect the location of data to query, either Domain or Process repository.  Parameters   Name : Parameter name to be used in the xQuery.  Value : Xpath for parameter data to be assigned.", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/ag/pm/fo/xml_database_query/#results", 
+            "text": "Options to map and format the result data.  Item XPath \nSpecifies item that will be listed in dropbox. If it is left empty, which is same with * value, all resulting items are being listed.", 
+            "title": "Results"
+        }, 
+        {
+            "location": "/ag/pm/fo/xml_database_query/#list-item-formatting", 
+            "text": "Customizes format of query result.  Display Text Format \nSpecify the format to display result text. You can use XPath inside curly braces. Ex: {{name}} - {{id}}  Value Format \nSpecify the format of value. You can use XPath inside curly braces. Ex:  {{id}} - {{type}}", 
+            "title": "List Item Formatting"
+        }, 
+        {
+            "location": "/ag/pm/fo/xml_database_query/#selection-mappings", 
+            "text": "In order to map the selected data from xQuery result into a node of the form, create a mapping by pressing Add New button.  Source \nNode name to map its data.  Target \nXPath to map data into.  Hierarchy XPath \nIn a nested xml node structure, for example if your XML looks like the excerpt below, you may specify the starting node of the recurrence. In this example Hierarchy XPath is \"Folders\".  Folders \n     Folder \n         Name folder1 /Name \n     /Folder \n     Folder \n         Name folder2 /Name \n         Folders \n             Folder \n                 Name folder2a /Name \n             /Folder \n             Folder \n                 Name folder2b /Name \n             /Folder \n         /Folders \n     /Folder  /Folders", 
+            "title": "Selection Mappings"
+        }, 
+        {
             "location": "/ag/pm/fo/form_data_query/", 
-            "text": "", 
+            "text": "This data source may be used to fetch data from current form.\n\n\nQuery\n\n\nSource XPath\n\nXPath to fetch data from the form.\n\n\nResults\n\n\nOptions to map and format result data.\n\n\nItem XPath\n\nXPath of item that will be listed in dropbox. If it is left empty, which is the same with * value, all resulting items are being listed.\n\n\nList Item Formatting\n\n\nCustomizes format of dropdown's options.\n\n\nDisplay Text Format\n\nSpecify the format to display result text. You can use column names inside curly braces. Ex: {{Name}} - {{Id}}\n\n\nValue Format\n\nSpecify the format of value. You can use column names inside curly braces. Ex:  {{Id}} - {{Type}}\n\n\nSelection Mappings\n\n\nIn order to map the selected data from current form into an XPath, create a mapping by pressing Add New button.\n\n\nSource\n\nNode name to map its data.\n\n\nTarget\n\nXPath to map data into.\n\n\nHierarchy XPath\n\nIn a nested xml node structure, for example if your XML looks like the excerpt below, you may specify the starting node of the recurrence. In this example Hierarchy XPath is \"Folders\".\n\n\nFolders\n\n    \nFolder\n\n        \nName\nfolder1\n/Name\n\n    \n/Folder\n\n    \nFolder\n\n        \nName\nfolder2\n/Name\n\n        \nFolders\n\n            \nFolder\n\n                \nName\nfolder2a\n/Name\n\n            \n/Folder\n\n            \nFolder\n\n                \nName\nfolder2b\n/Name\n\n            \n/Folder\n\n        \n/Folders\n\n    \n/Folder\n\n\n/Folders", 
             "title": "Form Data Query"
         }, 
         {
+            "location": "/ag/pm/fo/form_data_query/#query", 
+            "text": "Source XPath \nXPath to fetch data from the form.", 
+            "title": "Query"
+        }, 
+        {
+            "location": "/ag/pm/fo/form_data_query/#results", 
+            "text": "Options to map and format result data.  Item XPath \nXPath of item that will be listed in dropbox. If it is left empty, which is the same with * value, all resulting items are being listed.", 
+            "title": "Results"
+        }, 
+        {
+            "location": "/ag/pm/fo/form_data_query/#list-item-formatting", 
+            "text": "Customizes format of dropdown's options.  Display Text Format \nSpecify the format to display result text. You can use column names inside curly braces. Ex: {{Name}} - {{Id}}  Value Format \nSpecify the format of value. You can use column names inside curly braces. Ex:  {{Id}} - {{Type}}", 
+            "title": "List Item Formatting"
+        }, 
+        {
+            "location": "/ag/pm/fo/form_data_query/#selection-mappings", 
+            "text": "In order to map the selected data from current form into an XPath, create a mapping by pressing Add New button.  Source \nNode name to map its data.  Target \nXPath to map data into.  Hierarchy XPath \nIn a nested xml node structure, for example if your XML looks like the excerpt below, you may specify the starting node of the recurrence. In this example Hierarchy XPath is \"Folders\".  Folders \n     Folder \n         Name folder1 /Name \n     /Folder \n     Folder \n         Name folder2 /Name \n         Folders \n             Folder \n                 Name folder2a /Name \n             /Folder \n             Folder \n                 Name folder2b /Name \n             /Folder \n         /Folders \n     /Folder  /Folders", 
+            "title": "Selection Mappings"
+        }, 
+        {
             "location": "/ag/pm/fo/web_service_query/", 
-            "text": "", 
+            "text": "tbd\n\n\nQuery\n\n\nWeb Service\n\n\nService\n\n\nContract\n\n\nOperation\n\n\nParameters\n\n\nResults\n\n\nItem XPath\n\n\nList Item Formatting\n\n\nDisplay Text Format\n\n\nValue Format\n\n\nSelection Mappings\n\n\nAdd New\n\n\nSource\n\n\nTarget\n\n\nHierarchy Column", 
             "title": "Web Service Query"
         }, 
         {
-            "location": "/ag/pm/fo/content_types/", 
+            "location": "/ag/pm/fo/web_service_query/#query", 
             "text": "", 
+            "title": "Query"
+        }, 
+        {
+            "location": "/ag/pm/fo/web_service_query/#web-service", 
+            "text": "Service  Contract  Operation", 
+            "title": "Web Service"
+        }, 
+        {
+            "location": "/ag/pm/fo/web_service_query/#parameters", 
+            "text": "", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/ag/pm/fo/web_service_query/#results", 
+            "text": "Item XPath", 
+            "title": "Results"
+        }, 
+        {
+            "location": "/ag/pm/fo/web_service_query/#list-item-formatting", 
+            "text": "Display Text Format  Value Format", 
+            "title": "List Item Formatting"
+        }, 
+        {
+            "location": "/ag/pm/fo/web_service_query/#selection-mappings", 
+            "text": "Add New  Source  Target  Hierarchy Column", 
+            "title": "Selection Mappings"
+        }, 
+        {
+            "location": "/ag/pm/fo/content_types/", 
+            "text": "Lists content types that are registered for the domain.", 
             "title": "Content Types"
         }, 
         {

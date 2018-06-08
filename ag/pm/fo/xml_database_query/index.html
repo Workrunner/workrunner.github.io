@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#query" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1131,9 +1135,70 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Xml Database Query
+      </label>
+    
     <a href="./" title="Xml Database Query" class="md-nav__link md-nav__link--active">
       Xml Database Query
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#query" title="Query" class="md-nav__link">
+    Query
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" title="Parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" title="Results" class="md-nav__link">
+    Results
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-item-formatting" title="List Item Formatting" class="md-nav__link">
+    List Item Formatting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection-mappings" title="Selection Mappings" class="md-nav__link">
+    Selection Mappings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5850,6 +5915,69 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#query" title="Query" class="md-nav__link">
+    Query
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" title="Parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" title="Results" class="md-nav__link">
+    Results
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-item-formatting" title="List Item Formatting" class="md-nav__link">
+    List Item Formatting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection-mappings" title="Selection Mappings" class="md-nav__link">
+    Selection Mappings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5858,7 +5986,53 @@
                 
                   <h1>Xml Database Query</h1>
                 
-                
+                <p>Fetches data from XML database and loads into the dropdown control.</p>
+<h2 id="query">Query<a class="headerlink" href="#query" title="Permanent link">&para;</a></h2>
+<p>Write your xQuery script here.</p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<p>Options of which database to query and parameter assignments.</p>
+<p><strong>Repository</strong><br>
+Select the location of data to query, either Domain or Process repository.</p>
+<p><strong>Parameters</strong><br></p>
+<ul>
+<li>Name : Parameter name to be used in the xQuery.</li>
+<li>Value : Xpath for parameter data to be assigned.</li>
+</ul>
+<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
+<p>Options to map and format the result data.</p>
+<p><strong>Item XPath</strong><br>
+Specifies item that will be listed in dropbox. If it is left empty, which is same with * value, all resulting items are being listed.</p>
+<h3 id="list-item-formatting">List Item Formatting<a class="headerlink" href="#list-item-formatting" title="Permanent link">&para;</a></h3>
+<p>Customizes format of query result.</p>
+<p><strong>Display Text Format</strong><br>
+Specify the format to display result text. You can use XPath inside curly braces. Ex: {{name}} - {{id}}</p>
+<p><strong>Value Format</strong><br>
+Specify the format of value. You can use XPath inside curly braces. Ex:  {{id}} - {{type}}</p>
+<h3 id="selection-mappings">Selection Mappings<a class="headerlink" href="#selection-mappings" title="Permanent link">&para;</a></h3>
+<p>In order to map the selected data from xQuery result into a node of the form, create a mapping by pressing Add New button.</p>
+<p><strong>Source</strong><br>
+Node name to map its data.</p>
+<p><strong>Target</strong><br>
+XPath to map data into.</p>
+<p><strong>Hierarchy XPath</strong><br>
+In a nested xml node structure, for example if your XML looks like the excerpt below, you may specify the starting node of the recurrence. In this example Hierarchy XPath is "Folders".</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Folders&gt;</span>
+    <span class="nt">&lt;Folder&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>folder1<span class="nt">&lt;/Name&gt;</span>
+    <span class="nt">&lt;/Folder&gt;</span>
+    <span class="nt">&lt;Folder&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>folder2<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;Folders&gt;</span>
+            <span class="nt">&lt;Folder&gt;</span>
+                <span class="nt">&lt;Name&gt;</span>folder2a<span class="nt">&lt;/Name&gt;</span>
+            <span class="nt">&lt;/Folder&gt;</span>
+            <span class="nt">&lt;Folder&gt;</span>
+                <span class="nt">&lt;Name&gt;</span>folder2b<span class="nt">&lt;/Name&gt;</span>
+            <span class="nt">&lt;/Folder&gt;</span>
+        <span class="nt">&lt;/Folders&gt;</span>
+    <span class="nt">&lt;/Folder&gt;</span>
+<span class="nt">&lt;/Folders&gt;</span>
+</pre></div>
                 
                   
                 
