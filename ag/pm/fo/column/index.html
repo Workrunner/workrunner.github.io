@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#design" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -966,9 +970,43 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Column
+      </label>
+    
     <a href="./" title="Column" class="md-nav__link md-nav__link--active">
       Column
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5848,6 +5886,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5856,7 +5930,27 @@
                 
                   <h1>Column</h1>
                 
-                
+                <p>Columns are used in Row Layout Content to build a grid layout. In default there is only one column in each content and its width is set to fill whole width of its parent.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_column.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_column.png" /></a></p>
+<h2 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<p><strong>Align</strong><br>
+Adjusts the alignment of the column with respect to its parent.</p>
+<p><strong>Width</strong><br>
+A row content is assumed to have a maximum width of 12 columns in total. Conforming to this, a column may have a width of 1 to 12 columns. If "inherit from smaller" option is selected, it inherits the width from the configuration for the smaller device, which is specified at responsive layout section.</p>
+<p><strong>Responsive Layout</strong><br>
+Defines how the column is going to be displayed on mobile device screens. It provides width option selection for desktop, landscape and portrait orientations of a tablet and a regular mobile phone. Landscape orientation of tablet is the default width which is defined in the previous section.</p>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<p><strong>Bound Xpath</strong><br>
+XPath of the element. If set to empty, it uses parent xpath.</p>
+<p><strong>Other Properties</strong><br></p>
+<ul>
+<li>Cut is used to move control.</li>
+<li>Copy is used to copy control.</li>
+<li>Delete is used to delete control.</li>
+<li>XML is used to view and edit xml of the control.</li>
+<li>Convert is used to change content control into other controls.</li>
+<li>Add new is used to add the new column.</li>
+</ul>
                 
                   
                 

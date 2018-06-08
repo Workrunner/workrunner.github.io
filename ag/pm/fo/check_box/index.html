@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#design" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1002,9 +1006,43 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Check Box
+      </label>
+    
     <a href="./" title="Check Box" class="md-nav__link md-nav__link--active">
       Check Box
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5848,6 +5886,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5856,7 +5930,28 @@
                 
                   <h1>Check Box</h1>
                 
-                
+                <p>This control creates a check box to display a choice between one of two possible options. When it is checked it holds a true value in the XML and it becomes empty string when it is unchecked. You need to set type of "Check" in the data model to use it when designing form.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_checkbox.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_checkbox.png" /></a></p>
+<h2 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<p><strong>Label</strong><br>
+Label is a caption of the checkbox on the user interface.</p>
+<p><strong>Hints</strong><br>
+The text entered in this area pops up when you hover the field.</p>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<p><strong>Bound XPath</strong><br>
+Changes XPath of the check box.</p>
+<p><strong>Checked Value</strong><br>
+It represents true value.</p>
+<p><strong>Unchecked Value</strong><br>
+It represents an empty string value.</p>
+<p><strong>Other Properties</strong><br></p>
+<ul>
+<li>Cut is used to move control.</li>
+<li>Copy is used to copy control.</li>
+<li>Delete is used to delete control.</li>
+<li>XML is used to view and edit xml of the control.</li>
+<li>Convert is used to change content control into other controls.</li>
+</ul>
                 
                   
                 

@@ -1,0 +1,8 @@
+PWD /Users/gokay/zproject/projectW/github/mkdocs-material/docs/ag/pm
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/gokay/zproject/projectW/github/mkdocs-material/docs/ag/pm/xpath.md
+OUTPUT /Users/gokay/zproject/projectW/github/mkdocs-material/docs/ag/pm/xpath.log
+OUTPUT /Users/gokay/zproject/projectW/github/mkdocs-material/docs/ag/pm/xpath.pdf
+INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map

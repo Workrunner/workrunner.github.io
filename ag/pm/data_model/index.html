@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#elements" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -876,9 +880,50 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Data Model
+      </label>
+    
     <a href="./" title="Data Model" class="md-nav__link md-nav__link--active">
       Data Model
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elements" title="Elements" class="md-nav__link">
+    Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" title="Types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" title="Technical Details" class="md-nav__link">
+    Technical Details
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5844,6 +5889,49 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elements" title="Elements" class="md-nav__link">
+    Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" title="Types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" title="Technical Details" class="md-nav__link">
+    Technical Details
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5852,7 +5940,40 @@
                 
                   <h1>Data Model</h1>
                 
-                
+                <p>Workrunner uses <a href="http://en.wikipedia.org/wiki/XML">XML</a> data standard to used or updated in the process or internal process data needed to make the process work. This format allows to perform advanced query (<a href="http://en.wikipedia.org/wiki/XPath">XPath</a> or <a href="http://en.wikipedia.org/wiki/XQuery">XQuery</a>) methods and create multiple and nested data layouts to support all kinds of processes.</p>
+<p>Data model defines the model of XML data. You can define your own model or import existing models from external systems to use when needed.</p>
+<p>Data model consist on two types of object:</p>
+<h2 id="elements">Elements<a class="headerlink" href="#elements" title="Permanent link">&para;</a></h2>
+<p>Defines a data element.</p>
+<p>For a element you can configure the following properties:</p>
+<p><strong>Name</strong></br>
+Name of element.</p>
+<p><strong>Type</strong></br>
+Type of element. Selected as choice of container, string, number, date time, date, time, check, check or custom defined type.</p>
+<p><strong>Is List Item</strong></br>
+Check this field to allow multiple instances of this element.</p>
+<p><strong>Minimum Occurs</strong></br>
+Defines the at least how many elements should be created. Visible only when Is List Item is checked.</p>
+<p><strong>Use</strong></br>
+Select how element is used as a type or element reference. This field only valid when using external data types.</p>
+<p><strong>Target Schema</strong></br>
+Select containing external schema to use as type or reference. This field is only valid when using external data types.</p>
+<p>If type of field selected as container you can create child elements if needed.</p>
+<p><a href="../../../../images/ag/pm/20180307_elements.png"><img alt="Home page" src="../../../../images/ag/pm/20180307_elements.png" /></a></p>
+<h2 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h2>
+<p>Defines a custom data type to use as element later. Many processes uses same data type on different places like "Person" element with "Name" and "Surname" child.</p>
+<p>For a type you can configure the following:</p>
+<p><strong>Name</strong></br>
+Name of type to identity.</p>
+<p><a href="../../../../images/ag/pm/20180307_types.png"><img alt="Home page" src="../../../../images/ag/pm/20180307_types.png" /></a></p>
+<h2 id="technical-details">Technical Details<a class="headerlink" href="#technical-details" title="Permanent link">&para;</a></h2>
+<p>Data model is actually a XML schema designer for easy composing. You can use provided data model designer or use any xml schema editor to build your model.</p>
+<p><strong>What is XML schema?</strong></br>
+XML schema is description of a type of <a href="http://en.wikipedia.org/wiki/Extensible_Markup_Language">XML</a> document, typically expressed in terms of constraints on the structure and content of documents of that type. Please see <a href="http://en.wikipedia.org/wiki/XML_schema">http://en.wikipedia.org/wiki/XML_schema</a> for more information.</p>
+<p>In Workrunner, XML schema is used to generate and check process data model. You can define your schema or import any number of other schema with importing as a namespace.</p>
+<p><strong>Importing External Data Types</strong></br>
+If you have an external system and need to use it's data types in your model; you can add it as a new <a href="../namespaces/">namespace</a> and provide XML Schema Location to load. Loaded schema sets are stored in "External Xml Schemas".</p>
+<iframe width="420" height="240" src="https://www.youtube.com/embed/xqyJzQwTNMI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 
                   
                 
