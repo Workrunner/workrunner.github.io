@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#design" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1218,9 +1222,57 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Query Content
+      </label>
+    
     <a href="./" title="Query Content" class="md-nav__link md-nav__link--active">
       Query Content
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-syntax" title="Query Syntax" class="md-nav__link">
+    Query Syntax
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1670,8 +1722,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/database/" title="$Database Method List" class="md-nav__link">
-      $Database Method List
+    <a href="../../sc/database/" title="$Database Methods" class="md-nav__link">
+      $Database Methods
     </a>
   </li>
 
@@ -1802,8 +1854,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/delegation/" title="$Delegation Method List" class="md-nav__link">
-      $Delegation Method List
+    <a href="../../sc/delegation/" title="$Delegation Methods" class="md-nav__link">
+      $Delegation Methods
     </a>
   </li>
 
@@ -1862,8 +1914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/documents/" title="$Documents Method List" class="md-nav__link">
-      $Documents Method List
+    <a href="../../sc/documents/" title="$Documents Methods" class="md-nav__link">
+      $Documents Methods
     </a>
   </li>
 
@@ -2102,8 +2154,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/membership/" title="$Membership Method List" class="md-nav__link">
-      $Membership Method List
+    <a href="../../sc/membership/" title="$Membership Methods" class="md-nav__link">
+      $Membership Methods
     </a>
   </li>
 
@@ -2222,8 +2274,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/messages/" title="$Messages Method List" class="md-nav__link">
-      $Messages Method List
+    <a href="../../sc/messages/" title="$Messages Methods" class="md-nav__link">
+      $Messages Methods
     </a>
   </li>
 
@@ -2311,6 +2363,18 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sc/rest/" title="$Rest Methods" class="md-nav__link">
+      $Rest Methods
+    </a>
+  </li>
+
         
           
           
@@ -2426,8 +2490,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/xmlrepository/" title="$XmlRepository Method List" class="md-nav__link">
-      $XmlRepository Method List
+    <a href="../../sc/xmlrepository/" title="$XmlRepository Methods" class="md-nav__link">
+      $XmlRepository Methods
     </a>
   </li>
 
@@ -2510,8 +2574,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/calendar/" title="Calendar Method List" class="md-nav__link">
-      Calendar Method List
+    <a href="../../sc/calendar/" title="Calendar Methods" class="md-nav__link">
+      Calendar Methods
     </a>
   </li>
 
@@ -3278,8 +3342,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/document/" title="Document Method List" class="md-nav__link">
-      Document Method List
+    <a href="../../sc/document/" title="Document Methods" class="md-nav__link">
+      Document Methods
     </a>
   </li>
 
@@ -3470,8 +3534,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/instance/" title="Instance Method List" class="md-nav__link">
-      Instance Method List
+    <a href="../../sc/instance/" title="Instance Methods" class="md-nav__link">
+      Instance Methods
     </a>
   </li>
 
@@ -4502,8 +4566,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/workitem/" title="WorkItem Method List" class="md-nav__link">
-      WorkItem Method List
+    <a href="../../sc/workitem/" title="WorkItem Methods" class="md-nav__link">
+      WorkItem Methods
     </a>
   </li>
 
@@ -4814,8 +4878,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sc/xmlnode/" title="XmlNode Method List" class="md-nav__link">
-      XmlNode Method List
+    <a href="../../sc/xmlnode/" title="XmlNode Methods" class="md-nav__link">
+      XmlNode Methods
     </a>
   </li>
 
@@ -5848,6 +5912,56 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-syntax" title="Query Syntax" class="md-nav__link">
+    Query Syntax
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5856,7 +5970,323 @@
                 
                   <h1>Query Content</h1>
                 
-                
+                <p>Performs <a href="relational_database.md">relational database</a> queries on domain SQL database.</p>
+<h2 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<p><strong>Auto Search</strong><br>
+Specifies the query control should perform search immediately when visible. Visibility of control can be controlled by Rules or Section Name properties. When this attribute set to True value Filter content is not visible.</p>
+<p><strong>Auto Select All (v4.5)</strong><br>
+Specifies the query result picker is must be shown. Result picker allows to select individual rows to edit. If you work with too many rows picker is better method for performance. When set to True all matching rows are immediately imported.</p>
+<p><strong>Clear First</strong><br>
+Specifies the before query results populated on data model all existing records are removed.</p>
+<h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">&para;</a></h2>
+<p><strong>Section Name</strong><br>
+Name of section is for controlling read only or visible state of a section. If set to a value this section can be configured in <a href="../../pd/tasks/">task</a> properties.  </p>
+<p><strong>Validation Group</strong><br>
+Name of validation group rules before executing query. When any rule is failed, error is shown on screen and query is not executed.</p>
+<p><strong>Dynamic Rules</strong><br>
+Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.</p>
+<ul>
+<li>
+<p>Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+<li>
+<p>Validation rules, allow you to validate the data that is entered by the end-user. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+</ul>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<p><strong>Bound XPath</strong><br>
+XPath of the element. If set to empty, it uses parent xpath.</p>
+<p><strong>XPath</strong><br>
+XPath of data model to bind control. If not set uses current node on data model.</p>
+<p><strong>Target XPath</strong><br>
+Specifies the xpath of target container node to import query results. Specified xpath is relative to parent of current node not XPath attribute.</p>
+<p>For example, use "Filter" node for XPath attribute and use "Results" xpath for TargetXPath attribute.</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">Data</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Filter</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">SearchField</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Filter</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Results</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Row</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Column</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">Row</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Results</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">Data</span><span class="p">&gt;</span>
+</pre></div>
+
+<h2 id="query-syntax">Query Syntax<a class="headerlink" href="#query-syntax" title="Permanent link">&para;</a></h2>
+<p>Relational database queries uses special markup to specify query to execute. Query structure is similar to SQL Select command but you may use sub queries and join clauses automatically handled.</p>
+<p><strong>Query Structure</strong><br></p>
+<p>&lt;<strong>Query</strong></p>
+
+<p style="margin-left: 30.0px;"><strong>Start</strong>=&quot;&quot;<br/><em>Start index of results to fetch. If not specified 0 value is used.</em></p>
+
+<p style="margin-left: 30.0px;"><strong>MaxLength</strong>=&quot;-1&quot;&gt;<br/><em>Maximum number of results to fetch. If not specified -1 (maximum results) is used.</em></p>
+
+<p style="margin-left: 30.0px;">&lt;<strong>Parameters</strong>&gt;<br/><em>Query parameters.</em></p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>TargetSchema</strong>&gt;MySchema&lt;/<strong>TargetSchema</strong>&gt;<br/><em>Name of schema of query target. Required.</em></p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>TargetTable</strong>&gt;MyTable&lt;/<strong>TargetTable</strong>&gt;<br/><em>Name of table of query target. Required.</em></p>
+
+<p style="margin-left: 30.0px;">&lt;/<strong>Parameters</strong>&gt;</p>
+
+<p style="margin-left: 30.0px;">&lt;<strong>Columns</strong>&gt;<br/><em>List of columns to include in results.</em></p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>Column<br/> </strong>The c<em>olumn definition. Any number of column can be specified.</em></p>
+
+<p style="margin-left: 90.0px;"><strong>Name</strong>=&quot;MyColumn&quot;<br/><em>Name of column or relation path. Required.</em></p>
+
+<p style="margin-left: 90.0px;"><strong>Formula</strong>=&quot;None&quot;&gt;<br/><em>Aggregation formula like count, max etc. <em> <em>If not specified no aggregation is applied.</em> </em>
+  </em>
+</p>
+
+<p style="margin-left: 90.0px;">&lt;<strong>Properties</strong>&gt;<br/><em>Column specific properties. Currently </em> </p>
+
+<p style="margin-left: 120.0px;">&lt;<strong>XPath</strong>&gt;&lt;/<strong>XPath</strong>&gt;<br/>XPath of column value mapping for rows. If not specified column name is used.</p>
+
+<p style="margin-left: 120.0px;">&lt;<strong>Language</strong>&gt;&lt;/<strong>Language</strong>&gt;<br/>By default all columns are automatically localized by user language but with this property you can ask for explicitly specify the language. If language is not available, original
+  column value is used.</p>
+
+<p style="margin-left: 90.0px;">&lt;/<strong>Properties</strong>&gt;</p>
+
+<p style="margin-left: 60.0px;">&lt;/<strong>Column</strong>&gt;</p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>Column</strong>&gt;&lt;/<strong>Column</strong>&gt;</p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>Column</strong>&gt;&lt;/<strong>Column</strong>&gt;</p>
+
+<p style="margin-left: 30.0px;">&lt;/<strong>Columns</strong>&gt;</p>
+
+<p style="margin-left: 30.0px;">&lt;<strong>Where</strong>&gt;<br/><em>Query criteria and block list. Criteria can be consist of criteria definitions or block definitions to group criteria for logical conditions (and / or).</em></p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>Criteria</strong>&gt;<br/><em>List of criteria values.</em> </p>
+
+<p style="margin-left: 90.0px;">&lt;<strong>Criteria</strong><br/><em>The criteria definition. Any number of criteria can be specified.</em><strong> </strong></p>
+
+<p style="margin-left: 120.0px;"><strong>Name</strong>=&quot;MyColumn&quot;<br/><em>Column name or relation path to criteria to apply. Required.</em>
+</p>
+
+<p style="margin-left: 120.0px;"><strong>Comparison</strong>=&quot;Equals&quot;<br/><em>Comparison method of criteria like equals or greater etc. If not specified Equals value is used. </em> </p>
+
+<p style="margin-left: 120.0px;"><strong>Condition</strong>=&quot;And&quot;<br/><em>Condition of criteria to merge with previous criteria in list. &quot;And&quot;, &quot;Or&quot; values are valid. If not used &quot;And&quot; value is used.</em></p>
+
+<p style="margin-left: 120.0px;"><strong>Formula</strong>=&quot;None&quot;&gt;<br/><em>Aggregation formula like count, max etc. <em>If not specified no aggregation is applied.</em> </em>
+</p>
+
+<p style="margin-left: 120.0px;">&lt;<strong>Value</strong>&gt;&lt;/<strong>Value</strong>&gt;<br/><em>Value of criteria. Value can be specified in static value or template format like &quot;{{Code}}&quot; or &quot;000-{{Code}}-1111&quot; to dynamically evaluate.<br/>If not specified value used as empty string.<br/>You can use &quot;NULL&quot; string value to specify null value.</em></p>
+
+<p style="margin-left: 150.0px;">&lt;<strong>Properties</strong>&gt;<br/><em>Criteria specific custom properties. Currently IgnoreIfEquals only used.</em></p>
+
+<p style="margin-left: 150.0px;">&lt;/<strong>Properties</strong>&gt;</p>
+
+<p style="margin-left: 150.0px;"><strong>&lt;IgnoredValues&gt;</strong><br/><em>The list of values to ignore criteria completely. For example; when product name criteria is set to empty value you may want to list all products, not empty named products.</em></p>
+
+<p style="margin-left: 180.0px;"><strong>&lt;Value&gt;&lt;/Value&gt;</strong><br/><em>Value of criteria.</em></p>
+
+<p style="margin-left: 150.0px;"><strong>&lt;/IgnoredValues&gt;</strong></p>
+
+<p style="margin-left: 90.0px;">&lt;/<strong>Criteria</strong>&gt;</p>
+
+<p style="margin-left: 90.0px;">&lt;<strong>Criteria</strong>&gt; ............ &lt;/<strong>Criteria</strong>&gt;</p>
+
+<p style="margin-left: 60.0px;">&lt;/<strong>Criteria</strong>&gt;</p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>Blocks</strong>&gt;<br/><em>List of blocks to group criteria.</em> </p>
+
+<p style="margin-left: 90.0px;">&lt;<strong>Block</strong><br/><em>The block definition.</em><strong> </strong></p>
+
+<p style="margin-left: 120.0px;"><strong>Condition</strong>=&quot;And&quot;&gt;<br/><em>Condition to merge with previous blocks. If not specified And value is used.</em></p>
+
+<p style="margin-left: 120.0px;">&lt;<strong>Criteria</strong>&gt;<br/><em>List of criteria. Same with above criteria definition.</em> </p>
+
+<p style="margin-left: 150.0px;">&lt;<strong>Criteria</strong>&gt; ............ &lt;/<strong>Criteria</strong>&gt;</p>
+
+<p style="margin-left: 120.0px;">&lt;/<strong>Criteria</strong>&gt;</p>
+
+<p style="margin-left: 90.0px;">&lt;/<strong>Block</strong>&gt;</p>
+
+<p style="margin-left: 60.0px;">&lt;/<strong>Blocks</strong>&gt;</p>
+
+<p style="margin-left: 30.0px;">&lt;/<strong>Where</strong>&gt;</p>
+
+<p style="margin-left: 30.0px;">&lt;<strong>Order</strong>&gt;<br/><em>List of ordering columns.</em> </p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>Order</strong><br/><em>The order definition.</em> </p>
+
+<p style="margin-left: 90.0px;"><strong>Name</strong>=&quot;MyColumn&quot;<br/><em>Column name or relation path to apply order. Required.</em>
+</p>
+
+<p style="margin-left: 90.0px;"><strong>Type</strong>=&quot;Ascending&quot;/&gt;<br/><em>Type of ordering. &quot;Ascending&quot;, &quot;Descending&quot; values are valid. If not specified &quot;Ascending&quot; value is used.</em></p>
+
+<p style="margin-left: 30.0px;">&lt;/<strong>Order</strong>&gt;</p>
+
+<p style="margin-left: 30.0px;">&lt;<strong>SubQueries</strong>&gt;<br/><em>List of subqueries to return as related child rows.</em> </p>
+
+<p style="margin-left: 60.0px;">&lt;<strong>Query</strong><br/><em>Subquery definition. Same with above only Name attribute is required.</em></p>
+
+<p style="margin-left: 90.0px;"><strong>Name</strong>=&quot;&quot;&gt;<br/><em>Name of table relation to get rows as child. If relation is not found in table definition error is thrown.</em></p>
+
+<p style="margin-left: 60.0px;">&lt;/<strong>Query</strong>&gt;</p>
+
+<p style="margin-left: 30.0px;">&lt;/<strong>SubQueries</strong>&gt;</p>
+
+<p>&lt;/<strong>Query</strong>&gt;</p>
+
+<p><br><br></p>
+<p><strong>Formula</strong><br></p>
+<p>Formula specifies the method of evaluation of row values. Formula enumeration can be one of following values;</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td>No aggregation is applied. All values in rows.</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>Count of row values</td>
+</tr>
+<tr>
+<td>CountDistinct</td>
+<td>Count of distinct values in rows</td>
+</tr>
+<tr>
+<td>Sum</td>
+<td>Sum of row values. Valid for numeric type columns.</td>
+</tr>
+<tr>
+<td>SumDistinct</td>
+<td>Sum of distinct values in rows. Valid for numeric type columns.</td>
+</tr>
+<tr>
+<td>Avg</td>
+<td>Average of row values. Valid for numeric type columns.</td>
+</tr>
+<tr>
+<td>AvgDistinct</td>
+<td>Average of distinct values in rows. Valid for numeric type columns.</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>Minimum value in rows.</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>Maximum value in row values.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Comparison</strong><br></p>
+<p>Specifies the comparison method of criteria value.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Different</td>
+<td>All rows with different than criteria value.</td>
+</tr>
+<tr>
+<td>Equals</td>
+<td>All rows with same value.</td>
+</tr>
+<tr>
+<td>GreaterThan</td>
+<td>All rows that greater than criteria value.</td>
+</tr>
+<tr>
+<td>GreaterThanOrEqualTo</td>
+<td>All rows that greater or equals to criteria value.</td>
+</tr>
+<tr>
+<td>LessThan</td>
+<td>All rows that less than criteria value.</td>
+</tr>
+<tr>
+<td>LessThanOrEqualTo</td>
+<td>All rows that less or equals to criteria value.</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>All rows that likes to criteria value. Criteria value can be used with * (star character) Like <em>ABC, ABC</em>, <em>ABC</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Column Name</strong><br></p>
+<p>Column names can be specified as directly column name or relation path. Relation paths can be specified as "Relation.Relation.Column" format.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_queryContent.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_queryContent.png" /></a></p>
+<p>For example you can use following values as column names for above relational database model.</p>
+<table>
+<thead>
+<tr>
+<th>Column Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Name of customer</td>
+</tr>
+<tr>
+<td>Orders.Id</td>
+<td>Id of order</td>
+</tr>
+<tr>
+<td>Orders.Product.Name</td>
+<td>Name of ordered product</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example Query</strong><br></p>
+<p>Following query returns the all customer name and count of orders by product name criteria. Each row also contains the list of related customer orders as a child rows. </p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">Query</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Parameters</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">TargetSchema</span><span class="p">&gt;</span>Customer<span class="p">&lt;/</span><span class="nt">TargetSchema</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">TargetTable</span><span class="p">&gt;</span>MySchema<span class="p">&lt;/</span><span class="nt">TargetTable</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Parameters</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Columns</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Column</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;Name&quot;</span> <span class="na">Formula</span><span class="o">=</span><span class="s">&quot;None&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Column</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;Orders.Id&quot;</span> <span class="na">Formula</span><span class="o">=</span><span class="s">&quot;Count&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Columns</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Where</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Criteria</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Criteria</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;Orders.Product.Name&quot;</span> <span class="na">Comparison</span><span class="o">=</span><span class="s">&quot;Like&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Value</span><span class="p">&gt;</span>{{ProductName}}<span class="p">&lt;/</span><span class="nt">Value</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">IgnoredValues</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">Value</span><span class="p">&gt;&lt;/</span><span class="nt">Value</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">Value</span><span class="p">&gt;</span>*All*<span class="p">&lt;/</span><span class="nt">Value</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">IgnoredValues</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Criteria</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">Criteria</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Where</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Order</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Order</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;Orders.Product.Name&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Ascending&quot;</span><span class="p">/&gt;</span> 
+    <span class="p">&lt;/</span><span class="nt">Order</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">SubQueries</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Query</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;Orders&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Columns</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Column</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;Id&quot;</span> <span class="p">/&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Column</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;ProductId&quot;</span> <span class="p">/&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Columns</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Order</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Order</span> <span class="na">Name</span><span class="o">=</span><span class="s">&quot;Product.Name&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Ascending&quot;</span><span class="p">/&gt;</span> 
+            <span class="p">&lt;/</span><span class="nt">Order</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">Query</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">SubQueries</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">Query</span><span class="p">&gt;</span>
+</pre></div>
                 
                   
                 

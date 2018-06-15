@@ -1102,23 +1102,83 @@
         }, 
         {
             "location": "/ag/pm/fo/activity_stream_design/", 
-            "text": "", 
+            "text": "Will be updated.\n\n\n\n\nData\n\n\nWill be updated.\n\n\nLink Template\n\nWill be updated.\n\n\nObject Id XPath\n\nWill be updated.\n\n\nRules\n\n\nSection Name\n\nSection name to control visibility of control.\n\n\nDynamic Rules\n\nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.\n\n\n\n\nFormatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. Further information \nhere\n\n\nValidation rules, allow you to validate the data that is entered by the end-user.Further information \nhere\n\n\n\n\nData\n\n\nWill be updated.\n\n\nBound XPath\n\nXPath of the element. If set to empty, it uses parent xpath.\n\n\nOther Properties\n\n\n\n\nCut is used to move control.\n\n\nCopy is used to copy control.\n\n\nDelete is used to delete control.\n\n\nXML is used to view and edit xml of the control.\n\n\nConvert is used to change content control into other controls.", 
             "title": "Activity Stream Design"
         }, 
         {
+            "location": "/ag/pm/fo/activity_stream_design/#data", 
+            "text": "Will be updated.  Link Template \nWill be updated.  Object Id XPath \nWill be updated.", 
+            "title": "Data"
+        }, 
+        {
+            "location": "/ag/pm/fo/activity_stream_design/#rules", 
+            "text": "Section Name \nSection name to control visibility of control.  Dynamic Rules \nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.   Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. Further information  here  Validation rules, allow you to validate the data that is entered by the end-user.Further information  here", 
+            "title": "Rules"
+        }, 
+        {
+            "location": "/ag/pm/fo/activity_stream_design/#data_1", 
+            "text": "Will be updated.  Bound XPath \nXPath of the element. If set to empty, it uses parent xpath.  Other Properties   Cut is used to move control.  Copy is used to copy control.  Delete is used to delete control.  XML is used to view and edit xml of the control.  Convert is used to change content control into other controls.", 
+            "title": "Data"
+        }, 
+        {
             "location": "/ag/pm/fo/static_panel/", 
-            "text": "", 
+            "text": "Deprecated.\n\n\nRules\n\n\nSection Name\n\nName of section is for controlling read only or visible state of a section. After setting value, you can configure section in \ntask\n properties.\n\n\nDynamic Rules\n\n\nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.\n\n\n\n\nFormatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. \nFurther information \nhere\n.\n\n\nValidation rules, allow you to validate the data that is entered by the end-user. \nFurther information \nhere\n.\n\n\n\n\nData\n\n\nBound XPath\n\n\nChanges XPath of the static panel.\n\n\nOther Properties\n\n\n\n\nCut is used to move control.\n\n\nCopy is used to copy control.\n\n\nDelete is used to delete control.\n\n\nXML is used to view and edit xml of the control.\n\n\nConvert is used to change content control into other controls.", 
             "title": "Static Panel"
         }, 
         {
+            "location": "/ag/pm/fo/static_panel/#rules", 
+            "text": "Section Name \nName of section is for controlling read only or visible state of a section. After setting value, you can configure section in  task  properties.  Dynamic Rules  Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.   Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. \nFurther information  here .  Validation rules, allow you to validate the data that is entered by the end-user. \nFurther information  here .", 
+            "title": "Rules"
+        }, 
+        {
+            "location": "/ag/pm/fo/static_panel/#data", 
+            "text": "Bound XPath  Changes XPath of the static panel.  Other Properties   Cut is used to move control.  Copy is used to copy control.  Delete is used to delete control.  XML is used to view and edit xml of the control.  Convert is used to change content control into other controls.", 
+            "title": "Data"
+        }, 
+        {
             "location": "/ag/pm/fo/xml_query_content/", 
-            "text": "", 
+            "text": "Performs queries on XML databases. Click on this content and then the Edit button to open the query window.\n\n\nDesign\n\n\nAuto Search\n\nSpecifies the query control should perform search immediately when visible. Visibility of control can be controlled by Rules or Section Name properties. When this attribute set to True value Filter content is not visible.\n\n\nClear First\n\nSpecifies the before query results populated on data model all existing records are removed.\n\n\nRules\n\n\nSection Name\n\nName of section is for controlling read only or visible state of a section. After setting value, you can configure section in \ntask\n properties.\n\n\nValidation Group\n\nName of validation group rules before executing query. When any rule is failed, error is shown on screen and query is not executed.\n\n\nDynamic Rules\n\n\nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.\n\n\n\n\nFormatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. \nFurther information \nhere\n.\n\n\nValidation rules, allow you to validate the data that is entered by the end-user. \nFurther information \nhere\n.\n\n\n\n\nData\n\n\nBound XPath\n\nXPath of the element. If set to empty, it uses parent xpath. \n\n\nXPath\n\nXPath of data model to bind control. If not set uses current node on data model.\n\n\nTarget XPath\n\nSpecifies the xpath of target container node to import query results. Specified xpath is relative to parent of current node not XPath attribute.", 
             "title": "Xml Query Content"
         }, 
         {
+            "location": "/ag/pm/fo/xml_query_content/#design", 
+            "text": "Auto Search \nSpecifies the query control should perform search immediately when visible. Visibility of control can be controlled by Rules or Section Name properties. When this attribute set to True value Filter content is not visible.  Clear First \nSpecifies the before query results populated on data model all existing records are removed.", 
+            "title": "Design"
+        }, 
+        {
+            "location": "/ag/pm/fo/xml_query_content/#rules", 
+            "text": "Section Name \nName of section is for controlling read only or visible state of a section. After setting value, you can configure section in  task  properties.  Validation Group \nName of validation group rules before executing query. When any rule is failed, error is shown on screen and query is not executed.  Dynamic Rules  Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.   Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. \nFurther information  here .  Validation rules, allow you to validate the data that is entered by the end-user. \nFurther information  here .", 
+            "title": "Rules"
+        }, 
+        {
+            "location": "/ag/pm/fo/xml_query_content/#data", 
+            "text": "Bound XPath \nXPath of the element. If set to empty, it uses parent xpath.   XPath \nXPath of data model to bind control. If not set uses current node on data model.  Target XPath \nSpecifies the xpath of target container node to import query results. Specified xpath is relative to parent of current node not XPath attribute.", 
+            "title": "Data"
+        }, 
+        {
             "location": "/ag/pm/fo/query_content/", 
-            "text": "", 
+            "text": "Performs \nrelational database\n queries on domain SQL database.\n\n\nDesign\n\n\nAuto Search\n\nSpecifies the query control should perform search immediately when visible. Visibility of control can be controlled by Rules or Section Name properties. When this attribute set to True value Filter content is not visible.\n\n\nAuto Select All (v4.5)\n\nSpecifies the query result picker is must be shown. Result picker allows to select individual rows to edit. If you work with too many rows picker is better method for performance. When set to True all matching rows are immediately imported.\n\n\nClear First\n\nSpecifies the before query results populated on data model all existing records are removed.\n\n\nRules\n\n\nSection Name\n\nName of section is for controlling read only or visible state of a section. If set to a value this section can be configured in \ntask\n properties.  \n\n\nValidation Group\n\nName of validation group rules before executing query. When any rule is failed, error is shown on screen and query is not executed.\n\n\nDynamic Rules\n\nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.\n\n\n\n\n\n\nFormatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. \nFurther information \nhere\n.\n\n\n\n\n\n\nValidation rules, allow you to validate the data that is entered by the end-user. \nFurther information \nhere\n.\n\n\n\n\n\n\nData\n\n\nBound XPath\n\nXPath of the element. If set to empty, it uses parent xpath.\n\n\nXPath\n\nXPath of data model to bind control. If not set uses current node on data model.\n\n\nTarget XPath\n\nSpecifies the xpath of target container node to import query results. Specified xpath is relative to parent of current node not XPath attribute.\n\n\nFor example, use \"Filter\" node for XPath attribute and use \"Results\" xpath for TargetXPath attribute.\n\n\nData\n\n    \nFilter\n\n        \nSearchField\n \n/\n\n    \n/\nFilter\n\n    \nResults\n\n        \nRow\n\n            \nColumn\n \n/\n\n        \n/\nRow\n\n    \n/\nResults\n\n\n/\nData\n\n\n\n\n\nQuery Syntax\n\n\nRelational database queries uses special markup to specify query to execute. Query structure is similar to SQL Select command but you may use sub queries and join clauses automatically handled.\n\n\nQuery Structure\n\n\nQuery\n\n\n\nStart\n=\nStart index of results to fetch. If not specified 0 value is used.\n\n\n\nMaxLength\n=\n-1\nMaximum number of results to fetch. If not specified -1 (maximum results) is used.\n\n\n\nParameters\nQuery parameters.\n\n\n\nTargetSchema\nMySchema\n/\nTargetSchema\nName of schema of query target. Required.\n\n\n\nTargetTable\nMyTable\n/\nTargetTable\nName of table of query target. Required.\n\n\n\n/\nParameters\n\n\n\nColumns\nList of columns to include in results.\n\n\n\nColumn\n \nThe c\nolumn definition. Any number of column can be specified.\n\n\n\nName\n=\nMyColumn\nName of column or relation path. Required.\n\n\n\nFormula\n=\nNone\nAggregation formula like count, max etc. \n \nIf not specified no aggregation is applied.\n \n\n  \n\n\n\n\n\nProperties\nColumn specific properties. Currently \n \n\n\n\nXPath\n/\nXPath\nXPath of column value mapping for rows. If not specified column name is used.\n\n\n\nLanguage\n/\nLanguage\nBy default all columns are automatically localized by user language but with this property you can ask for explicitly specify the language. If language is not available, original\n  column value is used.\n\n\n\n/\nProperties\n\n\n\n/\nColumn\n\n\n\nColumn\n/\nColumn\n\n\n\nColumn\n/\nColumn\n\n\n\n/\nColumns\n\n\n\nWhere\nQuery criteria and block list. Criteria can be consist of criteria definitions or block definitions to group criteria for logical conditions (and / or).\n\n\n\nCriteria\nList of criteria values.\n \n\n\n\nCriteria\nThe criteria definition. Any number of criteria can be specified.\n \n\n\n\nName\n=\nMyColumn\nColumn name or relation path to criteria to apply. Required.\n\n\n\n\n\nComparison\n=\nEquals\nComparison method of criteria like equals or greater etc. If not specified Equals value is used. \n \n\n\n\nCondition\n=\nAnd\nCondition of criteria to merge with previous criteria in list. \nAnd\n, \nOr\n values are valid. If not used \nAnd\n value is used.\n\n\n\nFormula\n=\nNone\nAggregation formula like count, max etc. \nIf not specified no aggregation is applied.\n \n\n\n\n\n\nValue\n/\nValue\nValue of criteria. Value can be specified in static value or template format like \n{{Code}}\n or \n000-{{Code}}-1111\n to dynamically evaluate.\nIf not specified value used as empty string.\nYou can use \nNULL\n string value to specify null value.\n\n\n\nProperties\nCriteria specific custom properties. Currently IgnoreIfEquals only used.\n\n\n\n/\nProperties\n\n\n\nIgnoredValues\nThe list of values to ignore criteria completely. For example; when product name criteria is set to empty value you may want to list all products, not empty named products.\n\n\n\nValue\n/Value\nValue of criteria.\n\n\n\n/IgnoredValues\n\n\n\n/\nCriteria\n\n\n\nCriteria\n ............ \n/\nCriteria\n\n\n\n/\nCriteria\n\n\n\nBlocks\nList of blocks to group criteria.\n \n\n\n\nBlock\nThe block definition.\n \n\n\n\nCondition\n=\nAnd\nCondition to merge with previous blocks. If not specified And value is used.\n\n\n\nCriteria\nList of criteria. Same with above criteria definition.\n \n\n\n\nCriteria\n ............ \n/\nCriteria\n\n\n\n/\nCriteria\n\n\n\n/\nBlock\n\n\n\n/\nBlocks\n\n\n\n/\nWhere\n\n\n\nOrder\nList of ordering columns.\n \n\n\n\nOrder\nThe order definition.\n \n\n\n\nName\n=\nMyColumn\nColumn name or relation path to apply order. Required.\n\n\n\n\n\nType\n=\nAscending\n/\nType of ordering. \nAscending\n, \nDescending\n values are valid. If not specified \nAscending\n value is used.\n\n\n\n/\nOrder\n\n\n\nSubQueries\nList of subqueries to return as related child rows.\n \n\n\n\nQuery\nSubquery definition. Same with above only Name attribute is required.\n\n\n\nName\n=\nName of table relation to get rows as child. If relation is not found in table definition error is thrown.\n\n\n\n/\nQuery\n\n\n\n/\nSubQueries\n\n\n\n/\nQuery\n\n\n\n\n\nFormula\n\n\nFormula specifies the method of evaluation of row values. Formula enumeration can be one of following values;\n\n\n\n\n\n\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nNone\n\n\nNo aggregation is applied. All values in rows.\n\n\n\n\n\n\nCount\n\n\nCount of row values\n\n\n\n\n\n\nCountDistinct\n\n\nCount of distinct values in rows\n\n\n\n\n\n\nSum\n\n\nSum of row values. Valid for numeric type columns.\n\n\n\n\n\n\nSumDistinct\n\n\nSum of distinct values in rows. Valid for numeric type columns.\n\n\n\n\n\n\nAvg\n\n\nAverage of row values. Valid for numeric type columns.\n\n\n\n\n\n\nAvgDistinct\n\n\nAverage of distinct values in rows. Valid for numeric type columns.\n\n\n\n\n\n\nMin\n\n\nMinimum value in rows.\n\n\n\n\n\n\nMax\n\n\nMaximum value in row values.\n\n\n\n\n\n\n\n\nComparison\n\n\nSpecifies the comparison method of criteria value.\n\n\n\n\n\n\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDifferent\n\n\nAll rows with different than criteria value.\n\n\n\n\n\n\nEquals\n\n\nAll rows with same value.\n\n\n\n\n\n\nGreaterThan\n\n\nAll rows that greater than criteria value.\n\n\n\n\n\n\nGreaterThanOrEqualTo\n\n\nAll rows that greater or equals to criteria value.\n\n\n\n\n\n\nLessThan\n\n\nAll rows that less than criteria value.\n\n\n\n\n\n\nLessThanOrEqualTo\n\n\nAll rows that less or equals to criteria value.\n\n\n\n\n\n\nLike\n\n\nAll rows that likes to criteria value. Criteria value can be used with * (star character) Like \nABC, ABC\n, \nABC\n\n\n\n\n\n\n\n\nColumn Name\n\n\nColumn names can be specified as directly column name or relation path. Relation paths can be specified as \"Relation.Relation.Column\" format.\n\n\n\n\nFor example you can use following values as column names for above relational database model.\n\n\n\n\n\n\n\n\nColumn Name\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nName\n\n\nName of customer\n\n\n\n\n\n\nOrders.Id\n\n\nId of order\n\n\n\n\n\n\nOrders.Product.Name\n\n\nName of ordered product\n\n\n\n\n\n\n\n\nExample Query\n\n\nFollowing query returns the all customer name and count of orders by product name criteria. Each row also contains the list of related customer orders as a child rows. \n\n\nQuery\n\n    \nParameters\n\n        \nTargetSchema\nCustomer\n/\nTargetSchema\n\n        \nTargetTable\nMySchema\n/\nTargetTable\n\n    \n/\nParameters\n\n    \nColumns\n\n        \nColumn\n \nName\n=\nName\n \nFormula\n=\nNone\n \n/\n\n        \nColumn\n \nName\n=\nOrders.Id\n \nFormula\n=\nCount\n \n/\n\n    \n/\nColumns\n\n    \nWhere\n\n        \nCriteria\n\n            \nCriteria\n \nName\n=\nOrders.Product.Name\n \nComparison\n=\nLike\n\n                \nValue\n{{ProductName}}\n/\nValue\n\n                \nIgnoredValues\n\n                    \nValue\n/\nValue\n\n                    \nValue\n*All*\n/\nValue\n\n                \n/\nIgnoredValues\n\n            \n/\nCriteria\n\n        \n/\nCriteria\n\n    \n/\nWhere\n\n    \nOrder\n\n        \nOrder\n \nName\n=\nOrders.Product.Name\n \nType\n=\nAscending\n/\n \n    \n/\nOrder\n\n    \nSubQueries\n\n        \nQuery\n \nName\n=\nOrders\n\n            \nColumns\n\n                \nColumn\n \nName\n=\nId\n \n/\n\n                \nColumn\n \nName\n=\nProductId\n \n/\n\n            \n/\nColumns\n\n            \nOrder\n\n                \nOrder\n \nName\n=\nProduct.Name\n \nType\n=\nAscending\n/\n \n            \n/\nOrder\n\n        \n/\nQuery\n\n    \n/\nSubQueries\n\n\n/\nQuery", 
             "title": "Query Content"
+        }, 
+        {
+            "location": "/ag/pm/fo/query_content/#design", 
+            "text": "Auto Search \nSpecifies the query control should perform search immediately when visible. Visibility of control can be controlled by Rules or Section Name properties. When this attribute set to True value Filter content is not visible.  Auto Select All (v4.5) \nSpecifies the query result picker is must be shown. Result picker allows to select individual rows to edit. If you work with too many rows picker is better method for performance. When set to True all matching rows are immediately imported.  Clear First \nSpecifies the before query results populated on data model all existing records are removed.", 
+            "title": "Design"
+        }, 
+        {
+            "location": "/ag/pm/fo/query_content/#rules", 
+            "text": "Section Name \nName of section is for controlling read only or visible state of a section. If set to a value this section can be configured in  task  properties.    Validation Group \nName of validation group rules before executing query. When any rule is failed, error is shown on screen and query is not executed.  Dynamic Rules \nDynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.    Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. \nFurther information  here .    Validation rules, allow you to validate the data that is entered by the end-user. \nFurther information  here .", 
+            "title": "Rules"
+        }, 
+        {
+            "location": "/ag/pm/fo/query_content/#data", 
+            "text": "Bound XPath \nXPath of the element. If set to empty, it uses parent xpath.  XPath \nXPath of data model to bind control. If not set uses current node on data model.  Target XPath \nSpecifies the xpath of target container node to import query results. Specified xpath is relative to parent of current node not XPath attribute.  For example, use \"Filter\" node for XPath attribute and use \"Results\" xpath for TargetXPath attribute.  Data \n     Filter \n         SearchField   / \n     / Filter \n     Results \n         Row \n             Column   / \n         / Row \n     / Results  / Data", 
+            "title": "Data"
+        }, 
+        {
+            "location": "/ag/pm/fo/query_content/#query-syntax", 
+            "text": "Relational database queries uses special markup to specify query to execute. Query structure is similar to SQL Select command but you may use sub queries and join clauses automatically handled.  Query Structure  Query  Start = Start index of results to fetch. If not specified 0 value is used.  MaxLength = -1 Maximum number of results to fetch. If not specified -1 (maximum results) is used.  Parameters Query parameters.  TargetSchema MySchema / TargetSchema Name of schema of query target. Required.  TargetTable MyTable / TargetTable Name of table of query target. Required.  / Parameters  Columns List of columns to include in results.  Column   The c olumn definition. Any number of column can be specified.  Name = MyColumn Name of column or relation path. Required.  Formula = None Aggregation formula like count, max etc.    If not specified no aggregation is applied.   \n     Properties Column specific properties. Currently     XPath / XPath XPath of column value mapping for rows. If not specified column name is used.  Language / Language By default all columns are automatically localized by user language but with this property you can ask for explicitly specify the language. If language is not available, original\n  column value is used.  / Properties  / Column  Column / Column  Column / Column  / Columns  Where Query criteria and block list. Criteria can be consist of criteria definitions or block definitions to group criteria for logical conditions (and / or).  Criteria List of criteria values.    Criteria The criteria definition. Any number of criteria can be specified.    Name = MyColumn Column name or relation path to criteria to apply. Required.   Comparison = Equals Comparison method of criteria like equals or greater etc. If not specified Equals value is used.     Condition = And Condition of criteria to merge with previous criteria in list.  And ,  Or  values are valid. If not used  And  value is used.  Formula = None Aggregation formula like count, max etc.  If not specified no aggregation is applied.     Value / Value Value of criteria. Value can be specified in static value or template format like  {{Code}}  or  000-{{Code}}-1111  to dynamically evaluate. If not specified value used as empty string. You can use  NULL  string value to specify null value.  Properties Criteria specific custom properties. Currently IgnoreIfEquals only used.  / Properties  IgnoredValues The list of values to ignore criteria completely. For example; when product name criteria is set to empty value you may want to list all products, not empty named products.  Value /Value Value of criteria.  /IgnoredValues  / Criteria  Criteria  ............  / Criteria  / Criteria  Blocks List of blocks to group criteria.    Block The block definition.    Condition = And Condition to merge with previous blocks. If not specified And value is used.  Criteria List of criteria. Same with above criteria definition.    Criteria  ............  / Criteria  / Criteria  / Block  / Blocks  / Where  Order List of ordering columns.    Order The order definition.    Name = MyColumn Column name or relation path to apply order. Required.   Type = Ascending / Type of ordering.  Ascending ,  Descending  values are valid. If not specified  Ascending  value is used.  / Order  SubQueries List of subqueries to return as related child rows.    Query Subquery definition. Same with above only Name attribute is required.  Name = Name of table relation to get rows as child. If relation is not found in table definition error is thrown.  / Query  / SubQueries  / Query   Formula  Formula specifies the method of evaluation of row values. Formula enumeration can be one of following values;     Value  Description      None  No aggregation is applied. All values in rows.    Count  Count of row values    CountDistinct  Count of distinct values in rows    Sum  Sum of row values. Valid for numeric type columns.    SumDistinct  Sum of distinct values in rows. Valid for numeric type columns.    Avg  Average of row values. Valid for numeric type columns.    AvgDistinct  Average of distinct values in rows. Valid for numeric type columns.    Min  Minimum value in rows.    Max  Maximum value in row values.     Comparison  Specifies the comparison method of criteria value.     Value  Description      Different  All rows with different than criteria value.    Equals  All rows with same value.    GreaterThan  All rows that greater than criteria value.    GreaterThanOrEqualTo  All rows that greater or equals to criteria value.    LessThan  All rows that less than criteria value.    LessThanOrEqualTo  All rows that less or equals to criteria value.    Like  All rows that likes to criteria value. Criteria value can be used with * (star character) Like  ABC, ABC ,  ABC     Column Name  Column names can be specified as directly column name or relation path. Relation paths can be specified as \"Relation.Relation.Column\" format.   For example you can use following values as column names for above relational database model.     Column Name  Description      Name  Name of customer    Orders.Id  Id of order    Orders.Product.Name  Name of ordered product     Example Query  Following query returns the all customer name and count of orders by product name criteria. Each row also contains the list of related customer orders as a child rows.   Query \n     Parameters \n         TargetSchema Customer / TargetSchema \n         TargetTable MySchema / TargetTable \n     / Parameters \n     Columns \n         Column   Name = Name   Formula = None   / \n         Column   Name = Orders.Id   Formula = Count   / \n     / Columns \n     Where \n         Criteria \n             Criteria   Name = Orders.Product.Name   Comparison = Like \n                 Value {{ProductName}} / Value \n                 IgnoredValues \n                     Value / Value \n                     Value *All* / Value \n                 / IgnoredValues \n             / Criteria \n         / Criteria \n     / Where \n     Order \n         Order   Name = Orders.Product.Name   Type = Ascending /  \n     / Order \n     SubQueries \n         Query   Name = Orders \n             Columns \n                 Column   Name = Id   / \n                 Column   Name = ProductId   / \n             / Columns \n             Order \n                 Order   Name = Product.Name   Type = Ascending /  \n             / Order \n         / Query \n     / SubQueries  / Query", 
+            "title": "Query Syntax"
         }, 
         {
             "location": "/ag/pm/fo/apply_template/", 
@@ -1202,8 +1262,58 @@
         }, 
         {
             "location": "/ag/pm/databases/", 
-            "text": "", 
+            "text": "In Workrunner you can store all kinds of relational or document based data including files. Depending on your needs you are free to choose which database to use. For example a process may store all customer information on relational database, store all quote documents in a file database and store order information on document database for further analysis.\n\n\nEach database type has own advantages or disadvantages depending on your needs.\n\n\nRelational Database\n\n\nProvides storage for large number of small entities. Database operations generally performed on small number of entities without affecting other entities. However, not that because of nature of relational database you need to specify schema of database.\n\n\nAdvantages\n\n\n\n\nStores large number of entities without any performance lost.\n\n\nEfficient at processing small changes to data that can be logged and rolled-back (undone) if required.\n\n\n\n\nDisadvantages\n\n\n\n\nYou have to specify database schema.\n\n\nDatabase schema must be identical for all entities.\n\n\nTechnical and engineering knowledge is required to manage.\n\n\n\n\nIn Workrunner databases are called as \"schema\" and contains relational structured tables. Each schema contains the \nname\n and __prefix_ properties. When you open a process design page and click on Databases, you will see a list of all relational database schemas tied to that process. If there is no schema yet you can simply click Import and add one of the existing schemas or click Add New Schema button to create a schema and its tables. All of the schema import, update and add operations are not executed until the process changes are committed.\n\n\nAdd New Schema\n\n\nIn order to add a new schema you have to enter a name and a prefix.\n\n\nClicking on \nEdit\n button unfolds a menu including:\n\n\nName\n\nName of schema, you can enter any name in to name field.\n\n\nPrefix\n\nEnter short name in to prefix field.\n\n\nClick \nDetails\n button to display all the tables of the schema and again click Details button of one of the tables listed: \n\n\nFields\n\n\nName\n\nEnter name of field. \n\n\nType\n\nLimited text, unlimited text, integer number, floating number, money, yes/no, date/time, unique identifier, xml and binary are listed. Select to type of field.\n\n\nSize\n\nSpecifies the length of field in numbers of character. Only applicable to limited text type.\n\n\nLanguages\n\nUnder this section multiple language names can be added. For each language added, a separate column is added to table with the name \"columnName_languageName\". In this way corresponding translation of the column data is being stored in a distinct column and it is fetched depending on the user's culture choice.\n\n\nGeneral\n\n\nPrimary Key\n\nId, code and name are listed. Select to primary key. \n\n\nAuthorize By\n\nAll the fields of unique identifier type from the table shows up in this section. Selecting one of them will restrict users to see only the row with selected field whose data is identical to their userId upon a select query.\n\n\nRelations\n\n\nClick on \nAdd New Relation\n button:\n\n\nName\n\nEnter a name for relation. It will be used later to call that relation. e.g. Word UserLogons is the relation name in usage Users.UserLogons\n\n\nType\n\n\nSelect relation type. Options are\n\n\n\n\nOne to many\n\n\nOne to one\n\n\nOne to one or zero\n\n\nMany to one\n\n\n\n\nUpdate Rule\n\nSelect update rule for related rows. With cascade rule, which is the only rule provided, when one of the records is updated or deleted, corresponding data on the other related table also gets updated or deleted.\n\n\nTarget Schema\n\nSelect a schema to create a relation to its table.\n\n\nTarget Table\n\nSelect a table from target schema to create a relation to.\n\n\nConstraints\n\n\n\n\nSource field\n : Select a field name from first table to relate from.\n\n\nTarget field\n : Select a field name for second table to relate to.\n\n\n\n\nInitial Data\n\nFor some purposes, for example testing, you can populate tables with initial data enterd in XML format. \n\n\nImport\n\n\nDisplays all existing schemas. Select the ones you want to include in your process and click Ok.\n\n\nXml Database\n\n\nProvides storage for small or large number of large size entities in a hierarchy. Database operations generally performed with reading or writing full on tree of entities.\n\n\nAdvantages\n\n\n\n\nIdeal for highly variable data structures, and even unstructured data.\n\n\nOptimized for extremely fast storage and retrieval of whole documents or objects.\n\n\n\n\nDisadvantages\n\n\n\n\nSlow performance when need to join other data out of entity tree.\n\n\n\n\nFile Database\n\n\nProvides a database to manage binary files. Each stored file is identified with globally unique identifier (Guid) at domain level.\n\n\nAdvantages\n\n\n\n\nEfficient for binary files.\n\n\nFull text indexing\n\n\n\n\nDisadvantages\n\n\n\n\nOnly accessible from file id\n\n\n\n\nFiles can be uploaded to database with \nFile\n control from user interface or can be created with scripting environment \n$Files\n object.\n\n\nAccessing to a File\n\n\nUnique file id can be use to build a URL address in \nhttp(s)://mydomain.workrunner.io/file/\nfileId\n format. This file url can be accessed with from anonymous environment.\n\n\n\n\nSecurity\n\n\nGenerated guid values already secured there is no additional security performed. But IP restriction can be also applied at domain level if required.\n\n\n\n\nAccessing to file by default shows the preview application if supported. If you want to just download please use the \nhttp(s)://mydomain.workrunner.io/attachment/\nfileId\n format to force.\n\n\nRevisioning\n\n\nIn Workrunner every file has own unique identifier and any update on file stored with new identifier and marked as \"revision\". When revision is completed new file content replaced with old file to keep id number same.\n\n\nUpdates from user interface is automatically handled but in scripting environment you may need to use \nFiles.Replace\n method to update revision.", 
             "title": "Databases"
+        }, 
+        {
+            "location": "/ag/pm/databases/#relational-database", 
+            "text": "Provides storage for large number of small entities. Database operations generally performed on small number of entities without affecting other entities. However, not that because of nature of relational database you need to specify schema of database.  Advantages   Stores large number of entities without any performance lost.  Efficient at processing small changes to data that can be logged and rolled-back (undone) if required.   Disadvantages   You have to specify database schema.  Database schema must be identical for all entities.  Technical and engineering knowledge is required to manage.   In Workrunner databases are called as \"schema\" and contains relational structured tables. Each schema contains the  name  and __prefix_ properties. When you open a process design page and click on Databases, you will see a list of all relational database schemas tied to that process. If there is no schema yet you can simply click Import and add one of the existing schemas or click Add New Schema button to create a schema and its tables. All of the schema import, update and add operations are not executed until the process changes are committed.", 
+            "title": "Relational Database"
+        }, 
+        {
+            "location": "/ag/pm/databases/#add-new-schema", 
+            "text": "In order to add a new schema you have to enter a name and a prefix.  Clicking on  Edit  button unfolds a menu including:  Name \nName of schema, you can enter any name in to name field.  Prefix \nEnter short name in to prefix field.  Click  Details  button to display all the tables of the schema and again click Details button of one of the tables listed:", 
+            "title": "Add New Schema"
+        }, 
+        {
+            "location": "/ag/pm/databases/#fields", 
+            "text": "Name \nEnter name of field.   Type \nLimited text, unlimited text, integer number, floating number, money, yes/no, date/time, unique identifier, xml and binary are listed. Select to type of field.  Size \nSpecifies the length of field in numbers of character. Only applicable to limited text type.  Languages \nUnder this section multiple language names can be added. For each language added, a separate column is added to table with the name \"columnName_languageName\". In this way corresponding translation of the column data is being stored in a distinct column and it is fetched depending on the user's culture choice.", 
+            "title": "Fields"
+        }, 
+        {
+            "location": "/ag/pm/databases/#general", 
+            "text": "Primary Key \nId, code and name are listed. Select to primary key.   Authorize By \nAll the fields of unique identifier type from the table shows up in this section. Selecting one of them will restrict users to see only the row with selected field whose data is identical to their userId upon a select query.", 
+            "title": "General"
+        }, 
+        {
+            "location": "/ag/pm/databases/#relations", 
+            "text": "Click on  Add New Relation  button:  Name \nEnter a name for relation. It will be used later to call that relation. e.g. Word UserLogons is the relation name in usage Users.UserLogons  Type  Select relation type. Options are   One to many  One to one  One to one or zero  Many to one   Update Rule \nSelect update rule for related rows. With cascade rule, which is the only rule provided, when one of the records is updated or deleted, corresponding data on the other related table also gets updated or deleted.  Target Schema \nSelect a schema to create a relation to its table.  Target Table \nSelect a table from target schema to create a relation to.  Constraints   Source field  : Select a field name from first table to relate from.  Target field  : Select a field name for second table to relate to.   Initial Data \nFor some purposes, for example testing, you can populate tables with initial data enterd in XML format.", 
+            "title": "Relations"
+        }, 
+        {
+            "location": "/ag/pm/databases/#import", 
+            "text": "Displays all existing schemas. Select the ones you want to include in your process and click Ok.", 
+            "title": "Import"
+        }, 
+        {
+            "location": "/ag/pm/databases/#xml-database", 
+            "text": "Provides storage for small or large number of large size entities in a hierarchy. Database operations generally performed with reading or writing full on tree of entities.  Advantages   Ideal for highly variable data structures, and even unstructured data.  Optimized for extremely fast storage and retrieval of whole documents or objects.   Disadvantages   Slow performance when need to join other data out of entity tree.", 
+            "title": "Xml Database"
+        }, 
+        {
+            "location": "/ag/pm/databases/#file-database", 
+            "text": "Provides a database to manage binary files. Each stored file is identified with globally unique identifier (Guid) at domain level.  Advantages   Efficient for binary files.  Full text indexing   Disadvantages   Only accessible from file id   Files can be uploaded to database with  File  control from user interface or can be created with scripting environment  $Files  object.", 
+            "title": "File Database"
+        }, 
+        {
+            "location": "/ag/pm/databases/#accessing-to-a-file", 
+            "text": "Unique file id can be use to build a URL address in  http(s)://mydomain.workrunner.io/file/ fileId  format. This file url can be accessed with from anonymous environment.   Security  Generated guid values already secured there is no additional security performed. But IP restriction can be also applied at domain level if required.   Accessing to file by default shows the preview application if supported. If you want to just download please use the  http(s)://mydomain.workrunner.io/attachment/ fileId  format to force.", 
+            "title": "Accessing to a File"
+        }, 
+        {
+            "location": "/ag/pm/databases/#revisioning", 
+            "text": "In Workrunner every file has own unique identifier and any update on file stored with new identifier and marked as \"revision\". When revision is completed new file content replaced with old file to keep id number same.  Updates from user interface is automatically handled but in scripting environment you may need to use  Files.Replace  method to update revision.", 
+            "title": "Revisioning"
         }, 
         {
             "location": "/ag/pm/localization/", 
@@ -1248,7 +1358,7 @@
         {
             "location": "/ag/pm/sc/database/", 
             "text": "", 
-            "title": "$Database Method List"
+            "title": "$Database Methods"
         }, 
         {
             "location": "/ag/pm/sc/database.adddata/", 
@@ -1293,7 +1403,7 @@
         {
             "location": "/ag/pm/sc/delegation/", 
             "text": "", 
-            "title": "$Delegation Method List"
+            "title": "$Delegation Methods"
         }, 
         {
             "location": "/ag/pm/sc/delegation.add/", 
@@ -1308,7 +1418,7 @@
         {
             "location": "/ag/pm/sc/documents/", 
             "text": "", 
-            "title": "$Documents Method List"
+            "title": "$Documents Methods"
         }, 
         {
             "location": "/ag/pm/sc/documents.get/", 
@@ -1378,7 +1488,7 @@
         {
             "location": "/ag/pm/sc/membership/", 
             "text": "", 
-            "title": "$Membership Method List"
+            "title": "$Membership Methods"
         }, 
         {
             "location": "/ag/pm/sc/membership.administrator/", 
@@ -1418,7 +1528,7 @@
         {
             "location": "/ag/pm/sc/messages/", 
             "text": "", 
-            "title": "$Messages Method List"
+            "title": "$Messages Methods"
         }, 
         {
             "location": "/ag/pm/sc/messages.addemlsignature/", 
@@ -1444,6 +1554,11 @@
             "location": "/ag/pm/sc/messages.parseeml/", 
             "text": "", 
             "title": "$Messages.ParseEML"
+        }, 
+        {
+            "location": "/ag/pm/sc/rest/", 
+            "text": "", 
+            "title": "$Rest Methods"
         }, 
         {
             "location": "/ag/pm/sc/rest.create/", 
@@ -1473,7 +1588,7 @@
         {
             "location": "/ag/pm/sc/xmlrepository/", 
             "text": "", 
-            "title": "$XmlRepository Method List"
+            "title": "$XmlRepository Methods"
         }, 
         {
             "location": "/ag/pm/sc/xmlrepository.delete/", 
@@ -1498,7 +1613,7 @@
         {
             "location": "/ag/pm/sc/calendar/", 
             "text": "", 
-            "title": "Calendar Method List"
+            "title": "Calendar Methods"
         }, 
         {
             "location": "/ag/pm/sc/calendar.add/", 
@@ -1778,7 +1893,7 @@
         {
             "location": "/ag/pm/sc/document/", 
             "text": "", 
-            "title": "Document Method List"
+            "title": "Document Methods"
         }, 
         {
             "location": "/ag/pm/sc/fileinfo/", 
@@ -1848,7 +1963,7 @@
         {
             "location": "/ag/pm/sc/instance/", 
             "text": "", 
-            "title": "Instance Method List"
+            "title": "Instance Methods"
         }, 
         {
             "location": "/ag/pm/sc/instance.culture/", 
@@ -2228,7 +2343,7 @@
         {
             "location": "/ag/pm/sc/workitem/", 
             "text": "", 
-            "title": "WorkItem Method List"
+            "title": "WorkItem Methods"
         }, 
         {
             "location": "/ag/pm/sc/workitem.caption/", 
@@ -2348,7 +2463,7 @@
         {
             "location": "/ag/pm/sc/xmlnode/", 
             "text": "", 
-            "title": "XmlNode Method List"
+            "title": "XmlNode Methods"
         }, 
         {
             "location": "/ag/pm/sc/xmlnode.appendchild/", 
@@ -2572,18 +2687,78 @@
         }, 
         {
             "location": "/ag/is/embedding_workrunner/", 
-            "text": "", 
+            "text": "With embedded forms you can display Workrunner forms in other applications in HTML iframe.\n\n\nEmbedded form layout can be accessed from \nhttp(s)://\nmydomain\n.workrunner.io/app/embed.asmx\n url. Embedded layout does not show any side bar and only shows to main content of form with optionally actions. Example view of embedded layout of a form.\n\n\n\n\nAuthentication\n\n\nEmbedded forms needs valid authentication, if user is not logged in before, browser automatically redirected to login page. Alternatively you can specify an authentication token to login user automatically and skip login page.\n\n\nExample embedded page url with authentication token;\n\n\nhttp://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d\nauth=41AA3CE3CAFB..............BF8114\n\n\n\n\nYou can generate required authentication token with \ngetToken method in rest service\n. \n\n\nGenerated authentication tokens are limited to configured based time period and they can be expire. Please always generate new tokens as long as needed and do not store in any place like disk or code.\n\n\nEmbedding Form\n\n\nYou can embed Workrunner forms in a basic HTML IFrame tag like below;\n\n\nExample:\n\n\nhtml\n\n    \nbody\n\n        Hello!\n        \niframe\n \nsrc\n=\nhttp://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d\n \nwidth\n=\n100%\n \nheight\n=\n600\n \nframeborder\n=\n0\n/\niframe\n\n    \n/\nbody\n\n\n/\nhtml\n\n\n\n\n\nDefault configuration is prevents the use Workrunner in IFrame tag because of security. If you get any error please try to remove \"X-XFrame-Options\" header from your web configuration file to allow to use Workrunner in iframe tag.\n\n\nAction Toolbar\n\n\nBy default Workrunner does not show action toolbar of work items. If want to show action toolbar you can specify \"\nactions=1\n\" parameter in query string to show action toolbar.\n\n\nExample:\n\n\nhtml\n\n    \nbody\n\n        Hello!\n        \niframe\n \nsrc\n=\nhttp://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d\nactions=1\n \nwidth\n=\n100%\n \nheight\n=\n600\n \nframeborder\n=\n0\n/\niframe\n\n    \n/\nbody\n\n\n/\nhtml\n\n\n\n\n\nReturn Address\n\n\nYou can specify \"\nreturnUrl\n\" parameter in query string to redirect user another address after form is completed. This parameter is only meaningful if action toolbar is visible.\n\n\nExample:\n\n\nhtml\n\n    \nbody\n\n        Hello!\n        \niframe\n \nsrc\n=\nhttp://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d\nactions=1\nreturnUrl=http://localhost\n \nwidth\n=\n100%\n \nheight\n=\n600\n \nframeborder\n=\n0\n/\niframe\n\n    \n/\nbody\n\n\n/\nhtml", 
             "title": "Embedding Workrunner"
         }, 
         {
+            "location": "/ag/is/embedding_workrunner/#authentication", 
+            "text": "Embedded forms needs valid authentication, if user is not logged in before, browser automatically redirected to login page. Alternatively you can specify an authentication token to login user automatically and skip login page.  Example embedded page url with authentication token;  http://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d auth=41AA3CE3CAFB..............BF8114  You can generate required authentication token with  getToken method in rest service .   Generated authentication tokens are limited to configured based time period and they can be expire. Please always generate new tokens as long as needed and do not store in any place like disk or code.", 
+            "title": "Authentication"
+        }, 
+        {
+            "location": "/ag/is/embedding_workrunner/#embedding-form", 
+            "text": "You can embed Workrunner forms in a basic HTML IFrame tag like below;  Example:  html \n     body \n        Hello!\n         iframe   src = http://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d   width = 100%   height = 600   frameborder = 0 / iframe \n     / body  / html   Default configuration is prevents the use Workrunner in IFrame tag because of security. If you get any error please try to remove \"X-XFrame-Options\" header from your web configuration file to allow to use Workrunner in iframe tag.", 
+            "title": "Embedding Form"
+        }, 
+        {
+            "location": "/ag/is/embedding_workrunner/#action-toolbar", 
+            "text": "By default Workrunner does not show action toolbar of work items. If want to show action toolbar you can specify \" actions=1 \" parameter in query string to show action toolbar.  Example:  html \n     body \n        Hello!\n         iframe   src = http://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d actions=1   width = 100%   height = 600   frameborder = 0 / iframe \n     / body  / html", 
+            "title": "Action Toolbar"
+        }, 
+        {
+            "location": "/ag/is/embedding_workrunner/#return-address", 
+            "text": "You can specify \" returnUrl \" parameter in query string to redirect user another address after form is completed. This parameter is only meaningful if action toolbar is visible.  Example:  html \n     body \n        Hello!\n         iframe   src = http://mycompany.workrunner.io/app/embed.aspx?/workitem/d4c1adc7-c9d2-4af0-a2b3-b6d61d88df6d actions=1 returnUrl=http://localhost   width = 100%   height = 600   frameborder = 0 / iframe \n     / body  / html", 
+            "title": "Return Address"
+        }, 
+        {
             "location": "/ag/is/google_service_authentication/", 
-            "text": "", 
+            "text": "This document describes the allow Google APIs server to server access for Workrunner rest clients.\n\n\nCreating a Service Account\n\n\nBefore allowing the access you need to register Workrunner as application. This step is already configured for cloud configuration and required only for on-premises.\n\n\n\n\nLogin to \nhttps://console.cloud.google.com\n\n\nPlease select \"Service Accounts\" from \"IAM \n Admin\" menu.\n\n\nClick on \"Create Service Account\" button and specify the name of service account.  (Ex: Workrunner)\n\n\nCheck \"Furnish a new private key\" and \"Enable G Suite Domain-Wide Delegation\"\n\n\nPlease select \"Key type\" as P12\n\n\nPlease note the \"Service Account Id\" for later use.\n\n\nClick on Create Account to download p12 file.\n\n\n\n\nConfiguring Workrunner for Google Login Service\n\n\n\n\nStart a new Edit Domain task from Administration menu.\n\n\nExpand the Google Login Service\n\n\nEnter the registered google credentials. \n \n\n\n\n\n\n\nIn service account key; you can specify in following formats;\n\n\n\n\nIf certificate is stored in local server \n\n    \nFILE;\nCertificateFilePath\n;\nCertificatePassword\n\n\nIf you dont have local access to server you can also specify with \n\n    \nBASE64;\nCertificateBase64\n;\nCertificatePassword\n \n \n    \nURL;\nCertificateFileUrl\n;\nCertificatePassword\n\n\n\n\n\n\n\n\nConfiguring Workrunner for Google Drive Integration\n\n\n\n\nIf you want to enable Google Drive; in fileServices add new element as below;\n\n\n\n\nfileServices\n\n  \nadd\n \nclientType\n=\nDesktop\n \n/\n\n  \nadd\n \nclientType\n=\nWebcam\n \n/\n\n  \nadd\n \nclientType\n=\nGoogleDrive\n \nscope\n=\nhttps://www.googleapis.com/auth/drive\n/\n\n\n/\nfileServices\n\n\n\n2. If you want to allow offline access to API without user interaction please add \"offline\" scope with space separated.\n\n\nRelated articles\n\n\n\n\n$Rest\n\n\nRestRequest.PutAsync\n\n\nRestRequest.PostAsync\n\n\nRestRequest.PatchAsync\n\n\nRestRequest.ExecuteAsync", 
             "title": "Google Service Authentication"
         }, 
         {
+            "location": "/ag/is/google_service_authentication/#creating-a-service-account", 
+            "text": "Before allowing the access you need to register Workrunner as application. This step is already configured for cloud configuration and required only for on-premises.   Login to  https://console.cloud.google.com  Please select \"Service Accounts\" from \"IAM   Admin\" menu.  Click on \"Create Service Account\" button and specify the name of service account.  (Ex: Workrunner)  Check \"Furnish a new private key\" and \"Enable G Suite Domain-Wide Delegation\"  Please select \"Key type\" as P12  Please note the \"Service Account Id\" for later use.  Click on Create Account to download p12 file.", 
+            "title": "Creating a Service Account"
+        }, 
+        {
+            "location": "/ag/is/google_service_authentication/#configuring-workrunner-for-google-login-service", 
+            "text": "Start a new Edit Domain task from Administration menu.  Expand the Google Login Service  Enter the registered google credentials.       In service account key; you can specify in following formats;   If certificate is stored in local server  \n     FILE; CertificateFilePath ; CertificatePassword  If you dont have local access to server you can also specify with  \n     BASE64; CertificateBase64 ; CertificatePassword    \n     URL; CertificateFileUrl ; CertificatePassword", 
+            "title": "Configuring Workrunner for Google Login Service"
+        }, 
+        {
+            "location": "/ag/is/google_service_authentication/#configuring-workrunner-for-google-drive-integration", 
+            "text": "If you want to enable Google Drive; in fileServices add new element as below;   fileServices \n   add   clientType = Desktop   / \n   add   clientType = Webcam   / \n   add   clientType = GoogleDrive   scope = https://www.googleapis.com/auth/drive /  / fileServices  \n2. If you want to allow offline access to API without user interaction please add \"offline\" scope with space separated.", 
+            "title": "Configuring Workrunner for Google Drive Integration"
+        }, 
+        {
+            "location": "/ag/is/google_service_authentication/#related-articles", 
+            "text": "$Rest  RestRequest.PutAsync  RestRequest.PostAsync  RestRequest.PatchAsync  RestRequest.ExecuteAsync", 
+            "title": "Related articles"
+        }, 
+        {
             "location": "/ag/is/office365_service_authentication/", 
-            "text": "", 
+            "text": "Creating Service Account\n\n\nBefore allowing the access you need to register Workrunner as application. This step is already configured for cloud configuration and required only for on-premises.\n\n\n\n\nLogin to \nhttps://apps.dev.microsoft.com\n\n\nSelect type of application as \"Web\"\n\n\nEnter name of application (ex: Workrunner)\n\n\n\n\nEnter callback paths as following addresses\n\n\n\n\nhttps://workrunner.io/oauth/callback\n\n\nhttp://workrunner.io/oauth/callback\n\n\nhttps://www.workrunner.io/oauth/callback\n\n\nhttp://www.workrunner.io/oauth/callback\n\n\n\n\n\n\n\n\nCreate a new application secret by clicking on \"Generate New Key Pair\"\n\n\n\n\nDownload the generated PFX file.\n\n\n\n\nConfiguring Workrunner for Office365 Login Service\n\n\n\n\nStart a new Edit Domain task from Administration menu.\n\n\nExpand the Office 365 login service\n\n\nEnter the registered Office 365 credentials \n\n\n\n\n\n\nIn service account key; you can specify in following formats;\n\n\n\n\nIf certificate is stored in local server\n\n\nFILE;\nCertificateFilePath\n;\nCertificatePassword\n\n\nIf you dont have local access to server you can also specify with \n\n  \nBASE64;\nCertificateBase64\n;\nCertificatePassword\n\n  \nURL;\nCertificateFileUrl\n;\nCertificatePassword\n\n\n\n\n\n\n\n\nConfiguring Workrunner for One Drive for Business Integration\n\n\n\n\nIf you want to enable One Drive; add new element into fileServices section.\n\nfileServices\n\n  \nadd\n \nclientType\n=\nDesktop\n \n/\n\n  \nadd\n \nclientType\n=\nWebcam\n \n/\n\n  \nadd\n \nclientType\n=\nOneDrive\n \nscope\n=\nFiles.Read.All\n/\n\n\n/\nfileServices\n\n\n\n\nIf you want to allow offline access to OneDrive API without user interaction please add \"offline\" scope with space seperated.\n\n\n\n\nRelated articles\n\n\n\n\n$Rest\n\n\nRestRequest.PutAsync\n\n\nRestRequest.PostAsync\n\n\nRestRequest.PatchAsync\n\n\nRestRequest.ExecuteAsync", 
             "title": "Office365 Service Authentication"
+        }, 
+        {
+            "location": "/ag/is/office365_service_authentication/#creating-service-account", 
+            "text": "Before allowing the access you need to register Workrunner as application. This step is already configured for cloud configuration and required only for on-premises.   Login to  https://apps.dev.microsoft.com  Select type of application as \"Web\"  Enter name of application (ex: Workrunner)   Enter callback paths as following addresses   https://workrunner.io/oauth/callback  http://workrunner.io/oauth/callback  https://www.workrunner.io/oauth/callback  http://www.workrunner.io/oauth/callback     Create a new application secret by clicking on \"Generate New Key Pair\"   Download the generated PFX file.", 
+            "title": "Creating Service Account"
+        }, 
+        {
+            "location": "/ag/is/office365_service_authentication/#configuring-workrunner-for-office365-login-service", 
+            "text": "Start a new Edit Domain task from Administration menu.  Expand the Office 365 login service  Enter the registered Office 365 credentials     In service account key; you can specify in following formats;   If certificate is stored in local server  FILE; CertificateFilePath ; CertificatePassword  If you dont have local access to server you can also specify with  \n   BASE64; CertificateBase64 ; CertificatePassword \n   URL; CertificateFileUrl ; CertificatePassword", 
+            "title": "Configuring Workrunner for Office365 Login Service"
+        }, 
+        {
+            "location": "/ag/is/office365_service_authentication/#configuring-workrunner-for-one-drive-for-business-integration", 
+            "text": "If you want to enable One Drive; add new element into fileServices section. fileServices \n   add   clientType = Desktop   / \n   add   clientType = Webcam   / \n   add   clientType = OneDrive   scope = Files.Read.All /  / fileServices   If you want to allow offline access to OneDrive API without user interaction please add \"offline\" scope with space seperated.", 
+            "title": "Configuring Workrunner for One Drive for Business Integration"
+        }, 
+        {
+            "location": "/ag/is/office365_service_authentication/#related-articles", 
+            "text": "$Rest  RestRequest.PutAsync  RestRequest.PostAsync  RestRequest.PatchAsync  RestRequest.ExecuteAsync", 
+            "title": "Related articles"
         }, 
         {
             "location": "/ag/is/rest_services/", 
