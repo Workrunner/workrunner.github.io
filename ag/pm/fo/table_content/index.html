@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#design" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1359,9 +1363,57 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Table Content
+      </label>
+    
     <a href="./" title="Table Content" class="md-nav__link md-nav__link--active">
       Table Content
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" title="Other" class="md-nav__link">
+    Other
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5862,6 +5914,56 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" title="Other" class="md-nav__link">
+    Other
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5870,7 +5972,118 @@
                 
                   <h1>Table Content</h1>
                 
-                
+                <p>Table content control allows listing multiple records.</p>
+<p><a href="../../../../tableContent/ag/pm/fo/20180307_tableContent.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_tableContent.png" /></a></p>
+<h2 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<p><strong>Add New Label</strong><br>
+Specifies a name for Add New button. This button adds new row to table content.</p>
+<p><strong>Show Blank Slate</strong><br></p>
+<h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">&para;</a></h2>
+<p><strong>Required for Group</strong><br>
+Enter any name into this area to specify a validation group for the table content. After that when you enter this same validation group name into Validation Group area on any action button of any task, it will be checked for validation whenever the action is selected on the form. </p>
+<p><strong>Section Name</strong><br>
+Name of section is for controlling read only or visible state of a section. If set to a value this section can be configured in <a href="../../pd/tasks/">task</a> properties.  </p>
+<p><strong>Dynamic Rules</strong><br>
+Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.</p>
+<ul>
+<li>
+<p>Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+<li>
+<p>Validation rules, allow you to validate the data that is entered by the end-user. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+</ul>
+<p><strong>Row Rules</strong><br>
+Same rules as the dynamic rules are available but it applies only to the rows that satisfy the condition.</p>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<p><strong>Bound XPath</strong><br>
+XPath of the element. If set to empty, it uses parent xpath.</p>
+<p><strong>Row Id XPath</strong><br>
+Give a specific Id for each row by filling this box with an XPath.   </p>
+<p><strong>Item XPath</strong><br>
+Items of a table content change depending on this setting. Default is " * " which sets it to regard all items as in the same structure. If you want to use different contents for different items you should dictate it by specifying an XPath. </p>
+<p><strong>Hierarchy XPath</strong><br>
+In a nested xml node structure, for example if your XML looks like the excerpt below, you may specify the starting node of the recurrence. In this example Hierarchy XPath is "Folders".</p>
+<p><div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">Folders</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder1<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder2<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Folders</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder2a<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder2b<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">Folders</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">Folders</span><span class="p">&gt;</span>
+</pre></div>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">Folders</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder1<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder2<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Folders</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder2a<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Folder</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>folder2b<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">Folders</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">Folder</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">Folders</span><span class="p">&gt;</span>
+</pre></div></p>
+<p><strong>Filter XPath</strong><br>
+By using Filter Xpath, it is possible to refine the content of the table. For this example, only the rows where <strong>IsCustomer</strong> node is set to <strong>true</strong>, will be displayed.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_filterXpath.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_filterXpath.png" /></a></p>
+<p><strong>Export to Excel</strong><br>
+This control allows you to export your records to excel. In order to accomplish this, all you have to do is, enable AllowExport in DataExchange and define the columns in this property.</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">DataExchange</span> <span class="na">AllowImport</span><span class="o">=</span><span class="s">&quot;False&quot;</span> <span class="na">AllowExport</span><span class="o">=</span><span class="s">&quot;True&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">Columns</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Column</span> <span class="na">Caption</span><span class="o">=</span><span class="s">&quot;Form No&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Text&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">XPath</span><span class="p">&gt;</span><span class="cp">&lt;![CDATA[FormNo]]&gt;</span><span class="p">&lt;/</span><span class="nt">XPath</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Column</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Column</span> <span class="na">Caption</span><span class="o">=</span><span class="s">&quot;Owner&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Text&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">XPath</span><span class="p">&gt;</span><span class="cp">&lt;![CDATA[Owner]]&gt;</span><span class="p">&lt;/</span><span class="nt">XPath</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Column</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">Column</span> <span class="na">Caption</span><span class="o">=</span><span class="s">&quot;Date&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;DateTime&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">XPath</span><span class="p">&gt;</span><span class="cp">&lt;![CDATA[FormDate]]&gt;</span><span class="p">&lt;/</span><span class="nt">XPath</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">Column</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">Columns</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">DataExchange</span><span class="p">&gt;</span>
+</pre></div>
+
+<p><strong>Sort XPath</strong><br>
+Sorts rows with respect to this XPath.</p>
+<h2 id="other">Other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h2>
+<p><strong>Allow Moving XPath</strong><br>
+Xpath to control item movement in list. Please use "0" to disable for always.</p>
+<p><strong>Allow Move Up/Down XPath</strong><br>
+Xpath to control vertical item movement in list. Please use "0" to disable for always. </p>
+<p><strong>Allow New XPath</strong><br>
+Xpath to control adding new items movement to list. Please use "0" to disable for always. </p>
+<p><strong>Allow Delete XPath</strong><br>
+Xpath to control deleting items movement from list. Please use "0" to disable for always.  </p>
+<p><strong>Allow Delete All XPath</strong><br>
+Xpath to control clear the list. Please use "0" to disable for always.   </p>
+<p><strong>Monitored XPaths</strong><br>
+Normally repeating content refreshes itself if specified XPath for filtering, ordering etc. changes. In cases you want to adjust repeating content to watch XPath(s) other than the ones in it, you may specify them at this section.</p>
+<p><strong>Other properties</strong><br></p>
+<ul>
+<li>Cut is used to move table  content.</li>
+<li>Copy is used to copy table content.</li>
+<li>Delete is used to delete table content.</li>
+<li>XML is used to view or add xml of the table content.</li>
+<li>Convert is used to change table content to other content controls.</li>
+<li>Add new is used to add the new columns in to table.</li>
+</ul>
                 
                   
                 

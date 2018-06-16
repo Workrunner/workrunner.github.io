@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#what-is-namespace" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1476,9 +1480,64 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Namespaces
+      </label>
+    
     <a href="./" title="Namespaces" class="md-nav__link md-nav__link--active">
       Namespaces
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-namespace" title="What is namespace?" class="md-nav__link">
+    What is namespace?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-namespace" title="Process Namespace" class="md-nav__link">
+    Process Namespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-namespaces" title="Importing Namespaces" class="md-nav__link">
+    Importing Namespaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registered-namespaces" title="Registered Namespaces" class="md-nav__link">
+    Registered Namespaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting-with-namespaces" title="Scripting with Namespaces" class="md-nav__link">
+    Scripting with Namespaces
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5856,6 +5915,63 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-namespace" title="What is namespace?" class="md-nav__link">
+    What is namespace?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-namespace" title="Process Namespace" class="md-nav__link">
+    Process Namespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-namespaces" title="Importing Namespaces" class="md-nav__link">
+    Importing Namespaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registered-namespaces" title="Registered Namespaces" class="md-nav__link">
+    Registered Namespaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting-with-namespaces" title="Scripting with Namespaces" class="md-nav__link">
+    Scripting with Namespaces
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5864,7 +5980,31 @@
                 
                   <h1>Namespaces</h1>
                 
-                
+                <p>Workrunner supports the mostly used namespaces in XML standard. Namespaces list allows to import data models or assign prefix for used namespaces.</p>
+<h2 id="what-is-namespace">What is namespace?<a class="headerlink" href="#what-is-namespace" title="Permanent link">&para;</a></h2>
+<p>XML namespaces are used for providing uniquely named elements and attributes in an XML document.</p>
+<p>A simple example would be to consider an XML instance that contained references to a customer and an ordered product. Both the customer element and the product element could have a child element named id. References to the id element would therefore be ambiguous; placing them in different namespaces would remove the ambiguity.</p>
+<h2 id="process-namespace">Process Namespace<a class="headerlink" href="#process-namespace" title="Permanent link">&para;</a></h2>
+<p>In Workrunner after you define your data model, it's namespace is set to empty by default. Using empty namespace is not harmful but you may want to set an namespace to your data model if you need to exchange data with other external applications. </p>
+<p>Adding a new namespace with empty prefix will change your data model schema to new namespace and all of your data is now stored in declared namespace URI.</p>
+<h2 id="importing-namespaces">Importing Namespaces<a class="headerlink" href="#importing-namespaces" title="Permanent link">&para;</a></h2>
+<p>If you have an external system and need to use it's data types in your model; you can add it as a new namespace and provide XML Schema Location to load. If you specified a schema location Workrunner will be try to download schema and store in "External Xml Schema Sets" to use. If schema is not accessible from network you can manually add (with basic copy and paste) XSD file content to "External Xml Schema Sets".</p>
+<h2 id="registered-namespaces">Registered Namespaces<a class="headerlink" href="#registered-namespaces" title="Permanent link">&para;</a></h2>
+<p>Workrunner provides couple of namespaces to make easier process development. </p>
+<p><strong>Workrunner Forms</strong> 
+Contains generic and basic data models. To import Workrunner forms namespace please use <a href="http://schemas.workrunner.io"><code>http://schemas.workrunner.io</code></a> namepace and same location.</p>
+<p>After you import namespace you can use following data models:</p>
+<p><strong>Identity</strong><br>
+Specifies an identity like <strong>Organization Unit, Position, User or Group</strong>. Identity element contains id number of identity with Caption, Type, Domain attributes.</p>
+<p>Workrunner form designer recognizes this data type proposes to use identity picker control.</p>
+<h2 id="scripting-with-namespaces">Scripting with Namespaces<a class="headerlink" href="#scripting-with-namespaces" title="Permanent link">&para;</a></h2>
+<p>You can access data model elements as usual in process namespace even you define a namespace. For example following script will continue run as usual</p>
+<div class="codehilite"><pre><span></span>var customers = $Xml.Select(&#39;Customers/Customer&#39;);
+</pre></div>
+
+<p>If you need to access other namespaces you need merge prefix and element names with <prefix>:<elementname> format. For example you can access external elements with following script:</p>
+<div class="codehilite"><pre><span></span>var orders = $Xml.Select(&#39;Customers/Customer//ext:Order&#39;);
+</pre></div>
                 
                   
                 

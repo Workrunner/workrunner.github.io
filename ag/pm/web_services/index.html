@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#consuming-soap-service" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -5244,9 +5248,70 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Web Services
+      </label>
+    
     <a href="./" title="Web Services" class="md-nav__link md-nav__link--active">
       Web Services
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#consuming-soap-service" title="Consuming SOAP Service" class="md-nav__link">
+    Consuming SOAP Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calling-service-from-scripts" title="Calling Service from Scripts" class="md-nav__link">
+    Calling Service from Scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-as-data-source" title="Using as Data Source" class="md-nav__link">
+    Using as Data Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-options" title="Additional Options" class="md-nav__link">
+    Additional Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consuming-rest-service" title="Consuming Rest Service" class="md-nav__link">
+    Consuming Rest Service
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5856,6 +5921,69 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#consuming-soap-service" title="Consuming SOAP Service" class="md-nav__link">
+    Consuming SOAP Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calling-service-from-scripts" title="Calling Service from Scripts" class="md-nav__link">
+    Calling Service from Scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-as-data-source" title="Using as Data Source" class="md-nav__link">
+    Using as Data Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-options" title="Additional Options" class="md-nav__link">
+    Additional Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consuming-rest-service" title="Consuming Rest Service" class="md-nav__link">
+    Consuming Rest Service
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5864,7 +5992,44 @@
                 
                   <h1>Web Services</h1>
                 
-                
+                <p>Web services allows to invoke methods and fetch data on external web services that supports the <a href="https://en.wikipedia.org/wiki/Web_Services_Description_Language">WSDL standard</a>. </p>
+<ul>
+<li>To add a new service click plus ( + ) symbol in web services list from process designer dashboard.</li>
+<li>Enter the web service address in URL field. (Example: <a href="http://www.webservicex.net/globalweather.asmx?WSDL">http://www.webservicex.net/globalweather.asmx?WSDL</a> )</li>
+<li>Currently only WSDL standard is supported but other service types will be added in next releases.</li>
+<li>After clicking on 'Ok' button service is automatically discovered in couple seconds and service methods are displayed on screen.</li>
+</ul>
+<p>Service discovery scans the available methods on service and automatically registers the web service xml data types in "External Xml Schemas". Web service data types also can be directly used in process data model.</p>
+<p>In example "GetWeather" is a method in service and expects the "CityName", "CountryName" fields to invoke and returns GetWeatherResult type. Gray box contains the example usage for scripting. Return value of method may be a basic value or complex data type. You may need to inspect data type from external xml schemas.</p>
+<p><strong>Test Mode URL</strong><br>
+This field is optional, you may leave it blank. If you want to use another service for testing environment you can specify the URL of service. If workflow instance is in test mode this address is used automatically. Test and live service definition must be identical otherwise unpredictable errors may be occur.</p>
+<h2 id="consuming-soap-service">Consuming SOAP Service<a class="headerlink" href="#consuming-soap-service" title="Permanent link">&para;</a></h2>
+<h3 id="calling-service-from-scripts">Calling Service from Scripts<a class="headerlink" href="#calling-service-from-scripts" title="Permanent link">&para;</a></h3>
+<p>After service is registered you can call the service from scripting environments including browser based client scripts.</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">$Services</span><span class="p">.</span><span class="nx">GlobalWeather</span><span class="p">.</span><span class="nx">GlobalWeatherSoap</span><span class="p">.</span><span class="nx">GetWeather</span><span class="p">({</span>
+  <span class="nx">CityName</span> <span class="o">:</span> <span class="s1">&#39;Amsterdam&#39;</span><span class="p">,</span>
+  <span class="nx">CountryName</span> <span class="o">:</span> <span class="s1">&#39;Netherlands&#39;</span><span class="p">,</span>
+<span class="p">});</span>
+</pre></div>
+
+<h3 id="using-as-data-source">Using as Data Source<a class="headerlink" href="#using-as-data-source" title="Permanent link">&para;</a></h3>
+<p>You may also use the service methods to populate lists (for example DropDowns)</p>
+<p>After service is registered add a new data source as "Web Service Query"</p>
+<p>Click on "Edit" button to edit data source. Service method is now displayed on screen and specify input parameters.</p>
+<h3 id="additional-options">Additional Options<a class="headerlink" href="#additional-options" title="Permanent link">&para;</a></h3>
+<p>All standard SOAP headers are automatically handled by system but in some scenarios you may need set additional SOAP headers transfer information.</p>
+<p>While invoking service after specifying request body you may give secondary object to as headers body. If service definition has matching header by name, specified value is imported to the SOAP message.</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">$Services</span><span class="p">.</span><span class="nx">GlobalWeather</span><span class="p">.</span><span class="nx">GlobalWeatherSoap</span><span class="p">.</span><span class="nx">GetWeather</span><span class="p">({</span>
+  <span class="nx">CityName</span> <span class="o">:</span> <span class="s1">&#39;Amsterdam&#39;</span><span class="p">,</span>
+  <span class="nx">CountryName</span> <span class="o">:</span> <span class="s1">&#39;Netherlands&#39;</span><span class="p">,</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="nx">MyHeader</span> <span class="o">:</span> <span class="s1">&#39;MyHeaderValue&#39;</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2 id="consuming-rest-service">Consuming Rest Service<a class="headerlink" href="#consuming-rest-service" title="Permanent link">&para;</a></h2>
+<p>Rest services does not provide any discovery information and dynamically invoked.</p>
+<p>Please refer to <a href="../sc/rest/">$Rest</a> page to get information for consuming a rest service.</p>
                 
                   
                 

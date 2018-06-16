@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#formatting-rules" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1425,9 +1429,43 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Rules
+      </label>
+    
     <a href="./" title="Rules" class="md-nav__link md-nav__link--active">
       Rules
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-rules" title="Formatting Rules" class="md-nav__link">
+    Formatting Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" title="Validation Rules" class="md-nav__link">
+    Validation Rules
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5858,6 +5896,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-rules" title="Formatting Rules" class="md-nav__link">
+    Formatting Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" title="Validation Rules" class="md-nav__link">
+    Validation Rules
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5866,7 +5940,41 @@
                 
                   <h1>Rules</h1>
                 
-                
+                <p>Dynamic Rules, allow you to change the styles of the controls and set validations. </p>
+<h2 id="formatting-rules">Formatting Rules<a class="headerlink" href="#formatting-rules" title="Permanent link">&para;</a></h2>
+<p>Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_formattingRules.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_formattingRules.png" /></a></p>
+<p><strong>Rule Condition</strong><br>
+This is the condition, that the formattings will apply when it's true.</p>
+<div class="codehilite"><pre><span></span>return $Xml.EvaluateBoolean(&#39;Score &gt; 10&#39;);
+</pre></div>
+
+<p>For this example, all formatting styles will apply when "Score" value is greater than 10.</p>
+<p><strong>Hidden</strong><br>
+If chosen Yes, it will make control invisible. (when rule condition is true)</p>
+<p><strong>Disabled</strong><br>
+If chosen Yes, it will make control readonly. (when rule condition is true)</p>
+<p><strong>Bold</strong><br>
+If chosen, it will make the text bold. (when rule condition is true)</p>
+<p><strong>Italic</strong><br>
+If chosen, it will make the text italic. (when rule condition is true)</p>
+<p><strong>TextColor</strong><br>
+Sets the color of the text that will be seen when rule condition is true.</p>
+<p><strong>Background Color</strong><br>
+Sets the background color of the text that will be seen when rule condition is true.</p>
+<p><strong>Available Objects</strong><br>
+will be update.</p>
+<h2 id="validation-rules">Validation Rules<a class="headerlink" href="#validation-rules" title="Permanent link">&para;</a></h2>
+<p>Validation rules, allow you to validate the data that is entered by the end-user. With this rule, you can notify the users if some conditions are not valid and the user is trying to take an <a href="actions.md">action</a>.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_validationRules.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_validationRules.png" /></a></p>
+<p><strong>Validation Group Name</strong><br>
+Name of the validation group that attached to <a href="actions.md">action</a>. You can leave empty to execute validation always.</p>
+<p><strong>Error Message</strong><br>
+The error message that will be shown to the user when rule is validated.</p>
+<p><strong>Rule Condition</strong><br>
+The condition for the validation. If this condition is valid, the error message will be shown and form will not be validated.</p>
+<p><strong>Available Objects</strong><br>
+will be update.</p>
                 
                   
                 

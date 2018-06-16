@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#tab-page" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1371,9 +1375,36 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Tabbed Content
+      </label>
+    
     <a href="./" title="Tabbed Content" class="md-nav__link md-nav__link--active">
       Tabbed Content
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tab-page" title="Tab Page" class="md-nav__link">
+    Tab Page
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5862,6 +5893,35 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tab-page" title="Tab Page" class="md-nav__link">
+    Tab Page
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5870,7 +5930,57 @@
                 
                   <h1>Tabbed Content</h1>
                 
-                
+                <p>A tab layout control container. Tabbed Content allows to use many controls in small space. </p>
+<p>For small devices please avoid using of tabbed content and consider alternative layouts.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_tabbedContent.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_tabbedContent.png" /></a></p>
+<p>For a tabbed content you can configure the following properties:</p>
+<p><strong>Section Name</strong><br>
+Name of section is for controlling read only or visible state of a section. If set to a value this section can be configured in <a href="../../pd/tasks/">task</a>  properties. </p>
+<p><strong>Dynamic Rules</strong><br>
+Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.
+* Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. 
+Further information <a href="../rules/">here</a>.</p>
+<ul>
+<li>Validation rules, allow you to validate the data that is entered by the end-user. 
+Further information <a href="../rules/">here</a>.</li>
+</ul>
+<p><strong>Data</strong><br>
+XPath to data model to be attached. If set to empty parent data element is used.</p>
+<p><strong>Active Tab XPath</strong><br>
+XPath of active tab index as number value. Updating value of this XPath causes to automatically switch specified tab page.</p>
+<h2 id="tab-page">Tab Page<a class="headerlink" href="#tab-page" title="Permanent link">&para;</a></h2>
+<p>You may also need to control tab pages individually and you can configure the following properties for a tab page:</p>
+<p><strong>Label</strong><br>
+Label to show as header of tab page.</p>
+<p><strong>Section Name</strong><br>
+Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.
+Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. 
+Further information <a href="../rules/">here</a>.</p>
+<p>Validation rules, allow you to validate the data that is entered by the end-user. 
+Further information <a href="../rules/">here</a>.</p>
+<p><strong>Dynamic Rules</strong><br>
+Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.</p>
+<ul>
+<li>
+<p>Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+<li>
+<p>Validation rules, allow you to validate the data that is entered by the end-user. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+</ul>
+<p><strong>Bound XPath</strong><br> 
+XPath of the element. If set to empty, it uses parent xpath.</p>
+<p><strong>Other properties</strong><br></p>
+<ul>
+<li>Cut is used to move tabbed content.</li>
+<li>Copy is used to copy tabbed content.</li>
+<li>Delete is used to delete tabbed content.</li>
+<li>XML is used to view or add xml of the tabbed content.</li>
+<li>Convert is used to change tabbed content to other content controls. </li>
+<li>Add new is used to open new tabbed content page.</li>
+</ul>
                 
                   
                 

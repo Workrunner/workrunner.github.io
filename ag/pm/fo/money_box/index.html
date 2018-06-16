@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#design" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1302,9 +1306,50 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Money Box
+      </label>
+    
     <a href="./" title="Money Box" class="md-nav__link md-nav__link--active">
       Money Box
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5860,6 +5905,49 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" title="Design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" title="Rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5868,7 +5956,45 @@
                 
                   <h1>Money Box</h1>
                 
-                
+                <p>Allows numerical entries and displays value with a money sign on the left. In order to use this box, set the data type to number from Data Model and select Money Box from the Convert menu on the form.</p>
+<p><a href="../../../../images/ag/pm/fo/20180307_moneyBox.png"><img alt="Home page" src="../../../../images/ag/pm/fo/20180307_moneyBox.png" /></a></p>
+<h2 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<p><strong>Size</strong><br>
+Large, Big, Medium, and Small options are listed. Selecting one of these will shrink or fit the money box into its container. </p>
+<p><strong>Place Holder</strong><br>
+Any text in this area will be written as faded in the place holder when it is empty.  </p>
+<p><strong>Hints</strong><br>
+The text entered in this area pops up when you hover the field. </p>
+<p><strong>Decimals</strong><br>
+Number of decimals to display after dot.</p>
+<p><strong>Show Digit Seperator</strong><br>
+Yes, use digit seperator for thousand.</p>
+<h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">&para;</a></h2>
+<p><strong>Required for Group</strong><br>
+This section is useful for giving a section a name to mark it as required when taking a specific action. When required for group section is filled for any element or section in the form, system doesn't let one to leave it empty and displays a warning. Setting a rule by clicking on any action on the process diagram and entering its name into the <a href="../../pd/tasks/">validation group</a> field from the right side menu will require this section to be filled.</p>
+<p><strong>Dynamic Rules</strong><br></p>
+<p>Dynamic rules section allows to specify format and warning messages of any element and section. Dynamic rules section consists of two parts, one of them is for formatting rules and the other one is for validation rules.</p>
+<ul>
+<li>
+<p>Formatting rules, allow you to change the formats (text color, background color, style) and visibility of a control depending upon a condition. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+<li>
+<p>Validation rules, allow you to validate the data that is entered by the end-user. 
+Further information <a href="../rules/">here</a>.</p>
+</li>
+</ul>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<p><strong>Bound Xpath</strong><br>
+XPath of the element. If set to empty, it uses parent xpath. </p>
+<p><strong>Other Properties</strong><br></p>
+<ul>
+<li>Cut is used to move control.</li>
+<li>Copy is used to copy control.</li>
+<li>Delete is used to delete control.</li>
+<li>XML is used to view and edit xml of the control.</li>
+<li>Convert is used to change content control into other controls.</li>
+</ul>
                 
                   
                 
