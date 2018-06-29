@@ -5983,7 +5983,7 @@
 <div class="codehilite"><pre><span></span>var client = $Rest.Create(&#39;http://api.geonames.org/&#39;);
 </pre></div>
 
-<p>Some of rest services may require the authentication. Emakin supports the OpenAuth2 based authentication services and to create a authenticated client please specify the service and identity as below;</p>
+<p>Some of rest services may require the authentication. Workrunner supports the OpenAuth2 based authentication services and to create a authenticated client please specify the service and identity as below;</p>
 <div class="codehilite"><pre><span></span>var client = $Rest.Create(&#39;https://graph.microsoft.com/v1.0/&#39;, &#39;Office365&#39;, &#39;&#39;, $WorkItem.CompletedBy).EnsureAuthenticated();
 </pre></div>
 
