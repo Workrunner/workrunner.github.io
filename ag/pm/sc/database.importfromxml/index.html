@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1547,34 +1551,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-10-1-2" type="checkbox" id="nav-3-3-10-1-2">
-    
-    <label class="md-nav__link" for="nav-3-3-10-1-2">
-      $ActivityStream
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-10-1-2">
-        $ActivityStream
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../activitystream.push/" title="$ActivityStream.Push" class="md-nav__link">
-      $ActivityStream.Push
+    <a href="../activitystream/" title="$ActivityStream" class="md-nav__link">
+      $ActivityStream
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -1767,9 +1747,57 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        $Database.ImportFromXml
+      </label>
+    
     <a href="./" title="$Database.ImportFromXml" class="md-nav__link md-nav__link--active">
       $Database.ImportFromXml
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5862,6 +5890,56 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5870,7 +5948,100 @@
                 
                   <h1>$Database.ImportFromXml</h1>
                 
-                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="nx">DataTable</span> <span class="nx">$Database</span><span class="p">.</span><span class="nx">ImportFromXml</span> <span class="p">(</span> <span class="nx">options</span> <span class="p">)</span>
+</pre></div>
+
+<p>Imports xml data to specified table. Please see <a href="../datatable.importfromxml/">$Datatable.ImportFromXml</a> for more details.</p>
+<h2 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permanent link">&para;</a></h2>
+<p>This method is a wrapper method for <a href="../datatable.importfromxml/">$Datatable.ImportFromXml</a> and <a href="../datatable.save/">DataTable.Save</a></p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p><strong>Common use case for importing data</strong>;</p>
+<div class="codehilite"><pre><span></span>// For following xml structure
+// <span class="p">&lt;</span><span class="nt">Root</span><span class="p">&gt;</span>
+//    <span class="p">&lt;</span><span class="nt">Group</span><span class="p">&gt;</span>
+//        <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>Developers (Junior)<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+//    <span class="p">&lt;/</span><span class="nt">Group</span><span class="p">&gt;</span>
+// <span class="p">&lt;/</span><span class="nt">Root</span><span class="p">&gt;</span>
+
+
+ $Database.ImportFromXml({
+     Parameters : {
+         TargetSchema: &#39;HR&#39;,
+         TargetTable: &#39;Groups&#39;,
+     },
+     XPath : &#39;Groups/Group&#39;
+   });
+</pre></div>
+
+<p><strong>Customized Column Update</strong>;</p>
+<div class="codehilite"><pre><span></span>// Save organization unit positions
+$Database.ImportFromXml({
+    Parameters : {
+        TargetSchema : &quot;HR&quot;,
+        TargetTable : &quot;OrganizationUnitPositions&quot;
+    },
+    XPath : &quot;//OrganizationUnitPositions/OrganizationUnitPosition&quot;,
+    Map : function(xml) {
+        // Update position by parent node id
+        this.Position = xml.Evaluate(&#39;../../Id&#39;);
+    }
+});
+</pre></div>
+
+<p><strong>Update Only Selected Columns</strong>;</p>
+<div class="codehilite"><pre><span></span>$Database.ImportFromXml({
+     Parameters : {                                                              // Fetch from Fikstur table under Fikstur schema.
+         TargetSchema : &#39;Maclar&#39;,
+         TargetTable : &#39;Fikstur&#39;       
+     },
+     Columns : [                                                                 // Use only specified columns
+       { Name : &#39;Id&#39; },
+       { Name : &#39;EvSahibiSkor&#39; },
+       { Name : &#39;MisafirSkor&#39; }
+     ],
+     XPath : &#39;//MacBilgileri&#39;,
+     Map : function(node) {                                                      // Custom column update
+             this.Id = node.Evaluate(&#39;Mac/Fikstur&#39;);
+             this.EvSahibiSkor = node.Evaluate(&#39;Skor/EvSahibi&#39;);
+             this.MisafirSkor = node.Evaluate(&#39;Skor/Misafir&#39;);
+     }
+});
+</pre></div>
+
+<p><strong>Nested Insert and Update</strong>;</p>
+<div class="codehilite"><pre><span></span>$Database.ImportFromXml({                                                                        // Save employee
+   Parameters : {
+       TargetSchema : &#39;HR&#39;,
+       TargetTable : &#39;Employee&#39;
+   },
+   XPath : &#39;Identities/Identity&#39;,                                                                // Find rows under Identities/Identity xpath
+   ColumnsXPath : &#39;Employee&#39;,                                                                    // Fetch column values from Employee. Final xpath
+   Map : function(employeeNode) {
+
+       $Database.Get({                                                                           // Fetch matching records from database
+           Parameters : {
+               TargetSchema : &#39;HR&#39;,
+               TargetTable : &#39;OrganizationUnitPositionMembers&#39;
+           },
+           Where : {
+             Criteria : [
+               { Name : &#39;Employee&#39;, Value : employeeNode.Evaluate(&#39;Id&#39;) },                       // &quot;Employee must equal to Employee/Id xpath value.&quot;
+               { Name : &#39;RegistryNumber&#39;, Value : &#39;%2&#39;, Comparison : &#39;Like&#39;, Condition : &#39;Or&#39; }  // Another criteria just for sample. &quot;or RegistryNumber must ends with 2&quot;
+             ]
+           }
+       })
+       .DeleteAll()                                                                              // Delete existing all rows
+       .CreateNew(function() {                                                                   // Create a new row
+           this.Employee = employeeNode.Evaluate(&#39;Id&#39;);                                          // Set Employee column to &quot;Employee/Id&quot; xpath value.
+           this.OrganizationUnitPosition = employeeNode.Evaluate(&#39;Employee/Position&#39;);           // Set OrganizationUnitPosition column to &quot;Employee/Position&quot; xpath value.
+       })
+       .Save();                                                                                  // Save this table.
+  }
+});
+</pre></div>
+
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
                 
                   
                 

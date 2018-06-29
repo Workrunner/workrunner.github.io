@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1547,34 +1551,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-10-1-2" type="checkbox" id="nav-3-3-10-1-2">
-    
-    <label class="md-nav__link" for="nav-3-3-10-1-2">
-      $ActivityStream
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-10-1-2">
-        $ActivityStream
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../activitystream.push/" title="$ActivityStream.Push" class="md-nav__link">
-      $ActivityStream.Push
+    <a href="../activitystream/" title="$ActivityStream" class="md-nav__link">
+      $ActivityStream
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -4251,9 +4231,64 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        RestRequest.Expect
+      </label>
+    
     <a href="./" title="RestRequest.Expect" class="md-nav__link md-nav__link--active">
       RestRequest.Expect
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5862,6 +5897,63 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5870,7 +5962,219 @@
                 
                   <h1>RestRequest.Expect</h1>
                 
-                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><div class="codehilite"><pre><span></span><span class="nx">RestRequest</span> <span class="nx">RestRequest</span><span class="p">.</span><span class="nx">Expect</span> <span class="p">(</span> <span class="nx">status</span> <span class="p">)</span>
+</pre></div>
+Sets the expected status code to verify request </p>
+<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
+<p>String <strong>status</strong>
+Status code</p>
+<h2 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permanent link">&para;</a></h2>
+<ul>
+<li>If this method is not used, default expected status codes are used.</li>
+<li>This method can be called multiple times to allow different status codes.</li>
+<li>Status Code must be one of the following values from "Status" column;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Related Elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Continue</td>
+<td>100</td>
+</tr>
+<tr>
+<td>SwitchingProtocols</td>
+<td>101</td>
+</tr>
+<tr>
+<td>OK</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Created</td>
+<td>201</td>
+</tr>
+<tr>
+<td>Accepted</td>
+<td>202</td>
+</tr>
+<tr>
+<td>NonAuthoritativeInformation</td>
+<td>203</td>
+</tr>
+<tr>
+<td>NoContent</td>
+<td>204</td>
+</tr>
+<tr>
+<td>ResetContent</td>
+<td>205</td>
+</tr>
+<tr>
+<td>PartialContent</td>
+<td>206</td>
+</tr>
+<tr>
+<td>Ambiguous</td>
+<td>300</td>
+</tr>
+<tr>
+<td>MultipleChoices</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Moved</td>
+<td>301</td>
+</tr>
+<tr>
+<td>MovedPermanently</td>
+<td>301</td>
+</tr>
+<tr>
+<td>Found</td>
+<td>302</td>
+</tr>
+<tr>
+<td>Redirect</td>
+<td>302</td>
+</tr>
+<tr>
+<td>RedirectMethod</td>
+<td>303</td>
+</tr>
+<tr>
+<td>SeeOther</td>
+<td>303</td>
+</tr>
+<tr>
+<td>NotModified</td>
+<td>304</td>
+</tr>
+<tr>
+<td>UseProxy</td>
+<td>305</td>
+</tr>
+<tr>
+<td>Unused</td>
+<td>306</td>
+</tr>
+<tr>
+<td>RedirectKeepVerb</td>
+<td>307</td>
+</tr>
+<tr>
+<td>TemporaryRedirect</td>
+<td>307</td>
+</tr>
+<tr>
+<td>BadRequest</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Unauthorized</td>
+<td>401</td>
+</tr>
+<tr>
+<td>PaymentRequired</td>
+<td>402</td>
+</tr>
+<tr>
+<td>Forbidden</td>
+<td>403</td>
+</tr>
+<tr>
+<td>NotFound</td>
+<td>404</td>
+</tr>
+<tr>
+<td>MethodNotAllowed</td>
+<td>405</td>
+</tr>
+<tr>
+<td>NotAcceptable</td>
+<td>406</td>
+</tr>
+<tr>
+<td>ProxyAuthenticationRequired</td>
+<td>407</td>
+</tr>
+<tr>
+<td>RequestTimeout</td>
+<td>408</td>
+</tr>
+<tr>
+<td>Conflict</td>
+<td>409</td>
+</tr>
+<tr>
+<td>Gone</td>
+<td>410</td>
+</tr>
+<tr>
+<td>LengthRequired</td>
+<td>411</td>
+</tr>
+<tr>
+<td>PreconditionFailed</td>
+<td>412</td>
+</tr>
+<tr>
+<td>RequestEntityTooLarge</td>
+<td>413</td>
+</tr>
+<tr>
+<td>RequestUriTooLong</td>
+<td>414</td>
+</tr>
+<tr>
+<td>UnsupportedMediaType</td>
+<td>415</td>
+</tr>
+<tr>
+<td>RequestedRangeNotSatisfiable</td>
+<td>416</td>
+</tr>
+<tr>
+<td>ExpectationFailed</td>
+<td>417</td>
+</tr>
+<tr>
+<td>UpgradeRequired</td>
+<td>426</td>
+</tr>
+<tr>
+<td>InternalServerError</td>
+<td>500</td>
+</tr>
+<tr>
+<td>NotImplemented</td>
+<td>501</td>
+</tr>
+<tr>
+<td>BadGateway</td>
+<td>502</td>
+</tr>
+<tr>
+<td>ServiceUnavailable</td>
+<td>503</td>
+</tr>
+<tr>
+<td>GatewayTimeout</td>
+<td>504</td>
+</tr>
+<tr>
+<td>HttpVersionNotSupported</td>
+<td>505</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
                 
                   
                 

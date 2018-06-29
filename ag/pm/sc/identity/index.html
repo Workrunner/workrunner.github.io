@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1547,34 +1551,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-10-1-2" type="checkbox" id="nav-3-3-10-1-2">
-    
-    <label class="md-nav__link" for="nav-3-3-10-1-2">
-      $ActivityStream
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-10-1-2">
-        $ActivityStream
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../activitystream.push/" title="$ActivityStream.Push" class="md-nav__link">
-      $ActivityStream.Push
+    <a href="../activitystream/" title="$ActivityStream" class="md-nav__link">
+      $ActivityStream
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -3450,9 +3430,50 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Identity
+      </label>
+    
     <a href="./" title="Identity" class="md-nav__link md-nav__link--active">
       Identity
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details" title="Details" class="md-nav__link">
+    Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5860,6 +5881,49 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details" title="Details" class="md-nav__link">
+    Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5868,7 +5932,34 @@
                 
                   <h1>Identity</h1>
                 
-                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Represents a identity in system.</p>
+<div class="codehilite"><pre><span></span>{
+    string Id,
+    string Domain,
+    string Name,
+    string Type
+}
+</pre></div>
+
+<p>In Workrunner every organizational entity defined as identity. Identity can be a user or organization unit (department) or group commonly called as "Identity". </p>
+<h2 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h2>
+<p><strong>Id</strong>
+Unique identifier of identity.</p>
+<p><strong>Domain</strong>
+Unique identifier of domain where identity defined.</p>
+<p><strong>Name</strong>
+Display name of identity.</p>
+<p><strong>Type</strong>
+Type of identity.</p>
+<h2 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permanent link">&para;</a></h2>
+<p>Identity type can be one of following types;</p>
+<ul>
+<li>User</li>
+<li>OrganizationUnit</li>
+<li>Position</li>
+<li>Group</li>
+</ul>
                 
                   
                 

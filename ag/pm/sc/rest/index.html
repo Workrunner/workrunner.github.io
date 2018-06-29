@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1547,34 +1551,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-10-1-2" type="checkbox" id="nav-3-3-10-1-2">
-    
-    <label class="md-nav__link" for="nav-3-3-10-1-2">
-      $ActivityStream
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-10-1-2">
-        $ActivityStream
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../activitystream.push/" title="$ActivityStream.Push" class="md-nav__link">
-      $ActivityStream.Push
+    <a href="../activitystream/" title="$ActivityStream" class="md-nav__link">
+      $ActivityStream
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -2319,9 +2299,70 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        $Rest Methods
+      </label>
+    
     <a href="./" title="$Rest Methods" class="md-nav__link md-nav__link--active">
       $Rest Methods
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-service-calling-walkthrough" title="Rest Service Calling Walkthrough" class="md-nav__link">
+    Rest Service Calling Walkthrough
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-rest-client" title="Creating Rest Client" class="md-nav__link">
+    Creating Rest Client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-rest-request" title="Creating Rest Request" class="md-nav__link">
+    Creating Rest Request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetching-rest-response" title="Fetching Rest Response" class="md-nav__link">
+    Fetching Rest Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5862,6 +5903,69 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-service-calling-walkthrough" title="Rest Service Calling Walkthrough" class="md-nav__link">
+    Rest Service Calling Walkthrough
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-rest-client" title="Creating Rest Client" class="md-nav__link">
+    Creating Rest Client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-rest-request" title="Creating Rest Request" class="md-nav__link">
+    Creating Rest Request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetching-rest-response" title="Fetching Rest Response" class="md-nav__link">
+    Fetching Rest Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5870,7 +5974,45 @@
                 
                   <h1>$Rest Methods</h1>
                 
-                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Allows to call rest services with JSON or XML content types.</p>
+<p>Rest service operations consist of objects <a href="restclient.md">Client</a> and <a href="restrequest.md">Request</a> and <a href="restresponse.md">Response</a>. </p>
+<h2 id="rest-service-calling-walkthrough">Rest Service Calling Walkthrough<a class="headerlink" href="#rest-service-calling-walkthrough" title="Permanent link">&para;</a></h2>
+<h3 id="creating-rest-client">Creating Rest Client<a class="headerlink" href="#creating-rest-client" title="Permanent link">&para;</a></h3>
+<p>To create a client use $Rest.Create method by providing the rest <a href="../restclient.url/">service base url</a>.</p>
+<div class="codehilite"><pre><span></span>var client = $Rest.Create(&#39;http://api.geonames.org/&#39;);
+</pre></div>
+
+<p>Some of rest services may require the authentication. Emakin supports the OpenAuth2 based authentication services and to create a authenticated client please specify the service and identity as below;</p>
+<div class="codehilite"><pre><span></span>var client = $Rest.Create(&#39;https://graph.microsoft.com/v1.0/&#39;, &#39;Office365&#39;, &#39;&#39;, $WorkItem.CompletedBy).EnsureAuthenticated();
+</pre></div>
+
+<p>This method acquires a authentication token from service and ensures client is authenticated. If token cannot be acquired from service <a href="../restclient.ensureauthenticated/">EnsureAuthenticated</a> method throws a javascript exception. You can also use <a href="../restclient.isauthenticated/">IsAuthenticated</a> property and <a href="../restclient.authenticate/">Authenticate</a> method to perform same operation without error handling.</p>
+<h3 id="creating-rest-request">Creating Rest Request<a class="headerlink" href="#creating-rest-request" title="Permanent link">&para;</a></h3>
+<p>After creating client connection you can create rest request and populate parameters as below;</p>
+<div class="codehilite"><pre><span></span>var request = client.Request(&#39;childrenJSON&#39;)
+                .AddQueryParameter(&#39;username&#39;, &#39;demo&#39;)
+                .AddQueryParameter(&#39;geonameId&#39;, id);
+</pre></div>
+
+<p>You may also set http headers with <a href="../restrequest.addheader/">AddHeader</a> method. </p>
+<p>Some rest methods requires JSON or XML based body and you can specify the content of request with <a href="../restrequest.addobject/">AddObject</a> or <a href="../restrequest.addxml/">AddXml</a> methods.</p>
+<h3 id="fetching-rest-response">Fetching Rest Response<a class="headerlink" href="#fetching-rest-response" title="Permanent link">&para;</a></h3>
+<p>After <a href="restrequest.md">Request</a> populated you can call the <a href="../restrequest.execute/">Execute</a> method to execute and fetch <a href="restresponse.md">Response</a> object. <a href="../restrequest.execute/">Execute</a> method by default does not perform any error check. If you want to be sure request has successfully executed please use <a href="../restrequest.expect/">Expect</a> method to specify expected status code.</p>
+<div class="codehilite"><pre><span></span>var response = request.Execute();
+
+if (response.StatusCode == &quot;OK&quot;) {
+    var val = response.GetHeader(&#39;X-Header&#39;);
+    var obj = response.ToJson();
+}
+</pre></div>
+
+<p>You can also use <a href="../restrequest.get/">Get</a>, <a href="../restrequest.delete/">Delete</a>, <a href="../restrequest.put/">Put</a>, <a href="../restrequest.post/">Post</a>, <a href="../restrequest.patch/">Patch</a> methods to call service with corresponding method or you can manually set the <a href="../restrequest.method/">RestRequest.Method</a> before executing.</p>
+<p>If service always returns JSON or XML you can use <a href="../restrequest.executejson/">ExecuteJson</a> or <a href="../restrequest.executexml/">ExecuteXml</a> method to fetch response as JSON object or XML navigator.</p>
+<div class="codehilite"><pre><span></span>var object = request.ExecuteJson();
+
+// object.person.name; 
+</pre></div>
                 
                   
                 

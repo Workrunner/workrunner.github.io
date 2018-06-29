@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1547,34 +1551,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-10-1-2" type="checkbox" id="nav-3-3-10-1-2">
-    
-    <label class="md-nav__link" for="nav-3-3-10-1-2">
-      $ActivityStream
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-10-1-2">
-        $ActivityStream
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../activitystream.push/" title="$ActivityStream.Push" class="md-nav__link">
-      $ActivityStream.Push
+    <a href="../activitystream/" title="$ActivityStream" class="md-nav__link">
+      $ActivityStream
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -1731,9 +1711,64 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        $Database.ExportToXml
+      </label>
+    
     <a href="./" title="$Database.ExportToXml" class="md-nav__link md-nav__link--active">
       $Database.ExportToXml
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5862,6 +5897,63 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5870,7 +5962,135 @@
                 
                   <h1>$Database.ExportToXml</h1>
                 
-                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="nx">DataTable</span> <span class="nx">$Database</span><span class="p">.</span><span class="nx">ExportToXml</span> <span class="p">(</span> <span class="nx">options</span> <span class="p">)</span>
+</pre></div>
+
+<p>Exports the data table content to xml data. For each row in data table a new xml child created on specified xpath.</p>
+<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
+<p>Object <strong>options</strong>
+  Exporting options. Options contains following properties:</p>
+<p>String <strong>XPath</strong>
+  Specifies the target xpath to export data on.</p>
+<p>XmlNode <strong>Node</strong>
+  Specifies the root xml node. This property is optional and if omitted uses the $Xml instance.</p>
+<p>String <strong>TargetSchema</strong>
+  Name of schema to execute query on.</p>
+<p>String <strong>TargetTable</strong>
+  Name of table to execute query on.</p>
+<p>Boolean <strong>IncludeAllColumns</strong>
+  Set to "True" to returns all columns on table. Optional, please see remarks.</p>
+<p>Function <strong>Map</strong>
+  Mapping callback function is used to change row values on the fly. This property is optional.</p>
+<h2 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permanent link">&para;</a></h2>
+<p>When IncludeAllColumns parameter is not specified, default behavior is query returns only explicitly specified columns. If not any column specified query returns the all defined columns on table.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p><strong>Exporting database content into XML</strong></p>
+<div class="codehilite"><pre><span></span>// For following xml structure
+// <span class="p">&lt;</span><span class="nt">Root</span><span class="p">&gt;</span>
+//    <span class="p">&lt;</span><span class="nt">Groups</span><span class="p">&gt;&lt;/</span><span class="nt">Groups</span><span class="p">&gt;</span>
+// <span class="p">&lt;/</span><span class="nt">Root</span><span class="p">&gt;</span>
+
+
+$Database.ExportToXml({
+  Parameters : {
+        TargetSchema: &#39;HR&#39;,
+        TargetTable: &#39;Groups&#39;
+    }
+  },
+  XPath : &#39;Groups/Group&#39;
+});
+
+
+// Xml updated as;
+// <span class="p">&lt;</span><span class="nt">Root</span><span class="p">&gt;</span>
+//    <span class="p">&lt;</span><span class="nt">Group</span><span class="p">&gt;</span>
+//        <span class="p">&lt;</span><span class="nt">Name</span><span class="p">&gt;</span>Developers (Junior)<span class="p">&lt;/</span><span class="nt">Name</span><span class="p">&gt;</span>
+//    <span class="p">&lt;/</span><span class="nt">Group</span><span class="p">&gt;</span>
+// <span class="p">&lt;/</span><span class="nt">Root</span><span class="p">&gt;</span>
+</pre></div>
+
+<p><strong>Exporting with sub queries</strong></p>
+<div class="codehilite"><pre><span></span>$Database.ExportToXml({
+   Parameters : {
+   TargetSchema : &#39;Contract&#39;,
+   TargetTable : &#39;Events&#39;
+ },
+ Where : {
+   Criteria : [
+     { Name : &#39;ReminderDate&#39;, Value : $Calendar.Today, Comparison : &#39;LessThan&#39; },
+     { Name : &#39;Durum&#39;, Value : &#39;IPT&#39;, Comparison : &#39;Different&#39; },
+     { Name : &#39;Type&#39;, Value : &#39;R&#39; },
+     { Name : &#39;Status&#39;, Value : &#39;W&#39; }     
+   ]
+ },
+ SubQueries : [
+   {
+     Name : &#39;Contract&#39;,
+     Parameters : {
+       IncludeAllColumns : &#39;True&#39;
+     },
+     SubQueries : [
+       {
+         Name : &#39;Party&#39;
+       },
+       {
+         Name : &#39;Versions&#39;
+       },
+       {
+         Name : &#39;Events&#39;
+       }
+     ]     
+   }
+ ],
+   XPath : &#39;ContractEvent&#39;
+ });
+</pre></div>
+
+<p><strong>Exporting with XML mappings</strong>;</p>
+<div class="codehilite"><pre><span></span>$Database.ExportToXml({
+ Parameters : {
+   TargetSchema: &#39;HR&#39;,
+   TargetTable: &#39;OrganizationUnitPositionMembers&#39;,
+   IncludeAllColumns: &#39;True&#39;
+ },
+ Columns : [
+   {
+     Name : &#39;Employee&#39;,
+     Properties : {
+       XPath : &#39;Id&#39;
+     }
+   },
+   {
+     Name : &#39;Employee.Person.DisplayName&#39;,
+     Properties : {
+       XPath : &#39;Name&#39;
+     }
+   },   
+   {
+     Name : &#39;OrganizationUnitPosition.Organization&#39;,
+     Properties : {
+       XPath : &#39;Department&#39;
+     }
+   },
+   {
+     Name : &#39;OrganizationUnitPosition.Organization.Name&#39;,
+     Properties : {
+       XPath : &#39;Department/@Name&#39;
+     }
+      }
+ ],
+ Where : {
+       Criteria: [
+         { Name: &#39;OrganizationUnitPosition.Manager&#39;, Value:&#39;D7B70176-C44D-44BB-A8C0-7900BC5DAF2A&#39;, Condition : &#39;And&#39;},
+         { Name: &#39;Employee.User.Disabled&#39;, Value: true, Comparison:&#39;Different&#39;, Condition : &#39;And&#39;}
+       ]
+ },
+ XPath : &#39;EmployeeList/Employee&#39;
+ });
+</pre></div>
+
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
                 
                   
                 

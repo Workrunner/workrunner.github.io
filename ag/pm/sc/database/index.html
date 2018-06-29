@@ -1547,34 +1547,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-10-1-2" type="checkbox" id="nav-3-3-10-1-2">
-    
-    <label class="md-nav__link" for="nav-3-3-10-1-2">
-      $ActivityStream
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-10-1-2">
-        $ActivityStream
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../activitystream.push/" title="$ActivityStream.Push" class="md-nav__link">
-      $ActivityStream.Push
+    <a href="../activitystream/" title="$ActivityStream" class="md-nav__link">
+      $ActivityStream
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -5870,7 +5846,10 @@
                 
                   <h1>$Database Methods</h1>
                 
-                
+                <p>Allows to perform relational database operations.</p>
+<p>You can use <a href="../database.get/">$Database.Get</a> method to perform query on existing records, make changes on returned <a href="datatable.md">DataTable</a> instance and persist all changes with <a href="../datatable.save/">DataTable.Save</a> method.</p>
+<p>If you need to just insert new values you can use the <a href="../database.empty/">$Database.Empty</a> method to create a empty <a href="datatable.md">DataTable</a> to add new rows.</p>
+<p>This class also provides <a href="../database.exporttoxml/"><span><span class="MathJax_Preview">Database.ImportFromXml][5] and [</span><script type="math/tex">Database.ImportFromXml][5] and [</script></span>Database.ExportToXml</a> methods to map database to <a href="data_model.md">Data Model</a> (Xml) for allow user to make changes interactive.</p>
                 
                   
                 

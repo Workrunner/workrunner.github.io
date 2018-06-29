@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1547,34 +1551,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-10-1-2" type="checkbox" id="nav-3-3-10-1-2">
-    
-    <label class="md-nav__link" for="nav-3-3-10-1-2">
-      $ActivityStream
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-10-1-2">
-        $ActivityStream
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../activitystream.push/" title="$ActivityStream.Push" class="md-nav__link">
-      $ActivityStream.Push
+    <a href="../activitystream/" title="$ActivityStream" class="md-nav__link">
+      $ActivityStream
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -2271,9 +2251,64 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        $Messages.New
+      </label>
+    
     <a href="./" title="$Messages.New" class="md-nav__link md-nav__link--active">
       $Messages.New
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -5862,6 +5897,63 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" title="See Also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -5870,7 +5962,54 @@
                 
                   <h1>$Messages.New</h1>
                 
-                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><div class="codehilite"><pre><span></span><span class="nx">Message</span> <span class="nx">$Messages</span><span class="p">.</span><span class="nx">New</span> <span class="p">(</span> <span class="p">[</span> <span class="nx">to</span> <span class="o">=</span> <span class="kc">null</span> <span class="p">],</span> <span class="p">[</span> <span class="nx">subject</span> <span class="o">=</span> <span class="kc">null</span> <span class="p">],</span> <span class="p">[</span> <span class="nx">body</span> <span class="o">=</span> <span class="kc">null</span> <span class="p">]</span> <span class="p">)</span>
+</pre></div>
+Creates a new message instance to be send.</p>
+<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
+<p>string <strong>to</strong>
+  message to recipients in email format. Optional but you must set a recipient before sending.</p>
+<p>string <strong>subject</strong>
+  subject of message. Optional.</p>
+<p>string <strong>body</strong>
+  body of message.</p>
+<h2 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permanent link">&para;</a></h2>
+<p>This method does not send message, only prepares the message. To send message please use Message.Send method.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p><strong>Send a message</strong>;</p>
+<div class="codehilite"><pre><span></span>var msg = $Messages.New( &#39;user@host.com&#39; , &#39;remember&#39; , &#39;Remember the milk!.&#39; );
+msg.Send();
+</pre></div>
+
+<p><strong>Multiple Recipients</strong>;</p>
+<div class="codehilite"><pre><span></span>var msg = $Messages.New();
+
+msg.Subject = $Xml.Evaluate(&#39;Dispatch/Subject&#39;);
+msg.Body = $Xml.Evaluate(&#39;Dispatch/Body&#39;);
+msg.DeleteAfter = $Calendar.AddDays($Calendar.Today,30);
+
+$Xml.SelectAll(&quot;To/Address&quot;, function(adr) {
+
+    var type = adr.Evaluate(&#39;Type/Code&#39;);
+
+    if (type === &#39;To&#39;) {
+        msg.To(adr.Evaluate(&#39;EMailAddress&#39;));
+    } else if (type === &#39;CC&#39;) {
+        msg.CC(adr.Evaluate(&#39;EMailAddress&#39;));
+    } else if (type === &#39;BCC&#39;) {
+        msg.BCC(adr.Evaluate(&#39;EMailAddress&#39;));
+    }
+
+});
+
+$Xml.SelectAll(&quot;Attachments/Attachment&quot;, function(att) {
+    msg.AttachFile(att.Evaluate(&#39;File&#39;));
+});
+
+msg.Send();
+</pre></div>
+
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
                 
                   
                 
